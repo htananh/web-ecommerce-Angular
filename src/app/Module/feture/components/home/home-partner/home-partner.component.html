@@ -1,0 +1,18 @@
+<div >
+  <div class="flex justify-around mb-2">
+
+    <div class="text-2xl font-bold">
+        Đối tác
+      </div>
+      <hr  class="line mt-4 ml-2">
+  </div>
+  <p class="font-extralight">Bộ sưu tập các thương hiện nổi tiếng lớn trên Thế Giới</p>
+  <div class="partner-container">
+
+      <swiper [slidesPerView]="3"  >
+        
+    <ng-template swiperSlide *ngFor="let item of partner"> <img [src]="item.image" alt="" class="modifier-img w-40 ml-5"></ng-template>
+    
+  </swiper>
+    </div>
+</div>

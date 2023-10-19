@@ -1,0 +1,76 @@
+<div class="py-10">
+    <main class="px-24">
+        <div class="flex items-baseline justify-between px-36 sm:px-6">
+            <p class="text-3xl font-bold">
+                Sản Phẩm
+            </p>
+            <div class="flex items-center">
+               
+                <button class="text-lg" mat-button  [matMenuTriggerFor]="Sort">Xếp Theo Giá</button>
+                <mat-menu #Sort="matMenu">
+                    <button mat-menu-item>Cao đến thấp</button>
+                    <button mat-menu-item>Thấp đến cao</button>
+                  </mat-menu>
+                </div>
+          
+        </div>
+        <mat-divider></mat-divider>
+        <section class="pt-4">
+            <div class="grid grid-cols-1 gap-8 gap-y-10 lg:grid-cols-4">
+                <div class="">
+                    <p class="text-xl">Lọc Theo  
+                    <mat-icon class="ml-2">filter_list</mat-icon>
+                </p> 
+                <form class="hidden lg:block">
+
+                    <div *ngFor="let item of filterMuiltiple">
+                        <div class="pt-6 lg:ml-4 font-medium">{{item.name}}</div>
+                        <mat-divider class="w-2/5"></mat-divider>
+                        <div class="pt-4">
+                            <div *ngFor="let option of item.option">
+                                <mat-checkbox 
+                                [color]="'primary'"
+                                [id]="item.id"
+                                [value]="option.value"
+                                (click)="handlefilterMuiltiple(option.value,item.id)"
+                               >
+                               <span>{{option.label}}</span>
+        </mat-checkbox>
+                            </div>
+                        </div>
+                    </div>  
+                    <div *ngFor="let item of filterSingle">
+                        <div class="pt-6 lg:ml-4 font-medium">{{item.name}}</div>
+                        <mat-divider class="w-2/5"></mat-divider>
+                        <div class="pt-4">
+                            <mat-radio-group>
+                            <div *ngFor="let option of item.option">
+                              
+                               
+                               <mat-radio-button   [color]="'primary'"
+                               [id]="item.id"
+                               [value]="option.value"
+                               (click)="handlefilterSimple(option.value,item.id)"
+                               ><span>{{option.label}}</span></mat-radio-button>
+                               
+                            </div>
+        </mat-radio-group>
+                        </div>
+                    </div>  
+                </form> 
+            </div>
+            <div class="lg:col-span-3">
+
+                <p class="text-xl"> Sản Phẩm</p>
+                 <div class="flex flex-wrap">
+
+                     <ng-container *ngFor="let item of products">
+                         <app-product-cart [product] = "item"></app-product-cart>  
+                     </ng-container>
+                 </div>
+            </div>
+            
+            </div>
+        </section>
+    </main>
+</div>

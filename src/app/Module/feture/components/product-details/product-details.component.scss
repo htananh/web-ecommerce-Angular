@@ -1,0 +1,19 @@
+:host ::ng-deep label{
+    margin-bottom: 0;
+  }
+.color_star{
+    color: #ff9f00;
+    padding-bottom: 2rem;
+}
+
+.mat-mdc-progress-bar {
+    --mdc-linear-progress-active-indicator-color: #ff9f00;
+    --mdc-linear-progress-track-color: rgba(63, 81, 181, 0.25);
+}
+.btn_addtocart{
+    background-color: rgb(220 38 38);
+    color: white;
+}
+.btn_addtocart:hover{
+    background-color: rgb(68, 68, 216);
+}

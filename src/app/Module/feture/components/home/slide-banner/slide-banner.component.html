@@ -1,0 +1,31 @@
+<div class="relative">
+    
+    <div class="slider-effectCoverflow">
+
+      <swiper 
+      [effect]="'coverflow'"
+      [grabCursor]="true"
+      [centeredSlides]="true"
+      [slidesPerView]="'auto'"
+      [coverflowEffect]="{
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true
+      }"
+      [pagination]="true"
+      [autoplay]="{
+        delay: 2500, 
+        disableOnInteraction: false 
+    }"
+      class="mySwiper ">
+   
+    <ng-template swiperSlide *ngFor="let item of slideBanner"> <img [src]="item.image" alt="" class="center-img h-[28rem] rounded-lg"></ng-template>
+    
+  </swiper>
+    </div>
+</div>
+
+
+

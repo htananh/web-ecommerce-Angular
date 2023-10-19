@@ -1,0 +1,43 @@
+
+                       
+
+                            <div (click)="navigateTo('/product-details/' + product.id)"
+
+                             class="relative box hover:scale-110 duration-500 cursor-pointer flex flex-col items-center rounded-lg m-3 border-2 lg:w-72">
+                                <div class="h-52 w-48 pt-4" >
+                                    <img [src]="product.imageURL" alt="">
+                                </div>
+                                <div class="p-4">
+                                    <p class="mt-2 text-xs font-bold text-black">{{product.title}}</p>
+                                    <div class="flex flex-wrap justify-around ">
+                                        <p class="text-center text-red-600 font-bold">{{product.discountedPrice}}</p>
+                                        <ng-container *ngIf="product.discountPersent !== null && product.discountPersent !== ''">
+                                            <p class="text-center text-current line-through">{{product.price}}</p>
+                                        </ng-container>
+                                       
+                                    </div>
+                                </div>
+                                <ng-container *ngIf="product.discountPersent !== null && product.discountPersent !== ''">
+                                    <div class="absolute" style="height: 31px;
+                                    left: -15px;
+                                    position: absolute;
+                                    top: -10px;
+                                    width: 4rem;
+                                    background: url('https://img.freepik.com/free-vector/banner-design-white-background_1308-95008.jpg?size=626&ext=jpg');
+                                    background-size: cover; /* hoặc contain tùy theo mong muốn */
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    color: #fff;
+                                    font-size: 12px;
+                                    font-weight: 700;
+                                    margin: 5px 0 0;
+                                    text-align: center;">
+                                        <p style="margin-top: 1.5rem;  color: #fff;">giảm {{product.discountPersent}} </p>
+                                    </div>
+                                </ng-container>
+                            </div>
+                      
+                              
+                            
+             

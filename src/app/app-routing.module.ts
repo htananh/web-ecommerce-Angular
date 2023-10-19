@@ -1,7 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './Module/feture/components/home/home.component';
+import { ProductsComponent } from './Module/feture/components/products/products.component';
+import { CartComponent } from './Module/feture/components/cart/cart.component';
+import { ProductDetailsComponent } from './Module/feture/components/product-details/product-details.component';
+import { CheckoutComponent } from './Module/feture/components/checkout/checkout.component';
+import { PaymentComponent } from './Module/feture/components/payment/payment.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: '', component:HomeComponent},
+  {path: 'checkout/payment/:id', component:PaymentComponent},
+  { path: ':lavelOne/:lavelTow/:lavelThere', component:ProductsComponent},
+  { path: 'cart', component:CartComponent},
+  { path: 'product-details/:id', component:ProductDetailsComponent},
+  {path: 'checkout', component:CheckoutComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
