@@ -1,1 +1,37 @@
-<p>cart works!</p>
+<mat-divider></mat-divider>
+<div class="lg:grid grid-cols-3 lg:mx-36 mx-10 py-5 gap-10">
+   <div class="lg:col-span-2  ">
+    <div class="flex justify-between">
+        <h1>Giỏ hàng của bạn</h1>
+        <p class="font-light">Sản phẩm đã chọn</p>
+    </div>
+    <ng-container *ngIf="cart">
+        <div  *ngFor="let product of cart">
+            <app-cart-item [item]="product"></app-cart-item>
+          
+        </div>
+    </ng-container>
+   </div>
+   <div class="col-span-1 ">
+        <div class="box-total">
+            <div class="flex justify-around ">
+
+                <h1>Tổng tiền</h1>
+                <p class="text-lg text-red-600 font-bold">10.000.000đ</p>
+            </div>
+            <p>
+                - ĐỔI HÀNG MIỄN PHÍ - Tại tất cả cửa hàng trong 15 ngày
+            </p>
+            <p>
+                - Bạn cũng có thể nhập mã giảm giá ở trang thanh toán.
+            </p>
+           
+                <button (click)="navigateToCheckout()" class="checkout w-full mt-5 p-2">Thanh toán</button>
+           
+        </div>
+        <div class="box-total pt-5 mt-2" style="background-color: #d9edf7;">
+            <p class="font-bold">Chính sách mua hàng</p>
+            <p>Hiện chúng tôi đang áp dụng giao hàng trên toàn quốc</p>
+        </div>
+   </div>
+</div>

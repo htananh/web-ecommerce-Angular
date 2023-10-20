@@ -6,6 +6,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { ProductCartComponent } from './components/product-cart/product-cart.component';
+import { CartItemComponent } from './components/cart-item/cart-item.component';
 
 
 
@@ -13,7 +14,8 @@ import { ProductCartComponent } from './components/product-cart/product-cart.com
   declarations: [
     NavbarComponent,
     FooterComponent,
-    ProductCartComponent
+    ProductCartComponent,
+    CartItemComponent
   ],
   imports: [
     CommonModule,
@@ -24,7 +26,8 @@ import { ProductCartComponent } from './components/product-cart/product-cart.com
   exports: [
     NavbarComponent,
     FooterComponent,
-    ProductCartComponent
+    ProductCartComponent,
+    CartItemComponent
   ]
 })
 export class SharedModule { }

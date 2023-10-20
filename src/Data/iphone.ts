@@ -80,8 +80,8 @@ export const iphone=[
         brand: "iphone",
         title: "iPhone 14 128GB | Chính hãng VN/A",
         color:"hồng",
-        discountedPrice: "22.990.000đ",
-        price: "18.790.000đ",
+        discountedPrice: "18.790.000đ",
+        price: "22.990.000đ",
         discountPersent: "18%",
         type: [
             {

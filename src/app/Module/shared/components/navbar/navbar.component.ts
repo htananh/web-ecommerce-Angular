@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Output, ViewEncapsulation } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -12,10 +13,15 @@ export class NavbarComponent {
     
   }
  
- 
+  constructor(private router:Router){
+    
+  }
   @Output() isform = new EventEmitter<boolean>();
   Login(){
     const booleanValue = true;
     this.isform.emit(booleanValue);
+  }
+  navigateToProducts(){
+    this.router.navigate(['product/product/all']);
   }
 }

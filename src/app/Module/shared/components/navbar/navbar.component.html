@@ -36,15 +36,15 @@
 <div class="text-center pb-3 ">
     <a routerLink="/" class="text-lg font-bold pr-2 active"  mat-button>TRANG CHỦ</a>
     <a  routerLink="/" class="text-lg font-bold pr-2 " mat-button [matMenuTriggerFor]="menu"
-    routerLinkActive="active" 
+    (click)="navigateToProducts()"
     > SẢN PHẨM 
     <i class="fas fa-angle-down "></i></a>
-    <a  routerLink="/" class="text-lg font-bold pr-2 " mat-button>TIN TỨC</a>
+    <a  routerLink='/' class="text-lg font-bold pr-2 " mat-button>TIN TỨC</a>
     <a  routerLink="/" class="text-lg font-bold pr-2" mat-button>LIÊN HỆ</a>
 </div>
 
 <mat-menu #menu="matMenu" #createPlanmenuTrigger="" class="w-32">
-  <button  mat-menu-item class="border-bottom product-slection">Điện thoại</button>
+  <button   mat-menu-item class="border-bottom product-slection">Điện thoại</button>
   <button mat-menu-item class="border-bottom product-slection">Laptop</button>
   <button mat-menu-item class="border-bottom product-slection">Đồng hồ</button>
   <button mat-menu-item class="product-slection">Phụ kiện</button>
