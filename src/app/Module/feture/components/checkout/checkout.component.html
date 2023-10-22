@@ -1,1 +1,118 @@
-<p>checkout works!</p>
+<mat-divider></mat-divider>
+<div class="grid grid-cols-2 gap-3  mx-32 py-10 pb-20">
+    <div class="col-span-1">
+        <h1>Thông tin giao hàng</h1>
+        <form [formGroup]="myform">
+            <div class="grid grid-cols-1 gap-x-5 sm:grid-cols-4 mx-5">
+
+                <div class="col-span-2 ">
+    
+                    <mat-form-field class="w-full " appearance="fill">
+                        <mat-label>Họ</mat-label>
+                        <input matInput  formControlName="firstname" placeholder="Hồ" value="" type="text">
+                      </mat-form-field>
+                </div>
+                <div class="col-span-2">
+    
+                    <mat-form-field class="w-full" appearance="fill">
+                        <mat-label>Tên</mat-label>
+                        <input matInput formControlName="lastname" placeholder="Tấn Anh" value="" type="text">
+                      </mat-form-field>
+                </div>
+                <div class="col-span-3">
+    
+                    <mat-form-field class="w-full" appearance="fill">
+                        <mat-label>Email</mat-label>
+                        <input matInput formControlName="email" placeholder="21521818@gm.uit.edu.vn" value="" type="email">
+                      </mat-form-field>
+                </div>
+                <div class="col-span-1">
+    
+                    <mat-form-field class="w-full" appearance="fill">
+                        <mat-label>Điện thoại</mat-label>
+                        <input matInput formControlName="number" placeholder="" value="number" >
+                      </mat-form-field>
+                </div>
+                <div class="col-span-2"  >
+    
+                    <mat-form-field class="w-full" appearance="fill" >
+                        <mat-label>Tỉnh/Thành Phố</mat-label>
+                        <mat-select  id="province" (selectionChange)="onProvinceChange()" formControlName="provinces">
+                            <mat-option  *ngFor="let province of provinces" [value]="province.code">{{ province.name }}
+                            </mat-option>
+                          </mat-select>
+                      </mat-form-field>
+                </div>
+                <div class="col-span-2">
+    
+                    <mat-form-field class="w-full" appearance="fill">
+                        <mat-label>Quận/Huyện</mat-label>
+                        <mat-select formControlName="district" id="district" (selectionChange)="onDistrictChange()">
+                            <mat-option   *ngFor="let district of districts" [value]="district.code">{{ district.name }}
+                            </mat-option>
+                          </mat-select>
+                      </mat-form-field>
+                </div>
+                <div class="col-span-2">
+    
+                    <mat-form-field class="w-full" appearance="fill">
+                        <mat-label>Xã/Phường</mat-label>
+                        <mat-select >
+                            <mat-option id="ward" (selectionChange)="onWardChange()" *ngFor="let ward of wards" [value]="ward.code">{{ ward.name }}
+                            </mat-option>
+                          </mat-select>
+                      </mat-form-field>
+                </div>
+                <div class="col-span-2">
+    
+                    <mat-form-field class="w-full" appearance="fill">
+                        <mat-label>Số nhà tên đường</mat-label>
+                        <input matInput  placeholder="ĐH CNTT" value="" type="text">
+                      </mat-form-field>
+                </div>
+            </div>
+        </form>
+        <div class="flex justify-between lg:mx-6">
+            <a (click)="navigatoCart()" class="font-semibold cursor-pointer" style="color: #338dbc;"> Giỏ hàng</a>
+            <button class="checkout  p-3">Tiếp tục đến phương thức thanh toán</button>
+        </div>
+    </div>
+    <div class="col-span-1 mx-6">
+        <h1>Thông tin sản phẩm</h1>
+        <div class="flex mx-6 relative pb-5">
+            <div class="h-[5rem] w-[5rem] lg:h-[7rem] lg:w-[7rem] lg:mr-10 mr-2">
+                
+                <img class="w-full h-full object-cover border-css" src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-14-storage-select-202209-6-1inch-y889.jpg" alt="">
+            </div>
+            <h3>iPhone 14 Pro Max 128GB | Chính hãng VN/A</h3>
+            <p class="absolute bottom-5 right-0 text-red-600 font-bold">
+                18.790.000đ
+            </p>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="py-5">
+            <input class="voucher__input mr-2" type="text" placeholder="Mã giảm giá">
+            <button disabled class="voucher__button">Sử dụng</button>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="py-5 mr-5">
+            <div class="flex justify-between pb-2">
+                <p>Tạm tính</p>
+                <p class=" text-red-600 font-bold">18.790.000đ</p>
+            </div>
+            <div class="flex justify-between">
+                <p>Phí vận chuyển</p>
+                <p class="  font-bold">0đ</p>
+            </div>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="flex justify-between pt-5 mr-5">
+            <h2>Tổng cộng</h2>
+            <h2 class=" text-red-600 font-bold">
+                18.790.000đ
+            </h2>
+        </div>
+    </div>
+</div>
+
+

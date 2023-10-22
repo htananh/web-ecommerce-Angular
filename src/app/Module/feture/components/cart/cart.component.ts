@@ -7,7 +7,7 @@ import {  Router } from '@angular/router';
   styleUrls: ['./cart.component.scss']
 })
 export class CartComponent {
-  cart=[1,1,1];
+  cart=[1];
   constructor(private router:Router){}
   navigateToCheckout(){
     this.router.navigate(['checkout']);

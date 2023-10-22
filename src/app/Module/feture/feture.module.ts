@@ -13,7 +13,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import {MatDividerModule} from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import {MatCheckboxModule} from '@angular/material/checkbox';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
 import {MatRadioModule} from '@angular/material/radio';
 import { CartComponent } from './components/cart/cart.component';
@@ -21,6 +21,9 @@ import { ProductDetailsComponent } from './components/product-details/product-de
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { PaymentComponent } from './components/payment/payment.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -48,7 +51,11 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     FormsModule,
     SharedModule,
     MatRadioModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+     MatInputModule,
+     MatSelectModule
   ],
   exports: [
     FetureComponent,

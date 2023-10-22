@@ -13,6 +13,8 @@ import {MatMenuModule} from '@angular/material/menu';
 import { FormsModule,ReactiveFormsModule  } from '@angular/forms';
 import { FetureModule } from './Module/feture/feture.module';
 import { SharedModule } from './Module/shared/shared.module';
+import { ProvinceService } from './services/province-service.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,10 +33,11 @@ import { SharedModule } from './Module/shared/shared.module';
     MatIconModule,
     MatMenuModule,
     FormsModule,
-    ReactiveFormsModule 
+    ReactiveFormsModule,
+    HttpClientModule
   
   ],
-  providers: [],
+  providers: [ProvinceService],
   bootstrap: [AppComponent],
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
