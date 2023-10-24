@@ -34,12 +34,12 @@
         </div>
 </div>
 <div class="text-center pb-3 ">
-    <a routerLink="/" class="text-lg font-bold pr-2 active"  mat-button>TRANG CHỦ</a>
+    <a routerLink="/" (click)="navigateToHome()" class="text-lg font-bold pr-2 active"  mat-button>TRANG CHỦ</a>
     <a  routerLink="/" class="text-lg font-bold pr-2 " mat-button [matMenuTriggerFor]="menu"
     (click)="navigateToProducts()"
     > SẢN PHẨM 
     <i class="fas fa-angle-down "></i></a>
-    <a  routerLink='/' class="text-lg font-bold pr-2 " mat-button>TIN TỨC</a>
+    <a  routerLink='/news' (click)="navigateToNews()" class="text-lg font-bold pr-2 " mat-button>TIN TỨC</a>
     <a  routerLink="/" class="text-lg font-bold pr-2" mat-button>LIÊN HỆ</a>
 </div>
 

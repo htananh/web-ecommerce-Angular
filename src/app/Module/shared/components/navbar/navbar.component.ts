@@ -24,4 +24,10 @@ export class NavbarComponent {
   navigateToProducts(){
     this.router.navigate(['product/product/all']);
   }
+  navigateToHome(){
+    this.router.navigate(['/']);
+  }
+  navigateToNews(){
+    this.router.navigate(['news']);
+  }
 }

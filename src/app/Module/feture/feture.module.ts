@@ -24,6 +24,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
+import { NewsComponent } from './components/news/news.component';
+import { NewsDetailsComponent } from './components/news/news-details/news-details.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,8 @@ import {MatSelectModule} from '@angular/material/select';
     ProductDetailsComponent,
     CheckoutComponent,
     PaymentComponent,
+    NewsComponent,
+    NewsDetailsComponent,
     
   ],
   imports: [

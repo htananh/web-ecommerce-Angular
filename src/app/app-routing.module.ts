@@ -6,6 +6,8 @@ import { CartComponent } from './Module/feture/components/cart/cart.component';
 import { ProductDetailsComponent } from './Module/feture/components/product-details/product-details.component';
 import { CheckoutComponent } from './Module/feture/components/checkout/checkout.component';
 import { PaymentComponent } from './Module/feture/components/payment/payment.component';
+import { NewsComponent } from './Module/feture/components/news/news.component';
+import { NewsDetailsComponent } from './Module/feture/components/news/news-details/news-details.component';
 
 const routes: Routes = [
   { path: '', component:HomeComponent},
@@ -13,7 +15,9 @@ const routes: Routes = [
   { path: ':lavelOne/:lavelTow/:lavelThere', component:ProductsComponent},
   { path: 'cart', component:CartComponent},
   { path: 'product-details/:id', component:ProductDetailsComponent},
-  {path: 'checkout', component:CheckoutComponent}
+  {path: 'checkout', component:CheckoutComponent},
+  {path: 'news',component:NewsComponent},
+  {path: 'news-details/:id',component:NewsDetailsComponent}
 ];
 
 @NgModule({

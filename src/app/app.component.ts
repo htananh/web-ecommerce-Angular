@@ -35,4 +35,5 @@ export class AppComponent {
       this.closeLogin();
     }
   }
+  
 }
