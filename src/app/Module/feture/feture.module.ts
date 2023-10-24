@@ -26,6 +26,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import { NewsComponent } from './components/news/news.component';
 import { NewsDetailsComponent } from './components/news/news-details/news-details.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { NewsDetailsComponent } from './components/news/news-details/news-detail
     PaymentComponent,
     NewsComponent,
     NewsDetailsComponent,
+    ContactComponent,
     
   ],
   imports: [

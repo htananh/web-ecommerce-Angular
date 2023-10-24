@@ -8,6 +8,7 @@ import { CheckoutComponent } from './Module/feture/components/checkout/checkout.
 import { PaymentComponent } from './Module/feture/components/payment/payment.component';
 import { NewsComponent } from './Module/feture/components/news/news.component';
 import { NewsDetailsComponent } from './Module/feture/components/news/news-details/news-details.component';
+import { ContactComponent } from './Module/feture/components/contact/contact.component';
 
 const routes: Routes = [
   { path: '', component:HomeComponent},
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'product-details/:id', component:ProductDetailsComponent},
   {path: 'checkout', component:CheckoutComponent},
   {path: 'news',component:NewsComponent},
-  {path: 'news-details/:id',component:NewsDetailsComponent}
+  {path: 'news-details/:id',component:NewsDetailsComponent},
+  {path:'contact',component:ContactComponent}
 ];
 
 @NgModule({

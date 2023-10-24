@@ -30,4 +30,10 @@ export class NavbarComponent {
   navigateToNews(){
     this.router.navigate(['news']);
   }
+  navigateToContact(){
+    this.router.navigate(['contact']);
+  }
+  navigateToCart(){
+    this.router.navigate(['cart']);
+  }
 }
