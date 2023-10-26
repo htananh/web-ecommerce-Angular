@@ -33,19 +33,23 @@
                   </mat-menu>
         </div>
 </div>
-<div class="text-center pb-3 ">
-    <a routerLink="/" (click)="navigateToHome()" class="text-lg font-bold pr-2 active"  mat-button>TRANG CHỦ</a>
-    <a  routerLink="/" class="text-lg font-bold pr-2 " mat-button [matMenuTriggerFor]="menu"
-    (click)="navigateToProducts()"
+<div class="text-center pb-3 space-x-2">
+    <a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }" class="text-lg font-bold pr-2"  >TRANG CHỦ</a>
+    <a  routerLink="/#" class="text-lg font-bold pr-2 product"   [matMenuTriggerFor]="menu"
+   
     > SẢN PHẨM 
-    <i class="fas fa-angle-down "></i></a>
-    <a  routerLink='/news' (click)="navigateToNews()" class="text-lg font-bold pr-2 " mat-button>TIN TỨC</a>
-    <a  routerLink="/" (click)="navigateToContact()" class="text-lg font-bold pr-2" mat-button>LIÊN HỆ</a>
+    <i class="fas fa-angle-down "></i>
+    
+    </a>
+    <a routerLink="/news" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }" class="text-lg font-bold pr-2" >TIN TỨC</a>
+
+
+    <a  routerLink="/contact" routerLinkActive="active-link"  class="text-lg font-bold pr-2" >LIÊN HỆ</a>
 </div>
 
-<mat-menu #menu="matMenu" #createPlanmenuTrigger="" class="w-32">
-  <button   mat-menu-item class="border-bottom product-slection">Điện thoại</button>
-  <button mat-menu-item class="border-bottom product-slection">Laptop</button>
-  <button mat-menu-item class="border-bottom product-slection">Đồng hồ</button>
-  <button mat-menu-item class="product-slection">Phụ kiện</button>
+<mat-menu  #menu="matMenu"  class="w-32">
+  <a   mat-menu-item class="border-bottom product-slection" routerLinkActive="active-link"  routerLink="/product/product/all">Iphone</a>
+  <button mat-menu-item class="border-bottom product-slection">SamSung</button>
+  <button mat-menu-item class="border-bottom product-slection">Vivo</button>
+  <button mat-menu-item class="product-slection">Oppo</button>
 </mat-menu>

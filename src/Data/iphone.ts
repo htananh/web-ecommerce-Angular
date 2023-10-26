@@ -11,7 +11,8 @@ export const iphone=[
         type: [
             {
               Capacity: "128G",
-              quantity: 5
+              quantity: 5,
+              
             },
             {
                 Capacity: "256G",
@@ -125,6 +126,7 @@ export const iphone=[
           quantity: 20,
     },
     {
+        id:6,
         imageURL:"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-14-storage-select-202209-6-1inch-y889.jpg",
         brand: "iphone",
         title: "iPhone 14 128GB | Chính hãng VN/A",
@@ -149,6 +151,7 @@ export const iphone=[
           quantity: 20,
     },
     {
+        id:7,
         imageURL:"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/3/_/3_51_1_7.jpg",
         brand: "iphone",
         title: "iPhone 13 Pro Max 128GB | Chính hãng VN/A",
@@ -173,6 +176,7 @@ export const iphone=[
           quantity: 20,
     },
     {
+        id:8,
         imageURL:"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-14-storage-select-202209-6-1inch-y889.jpg",
         brand: "iphone",
         title: "iPhone 14 128GB | Chính hãng VN/A",
@@ -197,6 +201,7 @@ export const iphone=[
           quantity: 20,
     },
     {
+        id:9,
         imageURL:"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/3/_/3_51_1_7.jpg",
         brand: "iphone",
         title: "iPhone 13 Pro Max 128GB | Chính hãng VN/A",
@@ -221,6 +226,7 @@ export const iphone=[
           quantity: 20,
     },
     {
+        id:10,
         imageURL:"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-14-storage-select-202209-6-1inch-y889.jpg",
         brand: "iphone",
         title: "iPhone 14 128GB | Chính hãng VN/A",
@@ -245,6 +251,7 @@ export const iphone=[
           quantity: 20,
     },
     {
+        id:11,
         imageURL:"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/3/_/3_51_1_7.jpg",
         brand: "iphone",
         title: "iPhone 13 Pro Max 128GB | Chính hãng VN/A",
@@ -269,6 +276,7 @@ export const iphone=[
           quantity: 20,
     },
     {
+        id:12,
         imageURL:"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-14-storage-select-202209-6-1inch-y889.jpg",
         brand: "iphone",
         title: "iPhone 14 128GB | Chính hãng VN/A",
@@ -293,6 +301,7 @@ export const iphone=[
           quantity: 20,
     },
     {
+        id:13,
         imageURL:"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/3/_/3_51_1_7.jpg",
         brand: "iphone",
         title: "iPhone 13 Pro Max 128GB | Chính hãng VN/A",

@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
   encapsulation: ViewEncapsulation.None
 })
 export class NavbarComponent {
+  isNewsSelected: boolean = false;
   navigateTo(cart:any){
     
   }
@@ -28,6 +29,7 @@ export class NavbarComponent {
     this.router.navigate(['/']);
   }
   navigateToNews(){
+    this.isNewsSelected=true;
     this.router.navigate(['news']);
   }
   navigateToContact(){

@@ -7,6 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { ProductCartComponent } from './components/product-cart/product-cart.component';
 import { CartItemComponent } from './components/cart-item/cart-item.component';
+import { RouterLinkActive, RouterModule } from '@angular/router';
 
 
 
@@ -22,6 +23,8 @@ import { CartItemComponent } from './components/cart-item/cart-item.component';
     MatButtonModule,
     MatIconModule,
     MatMenuModule,
+    RouterLinkActive,
+    RouterModule 
   ],
   exports: [
     NavbarComponent,

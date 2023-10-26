@@ -15,6 +15,7 @@ import { FetureModule } from './Module/feture/feture.module';
 import { SharedModule } from './Module/shared/shared.module';
 import { ProvinceService } from './services/province-service.service';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatMenuModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule 
   
   ],
   providers: [ProvinceService],

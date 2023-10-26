@@ -33,5 +33,30 @@ a:hover{
 .search_btn:focus{
     border: none;
 }
+.product{
+    position: relative;
+}
+.hidden-menu{
+    display: none;
+     z-index: 1000;
+}
+.product:hover .hidden-menu{
+    display: block;
+    z-index: 1000;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f3f3f3;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.active{
+    color: rgb(14 165 233)
+}
+.active-link {
+    color: rgb(14 165 233)
+    
+    /* Add any other styles you want for the active state */
+  }
 
 

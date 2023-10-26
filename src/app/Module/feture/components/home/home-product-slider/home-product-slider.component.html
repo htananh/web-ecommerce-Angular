@@ -9,10 +9,10 @@
             <swiper [slidesPerView]="4"
              [navigation]="true" >
               
-          <ng-template swiperSlide *ngFor="let product of products"> 
+          <ng-template swiperSlide *ngFor="let item of products"> 
             
         
-            <div class="relative box hover:scale-110 duration-500 cursor-pointer flex flex-col items-center rounded-lg m-3 border-2 ">
+            <!-- <div class="relative box hover:scale-110 duration-500 cursor-pointer flex flex-col items-center rounded-lg m-3 border-2 ">
                 <div class="h-52 w-48 pt-4">
                     <img [src]="product.imageURL" alt="">
                 </div>
@@ -45,8 +45,8 @@
                         <p style="margin-top: 1.5rem;  color: #fff;">giảm {{product.discountPersent}} </p>
                     </div>
                 </ng-container>
-            </div>
-        
+            </div> -->
+            <app-product-cart [product] = "item"></app-product-cart>
         
         
         </ng-template>
