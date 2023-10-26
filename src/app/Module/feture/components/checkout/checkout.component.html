@@ -1,37 +1,61 @@
+
 <mat-divider></mat-divider>
 <div class="grid grid-cols-2 gap-3  mx-32 py-10 pb-20">
     <div class="col-span-1">
         <h1>Thông tin giao hàng</h1>
         <form [formGroup]="myform">
-            <div class="grid grid-cols-1 gap-x-5 sm:grid-cols-4 mx-5">
+            <div class="grid grid-cols-1 gap-x-5 sm:grid-cols-4 mx-5 space-y-5">
 
-                <div class="col-span-2 ">
+                <div class="col-span-4 space-y-2">
     
-                    <mat-form-field class="w-full " appearance="fill">
-                        <mat-label>Họ</mat-label>
-                        <input matInput  formControlName="firstname" placeholder="Hồ" value="" type="text">
-                      </mat-form-field>
+                   
+                    <label for=""> Họ và tên</label>
+                        <input
+                        [ngClass]="{'is-invalid': myform.get('firstname')?.invalid && myform.get('firstname')?.touched}"
+                        name="firstname"
+                        class="input w-full" formControlName="firstname"  value="" type="text" placeholder="Họ và tên">
+                        <div *ngIf="myform.get('firstname')?.invalid && myform.get('firstname')?.touched">
+                            <div *ngIf="myform.get('firstname')?.errors?.['required']" class="alert ">
+                                Không được bỏ trống 
+                            </div>
+                            <div *ngIf="myform.get('firstname')?.errors?.['minlength']" class="alert ">
+                                Phải nhiều hơn 5 kí tự
+                            </div>
+                            
+                          
+                        </div>
+                </div>
+               
+                <div class="col-span-2">
+                    <label for="">Email</label>
+                    <input
+                    [ngClass]="{'is-invalid': myform.get('email')?.invalid && myform.get('email')?.touched}"
+                    name="email"
+                    class="input w-full" formControlName="email"  value="" type="text" placeholder="21521818@gmail.com">
+                    <div *ngIf="myform.get('email')?.invalid && myform.get('email')?.touched">
+                        <div *ngIf="myform.get('email')?.errors?.['required']" class="alert ">
+                            Không được bỏ trống 
+                        </div>
+                        <div *ngIf="myform.get('email')?.errors?.['email']" class="alert ">
+                            email không đúng dạng
+                        </div>
+                    </div>
                 </div>
                 <div class="col-span-2">
     
-                    <mat-form-field class="w-full" appearance="fill">
-                        <mat-label>Tên</mat-label>
-                        <input matInput formControlName="lastname" placeholder="Tấn Anh" value="" type="text">
-                      </mat-form-field>
-                </div>
-                <div class="col-span-3">
-    
-                    <mat-form-field class="w-full" appearance="fill">
-                        <mat-label>Email</mat-label>
-                        <input matInput formControlName="email" placeholder="21521818@gm.uit.edu.vn" value="" type="email">
-                      </mat-form-field>
-                </div>
-                <div class="col-span-1">
-    
-                    <mat-form-field class="w-full" appearance="fill">
-                        <mat-label>Điện thoại</mat-label>
-                        <input matInput formControlName="number" placeholder="" value="number" >
-                      </mat-form-field>
+                    <label for="">Số điện thoại</label>
+                    <input
+                    [ngClass]="{'is-invalid': myform.get('number')?.invalid && myform.get('number')?.touched}"
+                    name="number"
+                    class="input w-full" formControlName="number"  value="" type="text" placeholder="0388754xxx">
+                    <div *ngIf="myform.get('number')?.invalid && myform.get('number')?.touched">
+                        <div *ngIf="myform.get('number')?.errors?.['required']" class="alert ">
+                            Không được bỏ trống 
+                        </div>
+                        <div *ngIf="myform.get('number')?.errors?.['pattern']" class="alert ">
+                            số điện thoại không đúng
+                        </div>
+                    </div>
                 </div>
                 <div class="col-span-2"  >
     

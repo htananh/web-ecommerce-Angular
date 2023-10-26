@@ -17,10 +17,13 @@ export class CheckoutComponent  {
   result: string = '';
   constructor(fb: FormBuilder, private apiService: ProvinceService,private router: Router) {
     this.myform = fb.group({
-      firstname: ['', Validators.required],
+      firstname: ['', [
+        Validators.required,
+        Validators.minLength(5)
+      ]],
       lastname: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      number: ['', [Validators.required, Validators.pattern(/^-?\d*\.?\d*$/)]],
+      number: ['', [Validators.required, Validators.pattern(/^(03|05|07|08|09|01[2|6|8|9])+([0-9]{8})\b/)]],
       streetAddress: ['', Validators.required],
       provinces: [null, Validators.required],
       district: ['', Validators.required],
