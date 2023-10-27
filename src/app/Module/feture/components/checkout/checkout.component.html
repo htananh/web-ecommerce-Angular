@@ -6,6 +6,13 @@
         <form [formGroup]="myform">
             <div class="grid grid-cols-1 gap-x-5 sm:grid-cols-4 mx-5 space-y-5">
 
+                <!-- Hiển thị thông báo nếu có lỗi -->
+                    <div class="col-span-4" *ngIf="errorMessages.length > 0" >
+                        <ul class=" space-y-2">
+                        <li class="alert " *ngFor="let message of errorMessages">{{ message }}</li>
+                        </ul>
+                    </div>
+  
                 <div class="col-span-4 space-y-2">
     
                    
@@ -58,47 +65,56 @@
                     </div>
                 </div>
                 <div class="col-span-2"  >
-    
-                    <mat-form-field class="w-full" appearance="fill" >
-                        <mat-label>Tỉnh/Thành Phố</mat-label>
-                        <mat-select  id="province" (selectionChange)="onProvinceChange()" formControlName="provinces">
-                            <mat-option  *ngFor="let province of provinces" [value]="province.code">{{ province.name }}
-                            </mat-option>
-                          </mat-select>
-                      </mat-form-field>
+                   
+                  
+                    
+                    <label for="">Tỉnh/Thành Phố</label>
+                    <select appearance="fill"     class="input w-full" id="province" (change)="onProvinceChange()" formControlName="provinces">
+                        <option [ngValue]="null" [disabled]="true" >Tỉnh/Thành Phố</option>
+                        <option *ngFor="let province of provinces" [value]="province.code">{{ province.name }}</option>
+                      </select>
+                      
+                   
+                </div>
+                <div class="col-span-2 w-full">
+                    <label for=""> Quận/Huyện</label>
+                    <select appearance="fill" class="input w-full" id="district" (change)="onDistrictChange()" formControlName="district">
+                        <option [ngValue]="null"   >Quận/Huyện</option>
+                        <option *ngFor="let district of districts" [value]="district.code">{{ district.name }}</option>
+                      </select>
+
                 </div>
                 <div class="col-span-2">
-    
-                    <mat-form-field class="w-full" appearance="fill">
-                        <mat-label>Quận/Huyện</mat-label>
-                        <mat-select formControlName="district" id="district" (selectionChange)="onDistrictChange()">
-                            <mat-option   *ngFor="let district of districts" [value]="district.code">{{ district.name }}
-                            </mat-option>
-                          </mat-select>
-                      </mat-form-field>
+                    <label for=""> Xã, Phường</label>
+                    <select     class="input w-full" id="ward"  formControlName="ward">
+                        <option [ngValue]="null" [disabled]="true" >Xã, Phường</option>
+                        <option *ngFor="let ward of wards" [value]="ward.code">{{ ward.name }}</option>
+                      </select>
+              
                 </div>
                 <div class="col-span-2">
-    
-                    <mat-form-field class="w-full" appearance="fill">
-                        <mat-label>Xã/Phường</mat-label>
-                        <mat-select >
-                            <mat-option id="ward" (selectionChange)="onWardChange()" *ngFor="let ward of wards" [value]="ward.code">{{ ward.name }}
-                            </mat-option>
-                          </mat-select>
-                      </mat-form-field>
-                </div>
-                <div class="col-span-2">
-    
-                    <mat-form-field class="w-full" appearance="fill">
-                        <mat-label>Số nhà tên đường</mat-label>
-                        <input matInput  placeholder="ĐH CNTT" value="" type="text">
-                      </mat-form-field>
+                    <label for="">Địa chỉ nhà</label>
+                    <input
+                    [ngClass]="{'is-invalid': myform.get('streetAddress')?.invalid && myform.get('streetAddress')?.touched}"
+                    name="streetAddress"
+                    class="input w-full" formControlName="streetAddress"  value="" type="text" placeholder="ĐH CNTT">
+                    <div *ngIf="myform.get('streetAddress')?.invalid && myform.get('streetAddress')?.touched">
+                        <div *ngIf="myform.get('streetAddress')?.errors?.['required']" class="alert ">
+                            Không được bỏ trống 
+                        </div>
+                        <div *ngIf="myform.get('streetAddress')?.errors?.['minlength']" class="alert ">
+                            Phải nhiều hơn 5 kí tự
+                        </div>
+                        
+                      
+                    </div>
+                 
                 </div>
             </div>
         </form>
-        <div class="flex justify-between lg:mx-6">
+        <div class="flex justify-between lg:mx-6 pt-5">
             <a (click)="navigatoCart()" class="font-semibold cursor-pointer" style="color: #338dbc;"> Giỏ hàng</a>
-            <button class="checkout  p-3">Tiếp tục đến phương thức thanh toán</button>
+            <button (click)="checkout()" class="checkout  p-3">Tiếp tục đến phương thức thanh toán</button>
         </div>
     </div>
     <div class="col-span-1 mx-6">
