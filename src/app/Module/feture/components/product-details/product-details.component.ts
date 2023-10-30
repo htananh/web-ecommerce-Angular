@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+
 import { iphone } from 'src/Data/iphone';
+import { Product,ProductType } from 'src/app/models/product';
+import { CartService } from 'src/app/services/cart.service';
 
 @Component({
   selector: 'app-product-details',
@@ -12,7 +15,10 @@ export class ProductDetailsComponent {
   selectColor:any;
   iphone:any;
   id:any;
-  constructor(private route: ActivatedRoute,private router:Router){}
+  constructor(private route: ActivatedRoute,
+    private router:Router,
+    private cartService: CartService
+    ){}
   ngOnInit() {
     this.iphone=iphone;
     this.route.params.subscribe(params => {
@@ -21,9 +27,22 @@ export class ProductDetailsComponent {
       console.log(this.id);
     })
   }
-  handleAddtoCart(){
+  
+  productType: ProductType = {
+    Capacity: '',
+    ColorType: ''
+  };
+  
+  handleAddtoCart(item: Product ){
+     this.productType = {
+      Capacity: this.selectType,
+      ColorType: this.selectColor
+    };
+    this.cartService.addToCart(item, this.productType)
+    console.log(this.cartService.getItems());
+    
     this.router.navigate(['cart']);
-    console.log( this.selectType,this.selectColor );
+    // console.log( this.selectType,this.selectColor );
   }
   onRadioChange(){
     console.log(this.selectType);

@@ -68,7 +68,7 @@
                    
                   
                     
-                    <label for="">Tỉnh/Thành Phố</label>
+                    <label for="">Tỉnh / Thành Phố</label>
                     <select appearance="fill"     class="input w-full" id="province" (change)="onProvinceChange()" formControlName="provinces">
                         <option [ngValue]="null" [disabled]="true" >Tỉnh/Thành Phố</option>
                         <option *ngFor="let province of provinces" [value]="province.code">{{ province.name }}</option>
@@ -77,7 +77,7 @@
                    
                 </div>
                 <div class="col-span-2 w-full">
-                    <label for=""> Quận/Huyện</label>
+                    <label for=""> Quận / Huyện</label>
                     <select appearance="fill" class="input w-full" id="district" (change)="onDistrictChange()" formControlName="district">
                         <option [ngValue]="null"   >Quận/Huyện</option>
                         <option *ngFor="let district of districts" [value]="district.code">{{ district.name }}</option>
@@ -85,7 +85,7 @@
 
                 </div>
                 <div class="col-span-2">
-                    <label for=""> Xã, Phường</label>
+                    <label for=""> Xã / Phường</label>
                     <select     class="input w-full" id="ward"  formControlName="ward">
                         <option [ngValue]="null" [disabled]="true" >Xã, Phường</option>
                         <option *ngFor="let ward of wards" [value]="ward.code">{{ ward.name }}</option>

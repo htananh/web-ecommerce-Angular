@@ -5,12 +5,26 @@
         <h1>Giỏ hàng của bạn</h1>
         <p class="font-light">Sản phẩm đã chọn</p>
     </div>
-    <ng-container *ngIf="cart">
+    <ng-container *ngIf="cart && cart.length > 0; else emptyCart">
         <div  *ngFor="let product of cart">
             <app-cart-item [item]="product"></app-cart-item>
           
         </div>
     </ng-container>
+    <ng-template #emptyCart>
+        <div class=" flex justify-center text-center ">
+            <div class="space-y-5">
+
+                <img class="w-72 ml-10" src="https://thegioidongho.netlify.app/static/media/cart_empty_background.7f8b973b8aeb202b078a.webp" alt="">
+              <h1 class="text-3xl "><span class="font-bold">"Không"</span> có gì trong giỏ hàng hết!!!</h1>
+              <div>
+  
+                  <a routerLink="/product/product/all" class="buyBtn pt-10">Mua sắm ngay</a>
+              </div>
+            </div>
+          
+        </div>
+      </ng-template>
    </div>
    <div class="col-span-1 ">
         <div class="box-total">

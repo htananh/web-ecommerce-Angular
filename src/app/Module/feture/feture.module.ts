@@ -27,6 +27,7 @@ import {MatSelectModule} from '@angular/material/select';
 import { NewsComponent } from './components/news/news.component';
 import { NewsDetailsComponent } from './components/news/news-details/news-details.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { RouterLinkActive, RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { ContactComponent } from './components/contact/contact.component';
     NewsDetailsComponent,
     ContactComponent,
     
+    
   ],
   imports: [
     CommonModule,
@@ -61,7 +63,9 @@ import { ContactComponent } from './components/contact/contact.component';
     ReactiveFormsModule,
     MatFormFieldModule,
      MatInputModule,
-     MatSelectModule
+     MatSelectModule,
+     RouterLinkActive,
+    RouterModule 
   ],
   exports: [
     FetureComponent,
