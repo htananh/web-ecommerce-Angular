@@ -244,8 +244,8 @@
                         <h2>{{item.title}}</h2>
                         <div class="price flex space-x-5">
         
-                            <p class="text-lg text-red-600 font-bold">{{item.discountedPrice}}</p>
-                            <p class="text-lg text-current line-through font-medium">{{item.price}}</p>
+                            <p class="text-lg text-red-600 font-bold">{{item.discountedPrice| currency :'VND'}}</p>
+                            <p class="text-lg text-current line-through font-medium">{{item.price| currency :'VND'}}</p>
                             <p class="text-lg text-red-600 font-bold">{{item.discountPersent}}</p>
                         </div>
                   

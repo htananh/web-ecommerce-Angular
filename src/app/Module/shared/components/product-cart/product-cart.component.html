@@ -10,9 +10,9 @@
                                 <div class="p-4">
                                     <p class="mt-2 text-xs font-bold text-black">{{product.title}}</p>
                                     <div class="flex flex-wrap justify-around ">
-                                        <p class="text-center text-red-600 font-bold">{{product.discountedPrice}}</p>
+                                        <p class="text-center text-red-600 font-bold">{{product.discountedPrice | currency :'VND'}}</p>
                                         <ng-container *ngIf="product.discountPersent !== null && product.discountPersent !== ''">
-                                            <p class="text-center text-current line-through">{{product.price}}</p>
+                                            <p class="text-center text-current line-through">{{product.price | currency :'VND'}}</p>
                                         </ng-container>
                                        
                                     </div>
@@ -33,7 +33,7 @@
                                     font-weight: 700;
                                     margin: 5px 0 0;
                                     text-align: center;">
-                                        <p style="margin-top: 1.5rem;  color: #fff;">giảm {{product.discountPersent}} </p>
+                                        <p style="margin-top: 1.5rem;  color: #fff;">giảm {{product.discountPersent }} </p>
                                     </div>
                                 </ng-container>
                             </div>

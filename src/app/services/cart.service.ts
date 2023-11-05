@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
-import { Product,ProductType } from '../models/product';
+import { Product,ProductType,PriceTotals } from '../models/product';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CartService {
   items: Product[] = [];
+ 
   // productType: ProductType[] = [];
   constructor() { }
 
@@ -13,17 +14,39 @@ export class CartService {
 
     const updatedProduct: Product = {
       ...product,
-      type: [productType] // Always create a new type array with the new productType
+      type: [productType] // với mỗi lần add cart mới thì tạo ra một type mới 
     };
 
     this.items.push(updatedProduct);
   }
-
+  addtoCartPlusToggle(product: Product)
+  {
+    this.items.push(product);
+  }
+  getTotalPrice(){
+    return this.items.reduce((total,item) => total + (+item.price*item.quantity),0);
+  }
   getItems() {
     return this.items;
   }
+  removeItem(id: number){
+   return this.items.filter(item => item.id !== id);
 
-  clearCart() {
+  }
+  setQuantity(id: number, value: number) {
+    const productToUpdate = this.items.find(item => item.id === id);
+    
+    if (productToUpdate) {
+      // If the product is found, update its quantity
+      productToUpdate.quantity = value;
+    }
+  }
+getItemForID(id: number): Product | undefined {
+  return this.items.find(item => item.id === id);
+}
+clearCart() {
     this.items = [];
     return this.items;}
+
+
 }

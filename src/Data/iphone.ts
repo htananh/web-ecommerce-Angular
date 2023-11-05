@@ -5,8 +5,8 @@ export const iphone=[
         brand: "iphone",
         title: "iPhone 15 128GB | Chính hãng VN/A",
         color:"hồng",
-        discountedPrice: "21.990.000đ",
-        price: "22.990.000đ",
+        discountedPrice: 21990000,
+        price: 22990000,
         discountPersent: "",
         type: [
             {
@@ -23,7 +23,7 @@ export const iphone=[
                 quantity: 10
             }
           ],
-          quantity: 20,
+          quantity: 1,
     },
     {
         id:2,
@@ -31,8 +31,8 @@ export const iphone=[
         brand: "iphone",
         title: "iPhone 15 Pro Max 256GB | Chính hãng VN/A",
         color:"hồng",
-        discountedPrice: "34.990.000₫",
-        price: "35.990.000₫",
+        discountedPrice: 34990000,
+        price: 35990000,
         discountPersent: "4%",
         type: [
             {
@@ -48,7 +48,7 @@ export const iphone=[
                 quantity: 10
             }
           ],
-          quantity: 20,
+          quantity: 1,
     },
     {
         id:3,
@@ -56,8 +56,8 @@ export const iphone=[
         brand: "iphone",
         title: "iPhone 14 Pro Max 128GB | Chính hãng VN/A",
         color:"hồng",
-        discountedPrice: "29.990.000đ",
-        price: "26.990.000đ",
+        discountedPrice: 29990000,
+        price: 26990000,
         discountPersent: "12%",
         type: [
             {
@@ -73,7 +73,7 @@ export const iphone=[
                 quantity: 10
             }
           ],
-          quantity: 20,
+          quantity: 1,
     },
     {
         id:4,
@@ -81,8 +81,8 @@ export const iphone=[
         brand: "iphone",
         title: "iPhone 14 128GB | Chính hãng VN/A",
         color:"hồng",
-        discountedPrice: "18.790.000đ",
-        price: "22.990.000đ",
+        discountedPrice: 18790000,
+        price: 22990000,
         discountPersent: "18%",
         type: [
             {
@@ -98,7 +98,7 @@ export const iphone=[
                 quantity: 10
             }
           ],
-          quantity: 20,
+          quantity: 1,
     },
     {
         id:5,
@@ -106,8 +106,8 @@ export const iphone=[
         brand: "iphone",
         title: "iPhone 13 Pro Max 128GB | Chính hãng VN/A",
         color:"hồng",
-        discountedPrice: "28.990.000đ",
-        price: "24.290.000đ",
+        discountedPrice: 28990000,
+        price: 24290000,
         discountPersent: "16%",
         type: [
             {
@@ -131,8 +131,8 @@ export const iphone=[
         brand: "iphone",
         title: "iPhone 14 128GB | Chính hãng VN/A",
         color:"hồng",
-        discountedPrice: "22.990.000đ",
-        price: "18.790.000đ",
+        discountedPrice: 22990000,
+        price: 18790000,
         discountPersent: "18%",
         type: [
             {
@@ -148,7 +148,7 @@ export const iphone=[
                 quantity: 10
             }
           ],
-          quantity: 20,
+          quantity: 1,
     },
     {
         id:7,
@@ -156,8 +156,8 @@ export const iphone=[
         brand: "iphone",
         title: "iPhone 13 Pro Max 128GB | Chính hãng VN/A",
         color:"hồng",
-        discountedPrice: "28.990.000đ",
-        price: "24.290.000đ",
+        discountedPrice: 28990000,
+        price: 24290000,
         discountPersent: "16%",
         type: [
             {
@@ -173,7 +173,7 @@ export const iphone=[
                 quantity: 10
             }
           ],
-          quantity: 20,
+          quantity: 1,
     },
     {
         id:8,
@@ -181,8 +181,8 @@ export const iphone=[
         brand: "iphone",
         title: "iPhone 14 128GB | Chính hãng VN/A",
         color:"hồng",
-        discountedPrice: "22.990.000đ",
-        price: "18.790.000đ",
+        discountedPrice: 22990000,
+        price: 18790000,
         discountPersent: "18%",
         type: [
             {
@@ -198,7 +198,7 @@ export const iphone=[
                 quantity: 10
             }
           ],
-          quantity: 20,
+          quantity: 1,
     },
     {
         id:9,
@@ -206,8 +206,8 @@ export const iphone=[
         brand: "iphone",
         title: "iPhone 13 Pro Max 128GB | Chính hãng VN/A",
         color:"hồng",
-        discountedPrice: "28.990.000đ",
-        price: "24.290.000đ",
+        discountedPrice: 28990000,
+        price: 24290000,
         discountPersent: "16%",
         type: [
             {
@@ -223,7 +223,7 @@ export const iphone=[
                 quantity: 10
             }
           ],
-          quantity: 20,
+          quantity: 1,
     },
     {
         id:10,
@@ -231,8 +231,8 @@ export const iphone=[
         brand: "iphone",
         title: "iPhone 14 128GB | Chính hãng VN/A",
         color:"hồng",
-        discountedPrice: "22.990.000đ",
-        price: "18.790.000đ",
+        discountedPrice: 22990000,
+        price: 18790000,
         discountPersent: "18%",
         type: [
             {
@@ -248,7 +248,7 @@ export const iphone=[
                 quantity: 10
             }
           ],
-          quantity: 20,
+          quantity: 1,
     },
     {
         id:11,
@@ -256,8 +256,8 @@ export const iphone=[
         brand: "iphone",
         title: "iPhone 13 Pro Max 128GB | Chính hãng VN/A",
         color:"hồng",
-        discountedPrice: "28.990.000đ",
-        price: "24.290.000đ",
+        discountedPrice: 28990000,
+        price: 24290000,
         discountPersent: "16%",
         type: [
             {
@@ -273,7 +273,7 @@ export const iphone=[
                 quantity: 10
             }
           ],
-          quantity: 20,
+          quantity: 1,
     },
     {
         id:12,
@@ -281,8 +281,8 @@ export const iphone=[
         brand: "iphone",
         title: "iPhone 14 128GB | Chính hãng VN/A",
         color:"hồng",
-        discountedPrice: "22.990.000đ",
-        price: "18.790.000đ",
+        discountedPrice: 22990000,
+        price: 18790000,
         discountPersent: "18%",
         type: [
             {
@@ -298,7 +298,7 @@ export const iphone=[
                 quantity: 10
             }
           ],
-          quantity: 20,
+          quantity: 1,
     },
     {
         id:13,
@@ -306,8 +306,8 @@ export const iphone=[
         brand: "iphone",
         title: "iPhone 13 Pro Max 128GB | Chính hãng VN/A",
         color:"hồng",
-        discountedPrice: "22.490.000đ",
-        price: "28.990.000đ",
+        discountedPrice: 22490000,
+        price: 28990000,
         discountPersent: "16%",
         type: [
             {
@@ -323,6 +323,6 @@ export const iphone=[
                 quantity: 10
             }
           ],
-          quantity: 20,
+          quantity: 1,
     }
 ]
