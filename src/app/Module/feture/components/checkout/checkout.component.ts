@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { CartService } from 'src/app/services/cart.service';
 import { ProvinceService } from 'src/app/services/province-service.service';
 
 
@@ -10,13 +11,14 @@ import { ProvinceService } from 'src/app/services/province-service.service';
   styleUrls: ['./checkout.component.scss']
 })
 export class CheckoutComponent  {
+  cart:any ;
   errorMessages:any = [];
   myform: FormGroup;
   provinces: any[] = [];
   districts: any[] = [];
   wards: any[] = [];
   result: string = '';
-  constructor(fb: FormBuilder, private apiService: ProvinceService,private router: Router) {
+  constructor(fb: FormBuilder, private apiService: ProvinceService,private router: Router, private cartService: CartService) {
     this.myform = fb.group({
       firstname: ['', [
         Validators.required,
@@ -38,6 +40,13 @@ export class CheckoutComponent  {
       this.provinces = data;
       // console.log(this.provinces);
     });
+    this.cart = this.cartService.getItems();
+  }
+  get totalPrice() {
+    // Calculate total price dynamically based on the current state of the cart
+    this.cart = this.cartService.getItems();
+    
+    return this.cartService.getTotalPrice();
   }
   selectedProvince: string | null = null;
 

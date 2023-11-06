@@ -13,6 +13,7 @@ export interface Product {
 export interface ProductType {
     Capacity: string;
     ColorType: string;
+
   }
 export interface PriceTotals{
   totalPrice: number;

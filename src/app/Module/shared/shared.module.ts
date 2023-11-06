@@ -8,6 +8,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { ProductCartComponent } from './components/product-cart/product-cart.component';
 import { CartItemComponent } from './components/cart-item/cart-item.component';
 import { RouterLinkActive, RouterModule } from '@angular/router';
+import { CartItemCheckoutComponent } from './components/cart-item-checkout/cart-item-checkout.component';
 
 
 
@@ -16,7 +17,8 @@ import { RouterLinkActive, RouterModule } from '@angular/router';
     NavbarComponent,
     FooterComponent,
     ProductCartComponent,
-    CartItemComponent
+    CartItemComponent,
+    CartItemCheckoutComponent
   ],
   imports: [
     CommonModule,
@@ -30,7 +32,8 @@ import { RouterLinkActive, RouterModule } from '@angular/router';
     NavbarComponent,
     FooterComponent,
     ProductCartComponent,
-    CartItemComponent
+    CartItemComponent,
+    CartItemCheckoutComponent
   ]
 })
 export class SharedModule { }

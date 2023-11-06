@@ -30,7 +30,8 @@ export class ProductDetailsComponent {
   
   productType: ProductType = {
     Capacity: '',
-    ColorType: ''
+    ColorType: '',
+
   };
   
   handleAddtoCart(item: Product ){

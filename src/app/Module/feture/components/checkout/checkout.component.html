@@ -119,15 +119,16 @@
     </div>
     <div class="col-span-1 mx-6">
         <h1>Thông tin sản phẩm</h1>
-        <div class="flex mx-6 relative pb-5">
-            <div class="h-[5rem] w-[5rem] lg:h-[7rem] lg:w-[7rem] lg:mr-10 mr-2">
-                
-                <img class="w-full h-full object-cover border-css" src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-14-storage-select-202209-6-1inch-y889.jpg" alt="">
-            </div>
-            <h3>iPhone 14 Pro Max 128GB | Chính hãng VN/A</h3>
-            <p class="absolute bottom-5 right-0 text-red-600 font-bold">
-                18.790.000đ
-            </p>
+        <div class="text-center">
+            <ng-container *ngIf="cart && cart.length > 0;">
+                <div  *ngFor="let product of cart; let index =index">
+                   
+        
+                        <app-cart-item-checkout [item]="product" [i]="index"></app-cart-item-checkout>
+        
+                  
+                </div>
+            </ng-container>
         </div>
         <mat-divider></mat-divider>
         <div class="py-5">
@@ -138,18 +139,18 @@
         <div class="py-5 mr-5">
             <div class="flex justify-between pb-2">
                 <p>Tạm tính</p>
-                <p class=" text-red-600 font-bold">18.790.000đ</p>
+                <p class=" text-red-600 font-bold">{{ totalPrice | currency :'VND'}}   </p>
             </div>
             <div class="flex justify-between">
                 <p>Phí vận chuyển</p>
-                <p class="  font-bold">0đ</p>
+                <p class="  font-bold">0đ   </p>
             </div>
         </div>
         <mat-divider></mat-divider>
         <div class="flex justify-between pt-5 mr-5">
             <h2>Tổng cộng</h2>
             <h2 class=" text-red-600 font-bold">
-                18.790.000đ
+                {{ totalPrice | currency :'VND'}}   
             </h2>
         </div>
     </div>

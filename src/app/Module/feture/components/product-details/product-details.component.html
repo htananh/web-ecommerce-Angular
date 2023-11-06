@@ -257,13 +257,13 @@
                             <div class="mb-2">
                                 <mat-radio-group aria-label="Select an option"
                                 [color]="'primary'"
-                                class="space-x-10"
+                                class="space-x-2"
                                 [(ngModel)]="selectType"
                                 (change)="onRadioChange()"
                                 >
                                 <ng-container *ngFor="let option of item.type " >
 
-                                    <mat-radio-button   class="margin-bottom"  [value]="option.Capacity"><span>{{option.Capacity}}</span></mat-radio-button>
+                                    <mat-radio-button   class="margin-bottom"  [value]="option.Capacity"><span class="font-bold">{{option.Capacity}}</span> <br> {{ option.discountedPrice | currency :'VND'}}</mat-radio-button>
                                 </ng-container>
                                     <!-- <mat-radio-button value="256G"><span>256G</span></mat-radio-button>
                                     <mat-radio-button value="512G"><span>512G</span></mat-radio-button> -->

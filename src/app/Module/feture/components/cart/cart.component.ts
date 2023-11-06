@@ -9,7 +9,7 @@ import { CartService } from 'src/app/services/cart.service';
 })
 export class CartComponent {
  cart:any;
- 
+
   constructor(private router:Router,
   private cartService: CartService
     ){}
@@ -19,13 +19,15 @@ export class CartComponent {
       this.cart = this.cartService.getItems();
     }
  
-
+    
     get totalPrice() {
       // Calculate total price dynamically based on the current state of the cart
       this.cart = this.cartService.getItems();
+      
       return this.cartService.getTotalPrice();
     }
 
+    
   navigateToCheckout(){
     this.router.navigate(['checkout']);
   }

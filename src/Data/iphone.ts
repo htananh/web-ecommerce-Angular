@@ -12,15 +12,18 @@ export const iphone=[
             {
               Capacity: "128G",
               quantity: 5,
+              discountedPrice: 21990000,
               
             },
             {
                 Capacity: "256G",
-                quantity: 5
+                quantity: 5,
+                discountedPrice: 23990000,
             },
             {
                 Capacity: "512G",
-                quantity: 10
+                quantity: 10,
+                discountedPrice: 25990000,
             }
           ],
           quantity: 1,
@@ -37,15 +40,18 @@ export const iphone=[
         type: [
             {
               Capacity: "128G",
-              quantity: 5
+              quantity: 5,
+              discountedPrice: 31990000,
             },
             {
                 Capacity: "256G",
-                quantity: 5
+                quantity: 5,
+                discountedPrice: 34990000,
             },
             {
                 Capacity: "512G",
-                quantity: 10
+                quantity: 10,
+                discountedPrice: 37990000
             }
           ],
           quantity: 1,
@@ -62,15 +68,18 @@ export const iphone=[
         type: [
             {
               Capacity: "128G",
-              quantity: 5
+              quantity: 5,
+              discountedPrice: 29990000
             },
             {
                 Capacity: "256G",
-                quantity: 5
+                quantity: 5,
+                discountedPrice: 31990000,
             },
             {
                 Capacity: "512G",
-                quantity: 10
+                quantity: 10,
+                discountedPrice: 33990000,
             }
           ],
           quantity: 1,
@@ -87,15 +96,18 @@ export const iphone=[
         type: [
             {
               Capacity: "128G",
-              quantity: 5
+              quantity: 5,
+              discountedPrice: 18790000,
             },
             {
                 Capacity: "256G",
-                quantity: 5
+                quantity: 5,
+                discountedPrice: 21790000,
             },
             {
                 Capacity: "512G",
-                quantity: 10
+                quantity: 10,
+                discountedPrice: 23790000,
             }
           ],
           quantity: 1,
@@ -112,15 +124,18 @@ export const iphone=[
         type: [
             {
               Capacity: "128G",
-              quantity: 5
+              quantity: 5,
+              discountedPrice: 28990000,
             },
             {
                 Capacity: "256G",
-                quantity: 5
+                quantity: 5,
+                discountedPrice: 31990000,
             },
             {
                 Capacity: "512G",
-                quantity: 10
+                quantity: 10,
+                discountedPrice: 34990000,
             }
           ],
           quantity: 20,
@@ -137,15 +152,18 @@ export const iphone=[
         type: [
             {
               Capacity: "128G",
-              quantity: 5
+              quantity: 5,
+              discountedPrice: 22990000,
             },
             {
                 Capacity: "256G",
-                quantity: 5
+                quantity: 5,
+                discountedPrice: 24990000,
             },
             {
                 Capacity: "512G",
-                quantity: 10
+                quantity: 10,
+                discountedPrice: 26990000,
             }
           ],
           quantity: 1,
