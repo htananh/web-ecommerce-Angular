@@ -9,6 +9,8 @@ import { PaymentComponent } from './Module/feture/components/payment/payment.com
 import { NewsComponent } from './Module/feture/components/news/news.component';
 import { NewsDetailsComponent } from './Module/feture/components/news/news-details/news-details.component';
 import { ContactComponent } from './Module/feture/components/contact/contact.component';
+import { SigninComponent } from './Module/auth/signin/signin.component';
+import { SignupComponent } from './Module/auth/signup/signup.component';
 
 const routes: Routes = [
   { path: '', component:HomeComponent},
@@ -19,7 +21,9 @@ const routes: Routes = [
   {path: 'checkout', component:CheckoutComponent},
   {path: 'news',component:NewsComponent},
   {path: 'news-details/:id',component:NewsDetailsComponent},
-  {path:'contact',component:ContactComponent}
+  {path:'contact',component:ContactComponent},
+  {path:'singin', component:SigninComponent},
+  {path:'singup', component:SignupComponent},
 ];
 
 @NgModule({

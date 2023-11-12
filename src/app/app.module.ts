@@ -16,10 +16,13 @@ import { SharedModule } from './Module/shared/shared.module';
 import { ProvinceService } from './services/province-service.service';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { AuthModule } from './Module/auth/auth.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
+   
     
     
   ],
@@ -30,6 +33,7 @@ import { RouterModule } from '@angular/router';
     BrowserAnimationsModule,
     FetureModule,
     SharedModule,
+    AuthModule,
     MatButtonModule,
     MatIconModule,
     MatMenuModule,

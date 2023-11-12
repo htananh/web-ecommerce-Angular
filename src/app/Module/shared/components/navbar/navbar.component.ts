@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Output, ViewEncapsulation } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import {MatDialog} from '@angular/material/dialog'
+import { AuthComponent } from 'src/app/Module/auth/auth.component';
 
 @Component({
   selector: 'app-navbar',
@@ -14,13 +15,16 @@ export class NavbarComponent {
     
   }
  
-  constructor(private router:Router){
+  constructor(private router:Router, private diaolog:MatDialog){
     
   }
   @Output() isform = new EventEmitter<boolean>();
-  Login(){
-    const booleanValue = true;
-    this.isform.emit(booleanValue);
+  HandleLogin(){
+    this.diaolog.open(AuthComponent,{
+     width:"30%",
+     height:"65%",
+     
+    })
   }
   navigateToProducts(){
     this.router.navigate(['product/product/all']);

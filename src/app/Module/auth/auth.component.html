@@ -1,0 +1,8 @@
+
+    <ng-container *ngIf="islogin; else regesterComponents">
+        <app-signin [changeIslogin]="changeIslogin()"></app-signin>
+    
+    </ng-container>
+    <ng-template #regesterComponents>
+        <app-signup [changeIslogin]="changeIslogin()"></app-signup>
+    </ng-template>

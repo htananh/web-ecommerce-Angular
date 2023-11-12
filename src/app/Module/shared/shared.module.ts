@@ -9,6 +9,7 @@ import { ProductCartComponent } from './components/product-cart/product-cart.com
 import { CartItemComponent } from './components/cart-item/cart-item.component';
 import { RouterLinkActive, RouterModule } from '@angular/router';
 import { CartItemCheckoutComponent } from './components/cart-item-checkout/cart-item-checkout.component';
+import {  MatDialogModule } from '@angular/material/dialog';
 
 
 
@@ -26,7 +27,8 @@ import { CartItemCheckoutComponent } from './components/cart-item-checkout/cart-
     MatIconModule,
     MatMenuModule,
     RouterLinkActive,
-    RouterModule 
+    RouterModule,
+    MatDialogModule
   ],
   exports: [
     NavbarComponent,
