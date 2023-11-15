@@ -37,7 +37,29 @@
     <ng-template swiperSlide > <img [src]="product.imageURL" alt="" class="modifier-img w-40"></ng-template>
    
   </swiper> -->
-  
+  <div >
+    <div >
+        
+        <div class="flex justify-around pt-10 mb-2">
+
+            <div class="text-2xl font-bold">
+                Sản phẩm theo danh mục
+              </div>
+              <hr class="line-product-title mt-4 ml-2">
+          </div>
+        </div>
+        <p class="font-extralight">Bộ sưu tập các thương hiện nổi tiếng lớn trên Thế Giới</p>
+            <!-- <ng-container *ngFor="let product of dataProduct ">
+                <div *ngIf="product.brand =='iphone'">
+                    <app-home-product-slider [title]="'iphone'" [products]="iphone"></app-home-product-slider>
+                </div>
+            </ng-container> -->
+           
+        <app-home-product-slider [title]="'Iphone'" [products]="iphone"></app-home-product-slider>
+        <app-home-product-slider [title]="'SamSung'" [products]="samsung"></app-home-product-slider>
+         <app-home-product-slider [title]="'Vivo'" [products]="vivo"></app-home-product-slider>
+       <app-home-product-slider [title]="'Oppo'" [products]="oppo"></app-home-product-slider>
+</div>
 
 
   

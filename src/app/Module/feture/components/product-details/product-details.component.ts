@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { dataProduct } from 'src/Data/data';
 
 import { iphone } from 'src/Data/iphone';
 import { Product,ProductType } from 'src/app/models/product';
@@ -13,14 +14,14 @@ import { CartService } from 'src/app/services/cart.service';
 export class ProductDetailsComponent {
   selectType:any;
   selectColor:any;
-  iphone:any;
+  dataProduct:any;
   id:any;
   constructor(private route: ActivatedRoute,
     private router:Router,
     private cartService: CartService
     ){}
   ngOnInit() {
-    this.iphone=iphone;
+    this.dataProduct=dataProduct;
     this.route.params.subscribe(params => {
       const idParams = parseInt(params['id'], 10);
       this.id = idParams;

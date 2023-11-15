@@ -10,7 +10,7 @@
              [navigation]="true" >
               
           <ng-template swiperSlide *ngFor="let item of products"> 
-            
+           
         
             <!-- <div class="relative box hover:scale-110 duration-500 cursor-pointer flex flex-col items-center rounded-lg m-3 border-2 ">
                 <div class="h-52 w-48 pt-4">
@@ -46,7 +46,7 @@
                     </div>
                 </ng-container>
             </div> -->
-            <app-product-cart [product] = "item"></app-product-cart>
+            <app-product-cart [product]="item"></app-product-cart>
         
         
         </ng-template>

@@ -9,7 +9,10 @@ SwiperCore.use([Navigation,Pagination,EffectCoverflow]);
 export class HomeProductSliderComponent {
   @Input() title:any;
   @Input() products:any;
+  
+  
   ngOnInit() {
+    console.log(this.products);
     // Initialize Swiper
     const mySwiper = new Swiper('.swiper-container', {
       slidesPerView: 4,

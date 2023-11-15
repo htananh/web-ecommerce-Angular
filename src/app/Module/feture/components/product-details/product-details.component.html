@@ -226,7 +226,7 @@
         </div>
     </section>
 </div> -->
-<ng-container *ngFor="let item of iphone">
+<ng-container *ngFor="let item of dataProduct">
 
     <div *ngIf="item.id==id">
         <div class="0-5 lg:p-10 ">
@@ -451,13 +451,17 @@
                         </div>
                     </div>
                 </div>
+                
             </section>
             <section class="related_product pb-10 px-5 lg:px-20">
                 <h1 style="font-weight: 500;" >Sản phẩm liên quan</h1>
                 
                 <div class="flex flex-wrap justify-center">
-                    <ng-container *ngFor="let item of iphone">
-                        <app-product-cart [product]="item"></app-product-cart>
+                    <ng-container *ngFor="let itemRec of dataProduct">
+                        <!-- <app-product-cart [product]="item"></app-product-cart> -->
+                        <div *ngIf="itemRec.brand == item.brand">
+                            <app-product-cart [product]="itemRec"></app-product-cart>
+                          </div>
                     </ng-container>
                 </div>
             </section>
