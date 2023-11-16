@@ -14,5 +14,5 @@ export class HomeComponent {
     this.iphone=iphone;
     this.samsung=samsung;
   }
-
+  
 }

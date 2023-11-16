@@ -12,7 +12,7 @@ export class HomeProductSliderComponent {
   
   
   ngOnInit() {
-    console.log(this.products);
+    // console.log(this.products);
     // Initialize Swiper
     const mySwiper = new Swiper('.swiper-container', {
       slidesPerView: 4,

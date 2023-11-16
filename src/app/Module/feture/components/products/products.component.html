@@ -1,15 +1,15 @@
 <div class="py-10">
     <main class="px-24">
         <div class="flex items-baseline justify-between px-36 sm:px-6">
-            <p class="text-3xl font-bold">
-                Sản Phẩm
+            <p class="text-3xl font-normal ">
+                Sản Phẩm <span class="text-xl active">> {{brand}}</span>
             </p>
             <div class="flex items-center">
                
                 <button class="text-lg" mat-button  [matMenuTriggerFor]="Sort">Xếp Theo Giá</button>
                 <mat-menu #Sort="matMenu">
-                    <button mat-menu-item>Cao đến thấp</button>
-                    <button mat-menu-item>Thấp đến cao</button>
+                    <button mat-menu-item (click)="sortItems('h2l')">Cao đến thấp</button>
+                    <button mat-menu-item (click)="sortItems('l2h')">Thấp đến cao</button>
                   </mat-menu>
                 </div>
           
@@ -22,8 +22,25 @@
                     <mat-icon class="ml-2">filter_list</mat-icon>
                 </p> 
                 <form class="hidden lg:block">
-
-                    <div *ngFor="let item of filterMuiltiple">
+                    <div *ngFor="let item of filterBrand">
+                        <div class="pt-6 lg:ml-4 font-medium">{{item.name}}</div>
+                        <mat-divider class="w-2/5"></mat-divider>
+                        <div class="pt-4">
+                            <mat-radio-group>
+                            <div *ngFor="let option of item.option">
+                              
+                               
+                               <mat-radio-button   [color]="'primary'"
+                               [id]="item.id"
+                               [value]="option.value"
+                               (click)="handlefilterSimple(option.value,item.id)"
+                               ><span>{{option.label}}</span></mat-radio-button>
+                               
+                            </div>
+        </mat-radio-group>
+                        </div>
+                    </div> 
+                    <div *ngFor="let item of filterColor">
                         <div class="pt-6 lg:ml-4 font-medium">{{item.name}}</div>
                         <mat-divider class="w-2/5"></mat-divider>
                         <div class="pt-4">
@@ -39,7 +56,7 @@
                             </div>
                         </div>
                     </div>  
-                    <div *ngFor="let item of filterSingle">
+                    <div *ngFor="let item of filterPrice">
                         <div class="pt-6 lg:ml-4 font-medium">{{item.name}}</div>
                         <mat-divider class="w-2/5"></mat-divider>
                         <div class="pt-4">
@@ -65,8 +82,40 @@
                  <div class="flex flex-wrap">
 
                      <ng-container *ngFor="let item of products">
-                         <app-product-cart [product] = "item"></app-product-cart>  
-                     </ng-container>
+                        <!-- chọn brand.|  color và price không chọn -->
+                        <div *ngIf="item.brand == brand && (colors == undefined )&& (price == undefined )">
+                            <app-product-cart [product] = "item"></app-product-cart>  
+                           
+                        </div>
+                          <!-- chọn brand và color | price không chọn -->
+                        <div *ngIf="item.brand == brand && (colors != undefined )&& (price == undefined )">
+                            <div *ngFor="let color of colors">
+                                <div *ngIf=" (item.color == color) ">
+                                    <app-product-cart [product] = "item"></app-product-cart>  
+                                   
+                                </div>
+                               
+                            </div>
+                        </div>
+                         <!-- chọn brand và price | color không chọn -->
+                        <div *ngIf="item.brand == brand && (colors == undefined )&& (price != undefined )">
+                            <div *ngIf=" (item.discountedPrice < price) ">
+                                <app-product-cart [product] = "item"></app-product-cart>  
+                               
+                            </div>
+                        </div>
+                         <!-- chọn cả 3-->
+                        <div *ngIf="item.brand == brand && (colors != undefined )&& (price != undefined )">
+                            <div *ngFor="let color of colors">
+                                <div *ngIf=" (item.color == color) &&(item.discountedPrice < price)">
+                                    <app-product-cart [product] = "item"></app-product-cart>  
+                                   
+                                </div>
+                               
+                            </div>
+                        </div>
+                     
+                    </ng-container>
                  </div>
             </div>
             

@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output, ViewEncapsulation } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import {MatDialog} from '@angular/material/dialog'
 import { AuthComponent } from 'src/app/Module/auth/auth.component';
 
@@ -15,7 +15,7 @@ export class NavbarComponent {
     
   }
  
-  constructor(private router:Router, private diaolog:MatDialog){
+  constructor(private router:Router, private diaolog:MatDialog, private activeRouter:ActivatedRoute){
     
   }
   @Output() isform = new EventEmitter<boolean>();
@@ -41,5 +41,9 @@ export class NavbarComponent {
   }
   navigateToCart(){
     this.router.navigate(['cart']);
+  }
+  handleToProduct(brand: string){
+   this.router.navigate(['products/product/all'],{queryParams: {brand: brand}});
+    
   }
 }

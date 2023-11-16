@@ -19,7 +19,7 @@ export class HomeProductComponent {
   oppo:any;
   ngOnInit(){
     this.dataProduct=dataProduct;
-    console.log(this.dataProduct);
+    // console.log(this.dataProduct);
     
      this.iphone =this.dataProduct.filter((item: any) => item.brand === "iphone");
      this.samsung =this.dataProduct.filter((item: any) => item.brand === "samsung");

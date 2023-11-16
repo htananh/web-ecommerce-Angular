@@ -48,8 +48,8 @@
 </div>
 
 <mat-menu  #menu="matMenu"  class="w-32">
-  <a   mat-menu-item class="border-bottom product-slection" routerLinkActive="active-link"  routerLink="/product/product/all">Iphone</a>
-  <button mat-menu-item class="border-bottom product-slection">SamSung</button>
-  <button mat-menu-item class="border-bottom product-slection">Vivo</button>
-  <button mat-menu-item class="product-slection">Oppo</button>
+  <button   mat-menu-item class="border-bottom product-slection" routerLinkActive="active-link"  (click)="handleToProduct('iphone')">Iphone</button>
+  <button mat-menu-item class="border-bottom product-slection" (click)="handleToProduct('samsung')">SamSung</button>
+  <button mat-menu-item class="border-bottom product-slection" (click)="handleToProduct('vivo')">Vivo</button>
+  <button mat-menu-item class="product-slection" (click)="handleToProduct('oppo')">Oppo</button>
 </mat-menu>
