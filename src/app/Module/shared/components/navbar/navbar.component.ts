@@ -11,6 +11,7 @@ import { AuthComponent } from 'src/app/Module/auth/auth.component';
 })
 export class NavbarComponent {
   isNewsSelected: boolean = false;
+  
   navigateTo(cart:any){
     
   }
@@ -46,4 +47,30 @@ export class NavbarComponent {
    this.router.navigate(['products/product/all'],{queryParams: {brand: brand}});
     
   }
+
+  
+  toggleMenuIcon!: HTMLElement | null;
+  toggelMenu!: HTMLElement | null;
+
+ngAfterViewInit() {
+  this.toggleMenuIcon = document.getElementById('toggleMenuIcon');
+  this.toggelMenu = document.getElementById('toggelMenu');
+
+  document.addEventListener('click', (e) => {
+    const clickedElement = e.target as Node;
+    if (this.toggleMenuIcon && this.toggelMenu && this.toggleMenuIcon.contains(clickedElement)) {
+      this.toggelMenu.classList.toggle('hta-menu-expanded');
+      this.toggelMenu.classList.toggle('hidden');
+    }  else if (this.toggelMenu && this.toggelMenu.contains(clickedElement)) {
+      // Người dùng nhấn vào bên trong toggleMenu
+      // Không thay đổi trạng thái toggleMenu ở đây
+    } 
+    else if(this.toggelMenu! && this.toggelMenu.classList.contains('hta-menu-expanded'))
+      {
+        this.toggelMenu.classList.remove('hta-menu-expanded');
+        this.toggelMenu.classList.add('hidden');
+      }
+  });
+}
+
 }

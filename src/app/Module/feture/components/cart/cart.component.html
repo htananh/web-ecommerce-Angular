@@ -22,7 +22,7 @@
               <h1 class="text-3xl "><span class="font-bold">"Không"</span> có gì trong giỏ hàng hết!!!</h1>
               <div>
   
-                  <a routerLink="/product/product/all" class="buyBtn pt-10">Mua sắm ngay</a>
+                  <a (click)="handleToProduct()" class="buyBtn pt-10">Mua sắm ngay</a>
               </div>
             </div>
           
@@ -48,8 +48,13 @@
             <p>
                 - Bạn cũng có thể nhập mã giảm giá ở trang thanh toán.
             </p>
-           
-                <button (click)="navigateToCheckout()" class="checkout w-full mt-5 p-2">Thanh toán</button>
+                <div *ngIf="cart ==''; else cartEmpty ">
+
+                    <button disabled (click)="navigateToCheckout()" class="checkout_empty w-full mt-5 p-2">Thanh toán</button>
+                </div>
+                <ng-template #cartEmpty>
+                    <button  (click)="navigateToCheckout()" class="checkout w-full mt-5 p-2">Thanh toán</button>
+                </ng-template>
            
         </div>
         <div class="box-total pt-5 mt-2" style="background-color: #d9edf7;">

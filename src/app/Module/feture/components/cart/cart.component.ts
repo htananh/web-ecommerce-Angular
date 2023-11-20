@@ -31,5 +31,8 @@ export class CartComponent {
   navigateToCheckout(){
     this.router.navigate(['checkout']);
   }
-  
+  handleToProduct(){
+    this.router.navigate(['products/product/all'],{queryParams: {brand:'iphone'}});
+     
+   }
 }
