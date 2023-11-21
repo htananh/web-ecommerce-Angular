@@ -8,7 +8,7 @@
                                     <img [src]="product.imageURL" alt="">
                                 </div>
                                 <div class="p-4">
-                                    <p class="mt-2 text-xs font-bold text-black">{{product.title}}</p>
+                                    <p class="mt-2 text-xs font-bold text-black text-center w-64">{{product.title}}</p>
                                     <div class="flex flex-wrap justify-around ">
                                         <p class="text-center text-red-600 font-bold">{{product.discountedPrice | currency :'VND'}}</p>
                                         <ng-container *ngIf="product.discountPersent !== null && product.discountPersent !== ''">

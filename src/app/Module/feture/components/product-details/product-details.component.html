@@ -233,7 +233,7 @@
  
             <section class=" product_details lg:grid grid-cols-3 lg:gap-10  pb-10 px-5 lg:px-20">
                 
-                <div class="col-span-2 flex justify-center">
+                <div class="col-span-2 flex justify-center h-60 lg:h-full">
                     
                     <img [src]="item.imageURL" alt="">
                 </div>
@@ -253,11 +253,11 @@
         
                             </p>
                         <div>
-                            <div class="text-lg font-bold m-0">Loại</div>
+                            <div class="lg:text-lg font-bold m-0">Loại</div>
                             <div class="mb-2">
                                 <mat-radio-group aria-label="Select an option"
                                 [color]="'primary'"
-                                class="space-x-2"
+                                class="lg:space-x-2 "
                                 [(ngModel)]="selectType"
                                 (change)="onRadioChange()"
                                 >
@@ -274,7 +274,7 @@
                                 <div>
                                     <mat-radio-group aria-label="Select an option"
                                     [color]="'primary'"
-                                    class="space-x-5"
+                                    class="lg:space-x-5"
                                     [(ngModel)]="selectColor"
                                     >
                                         <mat-radio-button  value="Trắng"><span>Trắng</span></mat-radio-button>
@@ -291,13 +291,13 @@
                     </div>
                 </div>
                 <div class="col-span-3 text-sm">
-                    <h1 style="font-weight: 500;" class="text-xl font-bold  pb-2">Thông tin chi tiết</h1>
+                    <h1 style="font-weight: 500;" class="lg:text-xl font-bold pb-2 pt-6">Thông tin chi tiết</h1>
                     <div class="ml-4">
         
                         <p>iPhone 14 Pro đem tới trải nghiệm thị giác siêu mượt mà khi sở hữu màn hình Dynamic Island sắc nét cùng công nghệ Super Retina XDR thế hệ mới. Hiệu năng của iPhone 14 Pro 128GB mạnh mẽ với vi xử lý Apple A16 Bionic, giúp ổn định mọi tác vụ. Cụm camera sau 48MP cùng nhiều công nghệ chụp ảnh hiện đại mang tới chất lượng quay chụp ấn tượng, chuẩn nhiếp ảnh chuyên nghiệp.
             
                         </p>
-                        <p>
+                        <p class="hidden lg:block">
                             Nằm trong phân khúc iPhone 14 Series cao cấp nhất hiện nay, iPhone 14 Pro 128GB đã và đang nhận được rất nhiều sự yêu thích từ người tiêu dùng Việt. Thế hệ iPhone mới nhất này thu hút người dùng với kiểu dáng sang trọng, tinh tế từ màn hình Dynamic Island cùng hiệu năng cực đỉnh của chipset Apple A16 Bionic. Với nhiều đột phá mạnh mẽ, iPhone 14 Pro 128GB chắc chắn sẽ là phân khúc smartphone mạnh mẽ, sang trọng top đầu hiện nay mà bạn không nên bỏ qua nhé!
                         </p>
                     </div>
@@ -305,8 +305,8 @@
             </section>
             <section class="Review_product pb-10 px-5 lg:px-20">
                 <h1 style="font-weight: 500;" >Đánh giá của sản phẩm</h1>
-                <div class="grid grid-cols-12 gap-7">
-                    <div class="col-span-5 flex flex-col justify-center item-center lg:ml-4">
+                <div class="lg:grid lg:grid-cols-12 gap-7">
+                    <div class="col-span-5 flex flex-col justify-center item-center ml-4">
                        <div>
                        
                         <p class="font-bold">

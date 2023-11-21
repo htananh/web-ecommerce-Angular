@@ -1,12 +1,12 @@
 <div class="py-10">
-    <main class="px-24">
-        <div class="flex items-baseline justify-between px-36 sm:px-6">
-            <p class="text-3xl font-normal ">
-                Sản Phẩm <span class="text-xl active">> {{brand}}</span>
+    <main class="lg:px-24 mx-8">
+        <div class="flex items-baseline justify-between  sm:px-6">
+            <p class="lg:text-3xl font-normal ">
+                Sản Phẩm <span class="lg:text-xl active">> {{brand}}</span>
             </p>
             <div class="flex items-center">
                
-                <button class="text-lg" mat-button  [matMenuTriggerFor]="Sort">Xếp Theo Giá</button>
+                <button class="lg:text-lg" mat-button  [matMenuTriggerFor]="Sort">Xếp Theo Giá</button>
                 <mat-menu #Sort="matMenu">
                     <button mat-menu-item (click)="sortItems('h2l')">Cao đến thấp</button>
                     <button mat-menu-item (click)="sortItems('l2h')">Thấp đến cao</button>
@@ -16,8 +16,8 @@
         </div>
         <mat-divider></mat-divider>
         <section class="pt-4">
-            <div class="grid grid-cols-1 gap-8 gap-y-10 lg:grid-cols-4">
-                <div class="">
+            <div class="grid grid-cols-1 gap-8 gap-y-10 lg:grid-cols-4 ">
+                <div class="hidden lg:block">
                     <p class="text-xl">Lọc Theo  
                     <mat-icon class="ml-2">filter_list</mat-icon>
                 </p> 
