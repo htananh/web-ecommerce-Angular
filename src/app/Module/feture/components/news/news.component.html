@@ -1,24 +1,24 @@
 <mat-divider></mat-divider>
-<div class="grid grid-cols-7 gap-10 mx-32  py-10">
+<div class="lg:grid lg:grid-cols-7 gap-10 xl:mx-32 mx-8  py-10">
     <div class="grid col-span-5">
         <h1 style="font-weight: bold;">Tin tức</h1>
         <ng-container *ngFor="let new of news">
-            <div class="my-4 grid grid-cols-3 cursor-pointer" (click)="navigaToNewsDetails(new.id)">
-                <div class="w-64 h-36 col-span-1 relative" >
-                    <img [src]="new.imagrTitle" alt="">
-                    <div class="absolute top-0 w-8 ">
+            <div class="my-4 grid lg:grid-cols-3 cursor-pointer " (click)="navigaToNewsDetails(new.id)">
+                <div class="lg:w-64 lg:h-36 col-span-1 relative" >
+                    <img class="lg:w-64 lg:h-36  object-cover w-full" [src]="new.imagrTitle" alt="">
+                    <div class="absolute top-0 lg:w-8 w-6">
                         <img class="blinking-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFsdMYXDk6LxXaOstvR-4tirnaDWXx7d5jlQ&usqp=CAU" alt="">
                       </div>
                       
                 </div>
-                <div class="col-span-2">
-                    <h2>{{new.title}}</h2>
+                <div class="lg:col-span-2 lg:ml-10">
+                    <p class="lg:text-lg font-bold text-sm">{{new.title}}</p>
                     <p>{{new.sub_title}}</p>
                 </div>
             </div>
         </ng-container>
     </div>
-    <div class="col-span-2">
+    <div class="col-span-2 hidden lg:block">
         <p style="font-weight: bold;"> Sản phẩm mới </p>
         <mat-divider></mat-divider>
         <div >

@@ -57,7 +57,7 @@ export const news=[
         id:3,
         imagrTitle:"https://fptshop.com.vn/Uploads/Originals/2023/2/28/638131737108281659_dsc05468.JPG",
         title:"Đặt trước Xiaomi 13 Lite độc quyền tại TECHSTORE Shop, nhận ngay nhiều ưu đãi hấp dẫn",
-        sub_title:"Từ nay đến ngày 10/03/2023, khách hàng đã có thể đặt trước Xiaomi 13 Series tại FPT Shop để sở hữu sớm nhất siêu phẩm này và nhận thêm bộ quà tặng trị giá đến 8.990.000 đồng cùng nhiều ưu đãi thiết thực khác.",
+        sub_title:"Từ nay đến ngày 10/03/2023, khách hàng đã có thể đặt trước Xiaomi 13 Series tại Tech Shop để nhận thêm nhiều ưu đãi",
         content:[{
             content_title:"Tuần lễ vàng",
             content_sub:` <p>Được biết, TECHSTORE Shop triển khai chương trình “Tuần lễ Xiaomi” với hàng loạt ưu đãi giá trị dành tặng khách hàng. Theo đó,  khi khách hàng chọn mua điện thoại trong thời gian từ từ 20/10 - 26/10/2023 sẽ nhận được ưu đãi đến 15.000.000 đồng. Chưa hết, khi khách hàng là học sinh – sinh viên, giáo viên hoặc giảng viên sẽ được giảm thêm 10% và tặng bảo hành 1 năm, nâng tổng thời gian bảo hành lên đến 03 năm. Đây cũng là ưu đãi độc quyền của FPT Shop, giúp các khách hàng yên tâm hơn khi sử dụng sản phẩm, cũng như tiết kiệm thêm được một phần chi phí nếu chẳng may laptop gặp sự cố trong quá trình sử dụng.</p>

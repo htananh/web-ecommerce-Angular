@@ -1,8 +1,8 @@
 <mat-divider></mat-divider>
-<div class="lg:grid grid-cols-3 lg:mx-36 mx-10 py-10 gap-10 mb-24">
+<div class="lg:grid grid-cols-3 lg:mx-36 mx-10 py-10 gap-10 mb-24 space-y-7">
    <div class="lg:col-span-2  ">
-    <div class="flex justify-between">
-        <h1>Giỏ hàng của bạn</h1>
+    <div class="flex justify-between text-center items-center">
+        <h2>Giỏ hàng của bạn</h2>
         <p class="font-light">Sản phẩm đã chọn</p>
     </div>
     <ng-container *ngIf="cart && cart.length > 0; else emptyCart">
@@ -18,11 +18,11 @@
         <div class=" flex justify-center text-center ">
             <div class="space-y-5">
 
-                <img class="w-72 ml-10" src="https://thegioidongho.netlify.app/static/media/cart_empty_background.7f8b973b8aeb202b078a.webp" alt="">
-              <h1 class="text-3xl "><span class="font-bold">"Không"</span> có gì trong giỏ hàng hết!!!</h1>
+                <img class="w-72 lg:ml-10 text-center" src="https://thegioidongho.netlify.app/static/media/cart_empty_background.7f8b973b8aeb202b078a.webp" alt="">
+              <h2 class="text-3xl "><span class="font-bold">"Không"</span> có gì trong giỏ hàng hết!!!</h2>
               <div>
   
-                  <a (click)="handleToProduct()" class="buyBtn pt-10">Mua sắm ngay</a>
+                  <a (click)="handleToProduct()" class="buyBtn pt-10 ">Mua sắm ngay</a>
               </div>
             </div>
           
@@ -42,7 +42,7 @@
             
                 </p>
             </div>
-            <p>
+            <p >
                 - ĐỔI HÀNG MIỄN PHÍ - Tại tất cả cửa hàng trong 15 ngày
             </p>
             <p>
@@ -57,7 +57,7 @@
                 </ng-template>
            
         </div>
-        <div class="box-total pt-5 mt-2" style="background-color: #d9edf7;">
+        <div class="box-total lg:pt-5 mt-2" style="background-color: #d9edf7;">
             <p class="font-bold">Chính sách mua hàng</p>
             <p>Hiện chúng tôi đang áp dụng giao hàng trên toàn quốc</p>
         </div>
