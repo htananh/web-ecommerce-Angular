@@ -1,10 +1,47 @@
 
 <mat-divider></mat-divider>
-<div class="grid grid-cols-2 gap-3  mx-32 py-10 pb-20">
-    <div class="col-span-1">
-        <h1>Thông tin giao hàng</h1>
+<div class="lg:grid lg:grid-cols-2 gap-3  lg:mx-32 py-10 pb-20">
+    <div class="col-span-1 mx-6">
+        <h1>Thông tin sản phẩm</h1>
+        <div class="text-center">
+            <ng-container *ngIf="cart && cart.length > 0;">
+                <div  *ngFor="let product of cart; let index =index">
+                   
+        
+                        <app-cart-item-checkout [item]="product" [i]="index"></app-cart-item-checkout>
+        
+                  
+                </div>
+            </ng-container>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="py-5">
+            <input class="voucher__input mr-2" type="text" placeholder="Mã giảm giá">
+            <button disabled class="voucher__button">Sử dụng</button>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="py-5 mr-5">
+            <div class="flex justify-between pb-2">
+                <p>Tạm tính</p>
+                <p class=" text-red-600 font-bold">{{ totalPrice | currency :'VND'}}   </p>
+            </div>
+            <div class="flex justify-between">
+                <p>Phí vận chuyển</p>
+                <p class="  font-bold">0đ   </p>
+            </div>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="flex justify-between pt-5 mr-5">
+            <h2>Tổng cộng</h2>
+            <h2 class=" text-red-600 font-bold">
+                {{ totalPrice | currency :'VND'}}   
+            </h2>
+        </div>
+    </div>
+    <div class="lg:col-span-1">
+        <h1 class="px-5">Thông tin giao hàng</h1>
         <form [formGroup]="myform">
-            <div class="grid grid-cols-1 gap-x-5 sm:grid-cols-4 mx-5 space-y-5">
+            <div class="lg:grid grid-cols-1 gap-x-5 sm:grid-cols-4 mx-5 space-y-5">
 
                 <!-- Hiển thị thông báo nếu có lỗi -->
                     <div class="col-span-4" *ngIf="errorMessages.length > 0" >
@@ -69,14 +106,14 @@
                   
                     
                     <label for="">Tỉnh / Thành Phố</label>
-                    <select appearance="fill"     class="input w-full" id="province" (change)="onProvinceChange()" formControlName="provinces">
+                    <select appearance="fill" class="input w-full" id="province" (change)="onProvinceChange()" formControlName="provinces">
                         <option [ngValue]="null" [disabled]="true" >Tỉnh/Thành Phố</option>
                         <option *ngFor="let province of provinces" [value]="province.code">{{ province.name }}</option>
                       </select>
                       
                    
                 </div>
-                <div class="col-span-2 w-full">
+                <div class="col-span-2 lg:w-full">
                     <label for=""> Quận / Huyện</label>
                     <select appearance="fill" class="input w-full" id="district" (change)="onDistrictChange()" formControlName="district">
                         <option [ngValue]="null"   >Quận/Huyện</option>
@@ -112,48 +149,12 @@
                 </div>
             </div>
         </form>
-        <div class="flex justify-between lg:mx-6 pt-5">
+        <div class="flex lg:justify-between lg:flex-row flex-col mx-6 pt-5">
             <a (click)="navigatoCart()" class="font-semibold cursor-pointer" style="color: #338dbc;"> Giỏ hàng</a>
-            <button (click)="checkout()" class="checkout  p-3">Tiếp tục đến phương thức thanh toán</button>
+            <button (click)="checkout()" class="checkout lg:mt-0 p-3 mt-5">Tiếp tục đến phương thức thanh toán</button>
         </div>
     </div>
-    <div class="col-span-1 mx-6">
-        <h1>Thông tin sản phẩm</h1>
-        <div class="text-center">
-            <ng-container *ngIf="cart && cart.length > 0;">
-                <div  *ngFor="let product of cart; let index =index">
-                   
-        
-                        <app-cart-item-checkout [item]="product" [i]="index"></app-cart-item-checkout>
-        
-                  
-                </div>
-            </ng-container>
-        </div>
-        <mat-divider></mat-divider>
-        <div class="py-5">
-            <input class="voucher__input mr-2" type="text" placeholder="Mã giảm giá">
-            <button disabled class="voucher__button">Sử dụng</button>
-        </div>
-        <mat-divider></mat-divider>
-        <div class="py-5 mr-5">
-            <div class="flex justify-between pb-2">
-                <p>Tạm tính</p>
-                <p class=" text-red-600 font-bold">{{ totalPrice | currency :'VND'}}   </p>
-            </div>
-            <div class="flex justify-between">
-                <p>Phí vận chuyển</p>
-                <p class="  font-bold">0đ   </p>
-            </div>
-        </div>
-        <mat-divider></mat-divider>
-        <div class="flex justify-between pt-5 mr-5">
-            <h2>Tổng cộng</h2>
-            <h2 class=" text-red-600 font-bold">
-                {{ totalPrice | currency :'VND'}}   
-            </h2>
-        </div>
-    </div>
+  
 </div>
 
 

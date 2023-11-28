@@ -19,11 +19,10 @@ export class NavbarComponent {
   constructor(private router:Router, private diaolog:MatDialog, private activeRouter:ActivatedRoute){
     
   }
-  @Output() isform = new EventEmitter<boolean>();
+
   HandleLogin(){
     this.diaolog.open(AuthComponent,{
-     width:"30%",
-     height:"65%",
+   
      
     })
   }
