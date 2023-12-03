@@ -294,11 +294,11 @@
                     <h1 style="font-weight: 500;" class="lg:text-xl font-bold pb-2 pt-6">Thông tin chi tiết</h1>
                     <div class="ml-4">
         
-                        <p>iPhone 14 Pro đem tới trải nghiệm thị giác siêu mượt mà khi sở hữu màn hình Dynamic Island sắc nét cùng công nghệ Super Retina XDR thế hệ mới. Hiệu năng của iPhone 14 Pro 128GB mạnh mẽ với vi xử lý Apple A16 Bionic, giúp ổn định mọi tác vụ. Cụm camera sau 48MP cùng nhiều công nghệ chụp ảnh hiện đại mang tới chất lượng quay chụp ấn tượng, chuẩn nhiếp ảnh chuyên nghiệp.
+                        <p>Điện thoại này đem tới trải nghiệm thị giác siêu mượt mà khi sở hữu màn hình Dynamic Island sắc nét cùng công nghệ Super Retina XDR thế hệ mới. Hiệu năng của nó mạnh mẽ với vi xử lý Apple A16 Bionic, giúp ổn định mọi tác vụ. Cụm camera sau 48MP cùng nhiều công nghệ chụp ảnh hiện đại mang tới chất lượng quay chụp ấn tượng, chuẩn nhiếp ảnh chuyên nghiệp.
             
                         </p>
                         <p class="hidden lg:block">
-                            Nằm trong phân khúc iPhone 14 Series cao cấp nhất hiện nay, iPhone 14 Pro 128GB đã và đang nhận được rất nhiều sự yêu thích từ người tiêu dùng Việt. Thế hệ iPhone mới nhất này thu hút người dùng với kiểu dáng sang trọng, tinh tế từ màn hình Dynamic Island cùng hiệu năng cực đỉnh của chipset Apple A16 Bionic. Với nhiều đột phá mạnh mẽ, iPhone 14 Pro 128GB chắc chắn sẽ là phân khúc smartphone mạnh mẽ, sang trọng top đầu hiện nay mà bạn không nên bỏ qua nhé!
+                            Nằm trong phân khúc cao cấp nhất hiện nay, chiếc điện thoại này đã và đang nhận được rất nhiều sự yêu thích từ người tiêu dùng Việt. Thế hệ  mới nhất này thu hút người dùng với kiểu dáng sang trọng, tinh tế từ màn hình Dynamic Island cùng hiệu năng cực đỉnh của chipset Apple A16 Bionic. Với nhiều đột phá mạnh mẽ, iPhone 14 Pro 128GB chắc chắn sẽ là phân khúc smartphone mạnh mẽ, sang trọng top đầu hiện nay mà bạn không nên bỏ qua nhé!
                         </p>
                     </div>
                 </div>
@@ -340,38 +340,15 @@
                         </div>
                         
                        </div>
-                       <div>
-                        <p class="font-bold">
-                            Phạm Hoài Vũ
-                        </p>
-                        <p>
-                            Sản phẩm tốt lắm shop
-                        </p>
-                        <div class="start">
-                            <i class="fas fa-star color_star"></i>
-                            <i class="fas fa-star color_star"></i>
-                            <i class="fas fa-star color_star"></i>
-                            <i class="fas fa-star color_star"></i>
-                            <i class="fas fa-star color_star"></i>
-                        </div>
-                        
+                       <!-- đây là phần thêm comment -->
+                       <div #Comment>
                        </div>
-                       <div>
-                        <p class="font-bold">
-                            Phan Thị Cát Tường
-                        </p>
-                        <p>
-                            Sản phẩm tốt lắm shop
-                        </p>
-                        <div class="start">
-                            <i class="fas fa-star color_star"></i>
-                            <i class="fas fa-star color_star"></i>
-                            <i class="fas fa-star color_star"></i>
-                            <i class="fas fa-star-half-alt color_star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        
+                       <div class="flex flex-col lg:gap-3 lg:mt-5">
+                        <label class="font-medium"  >Bình luận</label>
+                        <input [(ngModel)]="cmtInput" class="input w-10/12" type="text">
+                        <button (click)="handleCmt()" class="checkout lg:mt-0 p-3 mt-5 w-20 rounded-md">gửi</button>
                        </div>
+                    
                     </div>
                     <div class="col-span-7  text-lg">
                         <div class="flex space-x-5  text-lg">

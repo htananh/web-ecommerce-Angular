@@ -15,7 +15,7 @@ import { SignupComponent } from './Module/auth/signup/signup.component';
 const routes: Routes = [
   { path: '', component:HomeComponent},
   {path: 'checkout/payment/:id', component:PaymentComponent},
-  { path: ':lavelOne/:lavelTow/:lavelThere', component:ProductsComponent},
+  { path: ':NPDOne/:NPDTow/:NDTThere', component:ProductsComponent},
   { path: 'cart', component:CartComponent},
   { path: 'product-details/:id', component:ProductDetailsComponent},
   {path: 'checkout', component:CheckoutComponent},

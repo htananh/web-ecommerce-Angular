@@ -10,6 +10,7 @@ import { CartItemComponent } from './components/cart-item/cart-item.component';
 import { RouterLinkActive, RouterModule } from '@angular/router';
 import { CartItemCheckoutComponent } from './components/cart-item-checkout/cart-item-checkout.component';
 import {  MatDialogModule } from '@angular/material/dialog';
+import { PaymentCompletedComponent } from './components/payment-completed/payment-completed.component';
 
 
 
@@ -19,7 +20,8 @@ import {  MatDialogModule } from '@angular/material/dialog';
     FooterComponent,
     ProductCartComponent,
     CartItemComponent,
-    CartItemCheckoutComponent
+    CartItemCheckoutComponent,
+    PaymentCompletedComponent
   ],
   imports: [
     CommonModule,

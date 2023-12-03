@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { dataProduct } from 'src/Data/data';
 
@@ -16,6 +16,8 @@ export class ProductDetailsComponent {
   selectColor:any;
   dataProduct:any;
   id:any;
+  cmtInput:any;
+  @ViewChild('Comment', {static: false }) Comment !: ElementRef;
   constructor(private route: ActivatedRoute,
     private router:Router,
     private cartService: CartService
@@ -47,6 +49,16 @@ export class ProductDetailsComponent {
     // console.log( this.selectType,this.selectColor );
   }
   onRadioChange(){
-    console.log(this.selectType);
+    // console.log(this.selectType);
   }
+  NumberRandom= Math.floor((Math.random()*1000));
+  handleCmt(){
+    const commentHtml = `
+    <p class="font-bold">Khách hàng ${this.NumberRandom}</p>
+    <p>${this.cmtInput}</p>`;
+    this.Comment.nativeElement.innerHTML += commentHtml;
+
+  }
+
+
 }

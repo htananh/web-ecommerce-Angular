@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { PaymentCompletedComponent } from 'src/app/Module/shared/components/payment-completed/payment-completed.component';
 import { CartService } from 'src/app/services/cart.service';
 import { ProvinceService } from 'src/app/services/province-service.service';
 
@@ -11,6 +13,9 @@ import { ProvinceService } from 'src/app/services/province-service.service';
   styleUrls: ['./checkout.component.scss']
 })
 export class CheckoutComponent  {
+  dialogId!: HTMLElement |null;
+  showContent: boolean = false;
+  dialogData:any = {};
   cart:any ;
   errorMessages:any = [];
   myform: FormGroup;
@@ -18,13 +23,13 @@ export class CheckoutComponent  {
   districts: any[] = [];
   wards: any[] = [];
   result: string = '';
-  constructor(fb: FormBuilder, private apiService: ProvinceService,private router: Router, private cartService: CartService) {
+  constructor(fb: FormBuilder, private apiService: ProvinceService,private router: Router, private cartService: CartService,private diaolog:MatDialog) {
     this.myform = fb.group({
       firstname: ['', [
         Validators.required,
         Validators.minLength(5)
       ]],
-      lastname: ['', Validators.required],
+     
       email: ['', [Validators.required, Validators.email]],
       number: ['', [Validators.required, Validators.pattern(/^(03|05|07|08|09|01[2|6|8|9])+([0-9]{8})\b/)]],
       streetAddress: ['', Validators.required],
@@ -104,19 +109,16 @@ export class CheckoutComponent  {
   checkout() {
     this.errorMessages = [];
     const formControls = this.myform.controls;
-  
-  
     let emptyFields: string[] = [];
-  
-   
     for (const formControlName in formControls) {
       const formControl = formControls[formControlName];
-  
-      
       if (formControl.value === null || formControl.value === '' || formControl.value.length === 0) {
         emptyFields.push(formControlName);
       }
     }
+   
+      console.log(emptyFields);
+    
     
     // Kiểm tra nếu có trường nào trống, hiển thị thông báo
     if (emptyFields.length > 0) {
@@ -147,13 +149,35 @@ export class CheckoutComponent  {
              this.errorMessages.push("Vui lòng điền đầy đủ thông tin cho trường Địa chỉ nhà.");
               break;
           }  
-          console.log(this.errorMessages);
+          // console.log(this.errorMessages);
           
-    }}
-    else {
-      console.log('Form hợp lệ. Tiếp tục đến phương thức thanh toán.'); // Thực hiện các bước thanh toán
     }
   }
+    else {
+      
+      this.diaolog.open(PaymentCompletedComponent,{
+        
+     
+      })
+    
+       this.cartService.clearCart();
+      
+      
+    }
+  }
+  ShowTrue(){
+    this.showContent=true;
+  }
+  close() {
+    this.showContent=false;
+  }
+
+  
+  
+    
+  
+  
+   
   
 }
 
