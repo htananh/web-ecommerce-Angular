@@ -24,6 +24,7 @@ export class CartItemComponent {
     else if(this.item.quantity<1){
       this.addedCart.splice(this.addedCart.indexOf(this.item),1) ;
     }
+   this.cartService.setQuantity(this.item.quantity,this.item.id);
     
   }
   addedCart:any=[];

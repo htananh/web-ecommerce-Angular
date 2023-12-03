@@ -229,7 +229,7 @@
 <ng-container *ngFor="let item of dataProduct">
 
     <div *ngIf="item.id==id">
-        <div class="0-5 lg:p-10 ">
+        <div class="0-5 lg:p-10 mt-2">
  
             <section class=" product_details lg:grid grid-cols-3 lg:gap-10  pb-10 px-5 lg:px-20">
                 
@@ -343,10 +343,10 @@
                        <!-- đây là phần thêm comment -->
                        <div #Comment>
                        </div>
-                       <div class="flex flex-col lg:gap-3 lg:mt-5">
-                        <label class="font-medium"  >Bình luận</label>
-                        <input [(ngModel)]="cmtInput" class="input w-10/12" type="text">
-                        <button (click)="handleCmt()" class="checkout lg:mt-0 p-3 mt-5 w-20 rounded-md">gửi</button>
+                       <div class="flex flex-col lg:gap-3 lg:mt-5 mb-5">
+                        <label class="font-medium pb-2"  >Bình luận</label>
+                        <input [(ngModel)]="cmtInput" class="input lg:w-10/12 w-full" type="text">
+                        <button (click)="handleCmt()" class="checkout lg:mt-0 p-3 mt-5 lg:w-24 w-full rounded-md">Bình luận</button>
                        </div>
                     
                     </div>

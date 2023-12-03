@@ -13,6 +13,10 @@
                 '1020': { slidesPerView: 3 } ,
                 '1025': { slidesPerView: 4 } ,
                 }"
+                [autoplay]="{
+                    delay: 2500, 
+                    disableOnInteraction: false 
+                }"
              [navigation]="true" >
               
           <ng-template swiperSlide *ngFor="let item of products"> 

@@ -6,20 +6,20 @@
         <p class="lg:font-bold font-medium pt-3 lg:py-3">
            {{item.title }}
         </p>
-        <div class="flex lg:justify-around">
-            <div class="flex lg:space-x-10 space-x-3">
+        <div class="flex ">
+            <div >
 
                 <p class="text-center text-red-600 font-bold">
                    {{item.discountedPrice | currency :'VND'}}
                 </p>
-                <p class="text-center text-current line-through">
+                <!-- <p class="text-center text-current line-through">
                     {{item.price | currency :'VND'}}
-                </p>
+                </p> -->
             </div>
         </div>
         <div class="lg:absolute lg:bottom-5 lg:right-5 flex justify-end pb-3 items-center" >
           <div>
-            <button class="text-xs"mat-mini-fab color="Link"  (click)="updateItem(-1)">
+            <button class="lg:text-xs"mat-mini-fab color="Link"  (click)="updateItem(-1)">
               <mat-icon >remove</mat-icon>
             </button>
           </div>
@@ -35,12 +35,12 @@
   
       
    
-    <div class="absolute left-8 top-0">
-        <div class="example-button-container">
+    <div class="absolute lg:left-8 left-6 lg:top-2 top-1">
+        <div class="example-button-container ">
   
             <button
             (click)="removeCart()"
-             style="font-size: 2rem; border: 1px solid; background-color: red; color: white; " class="rounded-lg px-1">
+             style="font-size: 2rem; border: 1px solid; background-color: red; color: white; " class="rounded-lg  px-1">
               <span>-</span>
             </button>
         </div>
