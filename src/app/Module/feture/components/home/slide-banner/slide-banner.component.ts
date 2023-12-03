@@ -1,8 +1,8 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { SlideBanner } from 'src/Data/slidebanner';
-import SwiperCore,{Navigation,Pagination,EffectCoverflow,Autoplay} from 'swiper' 
+import SwiperCore,{Navigation,Pagination,EffectCoverflow,Autoplay, Virtual} from 'swiper' 
 SwiperCore.use([Navigation,Pagination,EffectCoverflow,Autoplay]);
-
+SwiperCore.use([Virtual]);
 @Component({
   selector: 'app-slide-banner',
   templateUrl: './slide-banner.component.html',
