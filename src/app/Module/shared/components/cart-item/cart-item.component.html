@@ -7,14 +7,14 @@
            {{item.title }}
         </p>
         <div class="flex ">
-            <div >
+            <div class="lg:flex lg:gap-5">
 
                 <p class="text-center text-red-600 font-bold">
                    {{item.discountedPrice | currency :'VND'}}
                 </p>
-                <!-- <p class="text-center text-current line-through">
+                <p class="text-center text-current line-through hidden lg:block">
                     {{item.price | currency :'VND'}}
-                </p> -->
+                </p>
             </div>
         </div>
         <div class="lg:absolute lg:bottom-5 lg:right-5 flex justify-end pb-3 items-center" >
