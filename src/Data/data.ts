@@ -145,7 +145,7 @@ export const dataProduct=[
         imageURL:"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-14-storage-select-202209-6-1inch-y889.jpg",
         brand: "iphone",
         title: "iPhone 14 128GB | Chính hãng VN/A",
-        color:"hồng",
+        color:"vàng",
         discountedPrice: 22990000,
         price: 18790000,
         discountPersent: "18%",
@@ -173,7 +173,7 @@ export const dataProduct=[
         imageURL:"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/3/_/3_51_1_7.jpg",
         brand: "iphone",
         title: "iPhone 13 Pro Max 128GB | Chính hãng VN/A",
-        color:"hồng",
+        color:"xanh",
         discountedPrice: 28990000,
         price: 24290000,
         discountPersent: "16%",
@@ -198,7 +198,7 @@ export const dataProduct=[
         imageURL:"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-14-storage-select-202209-6-1inch-y889.jpg",
         brand: "iphone",
         title: "iPhone 14 128GB | Chính hãng VN/A",
-        color:"hồng",
+        color:"vàng",
         discountedPrice: 22990000,
         price: 18790000,
         discountPersent: "18%",
@@ -223,7 +223,7 @@ export const dataProduct=[
         imageURL:"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/3/_/3_51_1_7.jpg",
         brand: "iphone",
         title: "iPhone 13 Pro Max 128GB | Chính hãng VN/A",
-        color:"hồng",
+        color:"xanh",
         discountedPrice: 28990000,
         price: 24290000,
         discountPersent: "16%",
@@ -243,62 +243,14 @@ export const dataProduct=[
           ],
           quantity: 1,
     },
-    {
-        id:10,
-        imageURL:"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-14-storage-select-202209-6-1inch-y889.jpg",
-        brand: "iphone",
-        title: "iPhone 14 128GB | Chính hãng VN/A",
-        color:"hồng",
-        discountedPrice: 22990000,
-        price: 18790000,
-        discountPersent: "18%",
-        type: [
-            {
-              Capacity: "128G",
-              quantity: 5
-            },
-            {
-                Capacity: "256G",
-                quantity: 5
-            },
-            {
-                Capacity: "512G",
-                quantity: 10
-            }
-          ],
-          quantity: 1,
-    },
-    {
-        id:11,
-        imageURL:"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/3/_/3_51_1_7.jpg",
-        brand: "iphone",
-        title: "iPhone 13 Pro Max 128GB | Chính hãng VN/A",
-        color:"hồng",
-        discountedPrice: 28990000,
-        price: 24290000,
-        discountPersent: "16%",
-        type: [
-            {
-              Capacity: "128G",
-              quantity: 5
-            },
-            {
-                Capacity: "256G",
-                quantity: 5
-            },
-            {
-                Capacity: "512G",
-                quantity: 10
-            }
-          ],
-          quantity: 1,
-    },
+    
+   
     {
         id:12,
         imageURL:"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-14-storage-select-202209-6-1inch-y889.jpg",
         brand: "iphone",
         title: "iPhone 14 128GB | Chính hãng VN/A",
-        color:"hồng",
+        color:"vàng",
         discountedPrice: 22990000,
         price: 18790000,
         discountPersent: "18%",
@@ -323,7 +275,7 @@ export const dataProduct=[
         imageURL:"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/3/_/3_51_1_7.jpg",
         brand: "iphone",
         title: "iPhone 13 Pro Max 128GB | Chính hãng VN/A",
-        color:"hồng",
+        color:"xanh",
         discountedPrice: 22490000,
         price: 28990000,
         discountPersent: "16%",
