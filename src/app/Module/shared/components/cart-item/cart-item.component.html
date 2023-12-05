@@ -7,14 +7,23 @@
            {{item.title }}
         </p>
         <div class="flex ">
-            <div class="lg:flex lg:gap-5">
+            <div class="flex lg:gap-5 lg:flex-row flex-col">
 
-                <p class="text-center text-red-600 font-bold">
-                   {{item.discountedPrice | currency :'VND'}}
+                <p class=" lg:text-center text-red-600 font-bold">
+                   {{item.type[0].Capacity.discountedPrice | currency :'VND'}}
                 </p>
-                <p class="text-center text-current line-through hidden lg:block">
+                <!-- <p class="text-center text-current line-through hidden lg:block">
                     {{item.price | currency :'VND'}}
-                </p>
+                </p> -->
+                <div class="flex gap-2 ">
+
+                  <p class="flex">
+                    Bộ nhớ: {{item.type[0].Capacity.Capacity}}
+                  </p>
+                  <p class="flex">
+                    Màu: {{item.type[0].ColorType}}
+                  </p>
+                </div>
             </div>
         </div>
         <div class="lg:absolute lg:bottom-5 lg:right-5 flex justify-end pb-3 items-center" >

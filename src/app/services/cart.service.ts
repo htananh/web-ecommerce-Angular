@@ -19,12 +19,27 @@ export class CartService {
 
     this.items.push(updatedProduct);
   }
+  getType(product: Product){
+    return product.type;
+  }
+  getTypea(product: ProductType){
+    return product;
+  }
+  getproductType(product: Product){
+    const productTypes: ProductType[] = [];
+    for (const product of this.items) 
+    {
+      productTypes.push(...product.type);
+
+    }
+    return productTypes;
+  }
   addtoCartPlusToggle(product: Product)
   {
     this.items.push(product);
   }
   getTotalPrice(){
-    return this.items.reduce((total,item) => total + (+item.price*item.quantity),0);
+    return this.items.reduce((total,item) => total + (+item.type[0].Capacity.discountedPrice*item.quantity),0);
   }
   getItems() {
     return this.items;

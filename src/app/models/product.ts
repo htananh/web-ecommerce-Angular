@@ -11,7 +11,9 @@ export interface Product {
     quantity: number;
   }
 export interface ProductType {
-    Capacity: string;
+    Capacity: {
+      Capacity: string, quantity: number, discountedPrice: number
+    };
     ColorType: string;
 
   }

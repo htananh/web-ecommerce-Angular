@@ -19,8 +19,14 @@ export class NewsComponent {
     
   }
 
-  navigateToProducts(){
-    this.router.navigate(['product/product/all']);
+  navigateToProductsIphone(){
+    this.router.navigate(['product/product/all'], {queryParams: {brand:'iphone'}});
+  }
+  navigateToProductsSamsung(){
+    this.router.navigate(['product/product/all'], {queryParams: {brand:'samsung'}});
+  }
+  navigateToProductsOppo(){
+    this.router.navigate(['product/product/all'], {queryParams: {brand:'oppo'}});
   }
   
 }

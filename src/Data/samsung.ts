@@ -1,6 +1,6 @@
 export const samsung=[
     {
-        id:1,
+        id:14,
         imageURL:"https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/s/2/s23-ultra-xanh.png",
         brand: "samsung",
         title: "Samsung Galaxy S23 Ultra 256GB",
@@ -29,7 +29,7 @@ export const samsung=[
           quantity: 1,
     },
     {
-        id:2,
+        id:15,
         imageURL:"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-z-flip-5-256gb_1_4.png",
         brand: "samsung",
         title: "Samsung Galaxy Z Flip5 256GB",
@@ -58,7 +58,7 @@ export const samsung=[
           quantity: 1,
     },
     {
-        id:3,
+        id:16,
         imageURL:"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-s22-ultra-12gb-256gb.png",
         brand: "samsung",
         title: "Samsung Galaxy S22 Ultra (12GB - 256GB)",
@@ -87,7 +87,7 @@ export const samsung=[
           quantity: 1,
     },
     {
-        id:4,
+        id:17,
         imageURL:"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-z-fold-5-256gb_1.png",
         brand: "samsung",
         title: "Samsung Galaxy Z Fold5 12GB 256GB",
@@ -116,11 +116,11 @@ export const samsung=[
           quantity: 1,
     },
     {
-        id:5,
+        id:18,
         imageURL:"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-m14.png",
         brand: "samsung",
         title: "Samsung Galaxy M14 5G 4GB 128GB",
-        color:"đen",
+        color:"xanh",
         discountedPrice: 3800000,
         price: 5280000,
         discountPersent: "10%",
@@ -145,7 +145,7 @@ export const samsung=[
           quantity: 1,
     },
     {
-        id:6,
+        id:19,
         imageURL:"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-a54.png",
         brand: "samsung",
         title: "Samsung Galaxy A54 5G 8GB 128GB",
@@ -174,7 +174,7 @@ export const samsung=[
           quantity: 1,
     },
     {
-        id:7,
+        id:20,
         imageURL:"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/s/m/sm-g990_s21fe_backfront_lv.png",
         brand: "samsung",
         title: "Samsung Galaxy S21 FE 8GB 128GB",
@@ -203,7 +203,7 @@ export const samsung=[
           quantity: 1,
     },
     {
-        id:8,
+        id:21,
         imageURL:"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-a23-5g.png",
         brand: "samsung",
         title: "Samsung Galaxy A23 5G",

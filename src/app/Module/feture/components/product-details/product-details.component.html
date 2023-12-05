@@ -263,7 +263,7 @@
                                 >
                                 <ng-container *ngFor="let option of item.type " >
 
-                                    <mat-radio-button   class="margin-bottom"  [value]="option.Capacity"><span class="font-bold">{{option.Capacity}}</span> <br> {{ option.discountedPrice | currency :'VND'}}</mat-radio-button>
+                                    <mat-radio-button   class="margin-bottom"  [value]="option"><span >{{option.Capacity}}</span> <br> {{ option.discountedPrice | currency :'VND'}}</mat-radio-button>
                                 </ng-container>
                                     <!-- <mat-radio-button value="256G"><span>256G</span></mat-radio-button>
                                     <mat-radio-button value="512G"><span>512G</span></mat-radio-button> -->
@@ -285,6 +285,7 @@
                                 </div>
                             </div>
                         </div>
+                        <p [ngClass]="{'SelectOption' : optional}"  #SelectOption></p>
                         <div>
                             <button class="w-full mt-5 btn_addtocart" style="padding: 1.5rem;" (click)="handleAddtoCart(item)" mat-raised-button >Thêm vào giỏ hàng</button>
                         </div>

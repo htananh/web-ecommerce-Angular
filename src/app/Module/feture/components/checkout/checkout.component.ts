@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { PaymentCompletedComponent } from 'src/app/Module/shared/components/payment-completed/payment-completed.component';
+import { ProductType } from 'src/app/models/product';
 import { CartService } from 'src/app/services/cart.service';
 import { ProvinceService } from 'src/app/services/province-service.service';
 
@@ -23,6 +24,7 @@ export class CheckoutComponent  {
   districts: any[] = [];
   wards: any[] = [];
   result: string = '';
+  productType : ProductType[] = [];;
   constructor(fb: FormBuilder, private apiService: ProvinceService,private router: Router, private cartService: CartService,private diaolog:MatDialog) {
     this.myform = fb.group({
       firstname: ['', [
@@ -46,12 +48,29 @@ export class CheckoutComponent  {
       // console.log(this.provinces);
     });
     this.cart = this.cartService.getItems();
+   
+    // console.log(this.productType);
+    console.log(this.cart);
+    
+    
+    this.check();
   }
+  check() {
+    
+    // for (let i = 0; i < this.cart.length; i++) {
+    //     console.log(this.cart[i].type[0].Capacity.discountedPrice);
+        
+      
+    // }
+    
+  }
+  
   get totalPrice() {
     // Calculate total price dynamically based on the current state of the cart
     this.cart = this.cartService.getItems();
     
     return this.cartService.getTotalPrice();
+    
   }
   selectedProvince: string | null = null;
 
