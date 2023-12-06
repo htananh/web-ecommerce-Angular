@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, map } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -9,16 +9,21 @@ export class ProvinceService {
   private host = "https://provinces.open-api.vn/api/";
   constructor(private http: HttpClient) { }
 
-  getProvinces() {
-    return this.http.get('https://provinces.open-api.vn/api/?depth=1');
+  getProvinces(provinceCode: string): Observable<string> {
+    const api = `${this.host}p/${provinceCode}?depth=1`;
+    return this.http.get(api).pipe(map((province: any) => province.name));
   }
 
-  getDistricts(provinceCode: string) {
-    return this.http.get('https://provinces.open-api.vn/api/p/' + provinceCode + '?depth=3');
+  // Hàm lấy tên huyện theo mã code
+  getDistricts(districtCode: string): Observable<string> {
+    const api = `${this.host}d/${districtCode}?depth=2`;
+    return this.http.get(api).pipe(map((district: any) => district.name));
   }
 
-  getWards(districtCode: string) {
-    return this.http.get('https://provinces.open-api.vn/api/d/' + districtCode + '?depth=3');
+  // Hàm lấy tên phường/xã theo mã code
+  getWards(wardCode: string): Observable<string> {
+    const api = `${this.host}w/${wardCode}?depth=2`;
+    return this.http.get(api).pipe(map((ward: any) => ward.name));
   }
   callAPI(depth: number): Observable<any> {
     const api = `${this.host}?depth=${depth}`;

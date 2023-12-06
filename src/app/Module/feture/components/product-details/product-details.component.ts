@@ -20,6 +20,9 @@ export class ProductDetailsComponent {
   id:any;
   optional:boolean = false;
   cmtInput:any;
+  brandById:String='';
+  productRelations:Product[]=[];
+  productRelationsGetByID:Product[]=[];
   @ViewChild('Comment', {static: false }) Comment !: ElementRef;
   @ViewChild ('SelectOption', {static: false}) SelectOption !: ElementRef;
   constructor(private route: ActivatedRoute,
@@ -33,10 +36,46 @@ export class ProductDetailsComponent {
     this.route.params.subscribe(params => {
       const idParams = parseInt(params['id'], 10);
       this.id = idParams;
-      console.log(this.id);
+      // console.log(this.id);
     })
+    // this.brandById = this.getBrandById();
+    // this.getProductRelations();
+    // this.productRelations=this.productRelationsGetByID.slice(0,4);
+    
   }
-  
+
+   getBrandById(){
+      for( let i=0 ; i<this.dataProduct.length ; i++ )
+      {
+        if(this.id == this.dataProduct[i].id)
+        {
+          return this.dataProduct[i].brand;
+        }
+      }
+  }
+  getProductRelations(){
+    for( let i=0 ; i<this.dataProduct.length ; i++ )
+    {
+      if(this.brandById == this.dataProduct[i].brand)
+      {
+          this.productRelationsGetByID.push(this.dataProduct[i]);
+      }
+    }
+    return this.productRelationsGetByID;
+  }
+    productsToShow: number = 4;
+  showMoreButton: boolean = true;
+  xemthem(){
+    this.productsToShow += 10; 
+    this.productRelations= this.productRelationsGetByID.slice(0,this.productsToShow);
+    this.showMoreButton = false;
+  }
+  thugon(){
+    this.productsToShow=4;
+    this.productRelations= this.productRelationsGetByID.slice(0,this.productsToShow);
+    this.showMoreButton = true;
+  }
+
   productType: ProductType = {
     Capacity: {
       Capacity: '', quantity: 0, discountedPrice: 0

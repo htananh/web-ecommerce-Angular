@@ -16,7 +16,7 @@
         </div>
         <mat-divider></mat-divider>
         <section class="pt-4">
-            <div class="grid grid-cols-1 gap-8 gap-y-10 lg:grid-cols-4 ">
+            <div class="grid grid-cols-1 gap-8 gap-y-10 lg:grid-cols-7 ">
                 <div class="hidden lg:block">
                     <p class="text-xl">Lọc Theo  
                     <mat-icon class="ml-2">filter_list</mat-icon>
@@ -76,17 +76,20 @@
                     </div>  
                 </form> 
             </div>
-            <div class="lg:col-span-3">
+            <div class="lg:col-span-6">
 
                 <p class="text-xl"> Sản Phẩm</p>
                  <div class="flex flex-wrap justify-center">
-                    <ng-container *ngFor="let item of products">
-                        <!-- chọn brand.|  color và price không chọn -->
+
+                  
+
+                    <!-- <ng-container *ngFor="let item of products">
+                       
                         <div *ngIf="item.brand == brand && (colors == undefined )&& (price == undefined )">
                             <app-product-cart [product] = "item"></app-product-cart>  
                            
                         </div>
-                          <!-- chọn brand và color | price không chọn -->
+                          
                         <div *ngIf="item.brand == brand && (colors != undefined )&& (price == undefined )">
                             <div *ngFor="let color of colors">
                                 <div *ngIf=" (item.color == color) ">
@@ -96,14 +99,14 @@
                                
                             </div>
                         </div>
-                         <!-- chọn brand và price | color không chọn -->
+                        
                         <div *ngIf="item.brand == brand && (colors == undefined )&& (price != undefined )">
                             <div *ngIf=" (item.discountedPrice < price) ">
                                 <app-product-cart [product] = "item"></app-product-cart>  
                                
                             </div>
                         </div>
-                         <!-- chọn cả 3-->
+                        
                         <div *ngIf="item.brand == brand && (colors != undefined )&& (price != undefined )">
                             <div *ngFor="let color of colors">
                                 <div *ngIf=" (item.color == color) &&(item.discountedPrice < price)">
@@ -114,8 +117,8 @@
                             </div>
                         </div>
                      
-                    </ng-container>
-                   <!-- <ng-container *ngIf="brand=='iphone'">
+                    </ng-container> -->
+                   <ng-container *ngIf="brand=='iphone'">
 
                     <ng-container *ngFor="let item of iphone">
                    
@@ -158,7 +161,7 @@
                        </div>
                     
                    </ng-container>
-                 </ng-container>
+                   </ng-container>
                 
                    <ng-container *ngIf="brand=='samsung'">
 
@@ -291,13 +294,13 @@
                        </div>
                     
                    </ng-container>
-                   </ng-container> -->
+                   </ng-container>
                 </div>
-                <!-- <div class="text-center">
+                <div class="text-center">
 
                     <button *ngIf="showMoreButton" (click)="xemthem()" class="  xemthem">xem thêm</button>
                     <button *ngIf="!showMoreButton" (click)="thugon()" class="  xemthem">thu gọn</button>
-                </div> -->
+                </div>
             </div>
             
             </div>

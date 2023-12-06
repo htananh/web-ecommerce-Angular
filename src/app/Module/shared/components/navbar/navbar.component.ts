@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output, ViewEncapsulation } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import {MatDialog} from '@angular/material/dialog'
 import { AuthComponent } from 'src/app/Module/auth/auth.component';

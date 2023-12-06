@@ -50,7 +50,7 @@ export class CheckoutComponent  {
     this.cart = this.cartService.getItems();
    
     // console.log(this.productType);
-    console.log(this.cart);
+    // console.log(this.cart);
     
     
     this.check();
@@ -128,15 +128,53 @@ export class CheckoutComponent  {
   checkout() {
     this.errorMessages = [];
     const formControls = this.myform.controls;
+    console.log(formControls['district'].value);
+    // this.apiService.getProvinces(formControls['provinces'].value).subscribe(
+    //   (data) => {
+      
+    //     console.log(data);
+    //   },
+    //   (error) => {
+       
+    //     console.error(error);
+    //   }
+    // );
+    // this.apiService.getDistricts(formControls['district'].value).subscribe(
+    //   (data) => {
+       
+    //     console.log(data);
+    //   },
+    //   (error) => {
+        
+    //     console.error(error);
+    //   }
+    // );
+    // this.apiService.getWards(formControls['ward'].value).subscribe(
+    //   (data) => {
+        
+    //     console.log(data);
+    //   },
+    //   (error) => {
+      
+    //     console.error(error);
+    //   }
+    // );
+    
+    
+    
+    console.log(formControls);
     let emptyFields: string[] = [];
     for (const formControlName in formControls) {
       const formControl = formControls[formControlName];
+      //  console.log(formControl.value);
+      
+      
       if (formControl.value === null || formControl.value === '' || formControl.value.length === 0) {
         emptyFields.push(formControlName);
       }
     }
    
-      console.log(emptyFields);
+      // console.log(emptyFields);
     
     
     // Kiểm tra nếu có trường nào trống, hiển thị thông báo
@@ -155,9 +193,7 @@ export class CheckoutComponent  {
           case "provinces":
             this.errorMessages.push("Vui lòng điền đầy đủ thông tin cho trường Tỉnh/Thành Phố.");
             break;
-          case "provinces":
-            this.errorMessages.push("Vui lòng điền đầy đủ thông tin cho trường Tỉnh/Thành Phố.");
-            break;
+          
           case "district":
              this.errorMessages.push("Vui lòng điền đầy đủ thông tin cho trường Quận/Huyện.");
             break;

@@ -6,6 +6,7 @@ import { dataProduct } from 'src/Data/data';
 import { samsung } from 'src/Data/samsung';
 import { vivo } from 'src/Data/vivo';
 import { oppo } from 'src/Data/oppo';
+import { Product } from 'src/app/models/product';
 
 @Component({
   selector: 'app-products',
@@ -20,6 +21,7 @@ export class ProductsComponent {
   brand: any;
   colors: any;
   price: any;
+
   iphone:any;
   iphones:any;
   samsung:any;
@@ -34,44 +36,51 @@ export class ProductsComponent {
     this.filterPrice =filterPrice;
     this.filterBrand =filterBrand;
     this.products=dataProduct;
-    // this.iphones=iphone;
-    // this.samsungs=samsung;
-    // this.vivos=vivo;
-    // this.oppos=oppo;
-    // this.iphone=this.iphones.slice(0,5);
-    // this.samsung=this.samsungs.slice(0,5);
-    // this.vivo=this.vivos.slice(0,5);
-    // this.oppo=this.oppos.slice(0,5);
+   
+    
+    this.iphones=iphone;
+    this.samsungs=samsung;
+    this.vivos=vivo;
+    this.oppos=oppo;
+    this.iphone=this.iphones.slice(0,12);
+    this.samsung=this.samsungs.slice(0,12);
+    this.vivo=this.vivos.slice(0,12);
+    this.oppo=this.oppos.slice(0,12);
     this.activatedRoute.queryParams.subscribe((params: Params) =>{
       this.brand = params['brand'];
+      
+       console.log(this.brand);
       this.colors = params['color']?.split(',');
       this.price = params['price'];
       // console.log(this.price);
       // console.log(this.colors);
       
     });
-   
-    
+  
     
   }
-  // productsToShow: number = 5;
-  // showMoreButton: boolean = true;
-  // xemthem(){
-  //   this.productsToShow += 5; 
-  //   this.iphone = this.iphones.slice(0, this.productsToShow); 
-  //   this.vivo = this.vivos.slice(0, this.productsToShow);
-  //   this.oppo = this.oppos.slice(0, this.productsToShow);
-  //   this.samsung = this.samsungs.slice(0, this.productsToShow);
-  //   this.showMoreButton = false;
-  // }
-  // thugon(){
-  //   this.productsToShow=5;
-  //   this.iphone=this.iphones.slice(0, this.productsToShow);
-  //   this.oppo = this.oppos.slice(0, this.productsToShow);
-  //   this.samsung=this.samsungs.slice(0, this.productsToShow);
-  //   this.vivo = this.vivos.slice(0, this.productsToShow);
-  //   this.showMoreButton = true;
-  // }
+
+
+  productsToShow: number = 5;
+  showMoreButton: boolean = true;
+  xemthem(){
+    this.productsToShow += 15; 
+
+    this.iphone = this.iphones.slice(0, this.productsToShow); 
+    this.vivo = this.vivos.slice(0, this.productsToShow);
+    this.oppo = this.oppos.slice(0, this.productsToShow);
+    this.samsung = this.samsungs.slice(0, this.productsToShow);
+    this.showMoreButton = false;
+  }
+  thugon(){
+    this.productsToShow=12;
+  
+    this.iphone=this.iphones.slice(0, this.productsToShow);
+    this.oppo = this.oppos.slice(0, this.productsToShow);
+    this.samsung=this.samsungs.slice(0, this.productsToShow);
+    this.vivo = this.vivos.slice(0, this.productsToShow);
+    this.showMoreButton = true;
+  }
   
   
   handlefilterMuiltiple(value: string, sectionId: string){

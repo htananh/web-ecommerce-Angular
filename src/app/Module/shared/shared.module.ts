@@ -11,6 +11,7 @@ import { RouterLinkActive, RouterModule } from '@angular/router';
 import { CartItemCheckoutComponent } from './components/cart-item-checkout/cart-item-checkout.component';
 import {  MatDialogModule } from '@angular/material/dialog';
 import { PaymentCompletedComponent } from './components/payment-completed/payment-completed.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -30,7 +31,8 @@ import { PaymentCompletedComponent } from './components/payment-completed/paymen
     MatMenuModule,
     RouterLinkActive,
     RouterModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule
   ],
   exports: [
     NavbarComponent,

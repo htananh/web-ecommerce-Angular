@@ -436,12 +436,23 @@
                 
                 <div class="flex flex-wrap justify-center">
                     <ng-container *ngFor="let itemRec of dataProduct">
-                        <!-- <app-product-cart [product]="item"></app-product-cart> -->
+                       
                         <div *ngIf="itemRec.brand == item.brand">
                             <app-product-cart [product]="itemRec"></app-product-cart>
                           </div>
                     </ng-container>
+                    <!-- <ng-container *ngFor="let itemRec of productRelations">
+                       
+                       
+                            <app-product-cart [product]="itemRec"></app-product-cart>
+                       
+                    </ng-container> -->
                 </div>
+                <!-- <div class="text-center">
+
+                    <button *ngIf="showMoreButton" (click)="xemthem()" class="  xemthem">xem thêm</button>
+                    <button *ngIf="!showMoreButton" (click)="thugon()" class="  xemthem">thu gọn</button>
+                </div> -->
             </section>
         </div>
     </div>
