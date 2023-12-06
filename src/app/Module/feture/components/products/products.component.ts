@@ -1,13 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
 import { filterMultipleColor, filterPrice, filterBrand } from './FilterData';
-import { iphone } from 'src/Data/iphone';
+
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { dataProduct } from 'src/Data/data';
-import { samsung } from 'src/Data/samsung';
-import { vivo } from 'src/Data/vivo';
-import { oppo } from 'src/Data/oppo';
-import { Product } from 'src/app/models/product';
 
+
+import { Product } from 'src/app/models/product';
+import { MatPaginator,MatPaginatorModule  } from '@angular/material/paginator';
+
+import { NgxPaginationModule } from 'ngx-pagination';
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
@@ -21,66 +22,78 @@ export class ProductsComponent {
   brand: any;
   colors: any;
   price: any;
+  productFilter:any;
+  page: number = 1;
+  count: number = 0;
+  tableSize: number = 6;
 
-  iphone:any;
-  iphones:any;
-  samsung:any;
-  samsungs:any;
-  vivo:any;
-  oppo:any;
-  vivos:any;
-  oppos:any;
-  constructor(private route:Router, private activatedRoute: ActivatedRoute) {}
+  constructor(private route:Router, private activatedRoute: ActivatedRoute,private renderer: Renderer2, private el: ElementRef) {}
   ngOnInit(){
+   
     this.filterColor =filterMultipleColor;
     this.filterPrice =filterPrice;
     this.filterBrand =filterBrand;
     this.products=dataProduct;
-   
     
-    this.iphones=iphone;
-    this.samsungs=samsung;
-    this.vivos=vivo;
-    this.oppos=oppo;
-    this.iphone=this.iphones.slice(0,12);
-    this.samsung=this.samsungs.slice(0,12);
-    this.vivo=this.vivos.slice(0,12);
-    this.oppo=this.oppos.slice(0,12);
     this.activatedRoute.queryParams.subscribe((params: Params) =>{
       this.brand = params['brand'];
       
-       console.log(this.brand);
+      console.log(this.brand);
       this.colors = params['color']?.split(',');
       this.price = params['price'];
-      // console.log(this.price);
-      // console.log(this.colors);
+
+      this.productFilter=filterProducts(this.products,this.brand,this.colors,this.price);
+
       
     });
+   
+    function filterProducts(products: any[], brand: string, colors: string[] | undefined, price: number | undefined) {
+      let filteredProducts = [];
+    
+      for (let item of products) {
+        if (item.brand == brand) {
+          if (colors === undefined && price === undefined) {
+            filteredProducts.push(item);
+          } else if (colors !== undefined && price === undefined) {
+            if (colors.includes(item.color)) {
+              filteredProducts.push(item);
+            }
+          } else if (colors === undefined && price !== undefined) {
+            if (item.discountedPrice < price) {
+              filteredProducts.push(item);
+            }
+          } else if (colors !== undefined && price !== undefined) {
+            if (colors.includes(item.color) && item.discountedPrice < price) {
+              filteredProducts.push(item);
+            }
+          }
+        }
+      }
+    
+      return filteredProducts;
+    }
+    
+  }
+  onTableDataChange(event: any) {
+    console.log(event);
+    
+    this.page = event;
+    
+  }
+
   
+  ngAfterViewInit(): void {
+
+    const pageSizeLabel = this.el.nativeElement.querySelector('#mat-paginator-page-size-label-0');
+
+    if (pageSizeLabel) {
+    
+      this.renderer.setProperty(pageSizeLabel, 'textContent', 'Số sản phẩm trên mỗi trang:');
+    }
     
   }
 
 
-  productsToShow: number = 5;
-  showMoreButton: boolean = true;
-  xemthem(){
-    this.productsToShow += 15; 
-
-    this.iphone = this.iphones.slice(0, this.productsToShow); 
-    this.vivo = this.vivos.slice(0, this.productsToShow);
-    this.oppo = this.oppos.slice(0, this.productsToShow);
-    this.samsung = this.samsungs.slice(0, this.productsToShow);
-    this.showMoreButton = false;
-  }
-  thugon(){
-    this.productsToShow=12;
-  
-    this.iphone=this.iphones.slice(0, this.productsToShow);
-    this.oppo = this.oppos.slice(0, this.productsToShow);
-    this.samsung=this.samsungs.slice(0, this.productsToShow);
-    this.vivo = this.vivos.slice(0, this.productsToShow);
-    this.showMoreButton = true;
-  }
   
   
   handlefilterMuiltiple(value: string, sectionId: string){
@@ -112,9 +125,9 @@ export class ProductsComponent {
   }
   sortItems(value:string){
     if(value =='l2h'){
-      this.products.sort((a:any, b:any) => Number(a.discountedPrice) - Number(b.discountedPrice));
+      this.productFilter.sort((a:any, b:any) => Number(a.discountedPrice) - Number(b.discountedPrice));
     }else if(value =='h2l'){
-      this.products.sort((a:any, b:any) => Number(b.discountedPrice) - Number(a.discountedPrice));
+      this.productFilter.sort((a:any, b:any) => Number(b.discountedPrice) - Number(a.discountedPrice));
     }
   }
 }

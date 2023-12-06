@@ -81,228 +81,27 @@
                 <p class="text-xl"> Sản Phẩm</p>
                  <div class="flex flex-wrap justify-center">
 
-                  
-
-                    <ng-container *ngFor="let item of products">
-                       
-                        <div *ngIf="item.brand == brand && (colors == undefined )&& (price == undefined )">
-                            <app-product-cart [product] = "item"></app-product-cart>  
-                           
-                        </div>
-                          
-                        <div *ngIf="item.brand == brand && (colors != undefined )&& (price == undefined )">
-                            <div *ngFor="let color of colors">
-                                <div *ngIf=" (item.color == color) ">
-                                    <app-product-cart [product] = "item"></app-product-cart>  
-                                   
-                                </div>
-                               
-                            </div>
-                        </div>
-                        
-                        <div *ngIf="item.brand == brand && (colors == undefined )&& (price != undefined )">
-                            <div *ngIf=" (item.discountedPrice < price) ">
-                                <app-product-cart [product] = "item"></app-product-cart>  
-                               
-                            </div>
-                        </div>
-                        
-                        <div *ngIf="item.brand == brand && (colors != undefined )&& (price != undefined )">
-                            <div *ngFor="let color of colors">
-                                <div *ngIf=" (item.color == color) &&(item.discountedPrice < price)">
-                                    <app-product-cart [product] = "item"></app-product-cart>  
-                                   
-                                </div>
-                               
-                            </div>
-                        </div>
-                     
+                    <ng-container  *ngFor="let item of productFilter | paginate : { itemsPerPage: tableSize,
+                                                                                    currentPage: page,
+                                                                                    totalItems: count
+                                                                                };"
+                    >
+                            <app-product-cart [product] = "item"></app-product-cart>     
                     </ng-container>
-                   <!-- <ng-container *ngIf="brand=='iphone'">
 
-                    <ng-container *ngFor="let item of iphone">
-                   
-                      
-                      
-                       <div *ngIf="item.brand == brand && (colors == undefined )&& (price == undefined )">
-                           
-
-                                   <app-product-cart [product] = "item"></app-product-cart>  
-                           
-                       
-                          
-                       </div>
-                        
-                       <div *ngIf="item.brand == brand && (colors != undefined )&& (price == undefined )">
-                           <div *ngFor="let color of colors">
-                               <div *ngIf=" (item.color == color) ">
-                                   <app-product-cart [product] = "item"></app-product-cart>  
-                                  
-                               </div>
-                              
-                           </div>
-                       </div>
-                       
-                       <div *ngIf="item.brand == brand && (colors == undefined )&& (price != undefined )">
-                           <div *ngIf=" (item.discountedPrice < price) ">
-                               <app-product-cart [product] = "item"></app-product-cart>  
-                              
-                           </div>
-                       </div>
-                       
-                       <div *ngIf="item.brand == brand && (colors != undefined )&& (price != undefined )">
-                           <div *ngFor="let color of colors">
-                               <div *ngIf=" (item.color == color) &&(item.discountedPrice < price)">
-                                   <app-product-cart [product] = "item"></app-product-cart>  
-                                  
-                               </div>
-                              
-                           </div>
-                       </div>
-                    
-                   </ng-container>
-                   </ng-container>
                 
-                   <ng-container *ngIf="brand=='samsung'">
-
-                    <ng-container *ngFor="let item of samsung">
-                   
-                      
-                       
-                       <div *ngIf="item.brand == brand && (colors == undefined )&& (price == undefined )">
-                           
-
-                                   <app-product-cart [product] = "item"></app-product-cart>  
-                           
-                       
-                          
-                       </div>
-                        
-                       <div *ngIf="item.brand == brand && (colors != undefined )&& (price == undefined )">
-                           <div *ngFor="let color of colors">
-                               <div *ngIf=" (item.color == color) ">
-                                   <app-product-cart [product] = "item"></app-product-cart>  
-                                  
-                               </div>
-                              
-                           </div>
-                       </div>
-                       
-                       <div *ngIf="item.brand == brand && (colors == undefined )&& (price != undefined )">
-                           <div *ngIf=" (item.discountedPrice < price) ">
-                               <app-product-cart [product] = "item"></app-product-cart>  
-                              
-                           </div>
-                       </div>
-                       
-                       <div *ngIf="item.brand == brand && (colors != undefined )&& (price != undefined )">
-                           <div *ngFor="let color of colors">
-                               <div *ngIf=" (item.color == color) &&(item.discountedPrice < price)">
-                                   <app-product-cart [product] = "item"></app-product-cart>  
-                                  
-                               </div>
-                              
-                           </div>
-                       </div>
-                    
-                   </ng-container>
-                   </ng-container>
-                   <ng-container *ngIf="brand=='vivo'">
-
-                    <ng-container *ngFor="let item of vivo">
-                   
-                      
-                    
-                       <div *ngIf="item.brand == brand && (colors == undefined )&& (price == undefined )">
-                           
-
-                                   <app-product-cart [product] = "item"></app-product-cart>  
-                           
-                       
-                          
-                       </div>
-                        
-                       <div *ngIf="item.brand == brand && (colors != undefined )&& (price == undefined )">
-                           <div *ngFor="let color of colors">
-                               <div *ngIf=" (item.color == color) ">
-                                   <app-product-cart [product] = "item"></app-product-cart>  
-                                  
-                               </div>
-                              
-                           </div>
-                       </div>
-                       
-                       <div *ngIf="item.brand == brand && (colors == undefined )&& (price != undefined )">
-                           <div *ngIf=" (item.discountedPrice < price) ">
-                               <app-product-cart [product] = "item"></app-product-cart>  
-                              
-                           </div>
-                       </div>
-                     
-                       <div *ngIf="item.brand == brand && (colors != undefined )&& (price != undefined )">
-                           <div *ngFor="let color of colors">
-                               <div *ngIf=" (item.color == color) &&(item.discountedPrice < price)">
-                                   <app-product-cart [product] = "item"></app-product-cart>  
-                                  
-                               </div>
-                              
-                           </div>
-                       </div>
-                    
-                   </ng-container>
-                   </ng-container>
-                   <ng-container *ngIf="brand=='oppo'">
-
-                    <ng-container *ngFor="let item of oppo">
-                   
-                      
-                     
-                       <div *ngIf="item.brand == brand && (colors == undefined )&& (price == undefined )">
-                           
-
-                                   <app-product-cart [product] = "item"></app-product-cart>  
-                           
-                       
-                          
-                       </div>
-                       
-                       <div *ngIf="item.brand == brand && (colors != undefined )&& (price == undefined )">
-                           <div *ngFor="let color of colors">
-                               <div *ngIf=" (item.color == color) ">
-                                   <app-product-cart [product] = "item"></app-product-cart>  
-                                  
-                               </div>
-                              
-                           </div>
-                       </div>
-                      
-                       <div *ngIf="item.brand == brand && (colors == undefined )&& (price != undefined )">
-                           <div *ngIf=" (item.discountedPrice < price) ">
-                               <app-product-cart [product] = "item"></app-product-cart>  
-                              
-                           </div>
-                       </div>
-                      
-                       <div *ngIf="item.brand == brand && (colors != undefined )&& (price != undefined )">
-                           <div *ngFor="let color of colors">
-                               <div *ngIf=" (item.color == color) &&(item.discountedPrice < price)">
-                                   <app-product-cart [product] = "item"></app-product-cart>  
-                                  
-                               </div>
-                              
-                           </div>
-                       </div>
-                    
-                   </ng-container>
-                   </ng-container> -->
                 </div>
-                <!-- <div class="text-center">
+                <div class="text-center mt-5">
 
-                    <button *ngIf="showMoreButton" (click)="xemthem()" class="  xemthem">xem thêm</button>
-                    <button *ngIf="!showMoreButton" (click)="thugon()" class="  xemthem">thu gọn</button>
-                </div> -->
+                    <pagination-controls
+                            previousLabel="Prev"
+                            nextLabel="Next"
+                            (pageChange)="onTableDataChange($event)"
+                            >
+                            </pagination-controls>
+                </div>
+
             </div>
-            
             </div>
         </section>
     </main>

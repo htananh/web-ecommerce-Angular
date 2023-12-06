@@ -28,6 +28,8 @@ import { NewsComponent } from './components/news/news.component';
 import { NewsDetailsComponent } from './components/news/news-details/news-details.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { RouterLinkActive, RouterModule } from '@angular/router';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -59,13 +61,15 @@ import { RouterLinkActive, RouterModule } from '@angular/router';
     FormsModule,
     SharedModule,
     MatRadioModule,
+    MatPaginatorModule,
     MatProgressBarModule,
     ReactiveFormsModule,
     MatFormFieldModule,
      MatInputModule,
      MatSelectModule,
      RouterLinkActive,
-    RouterModule 
+    RouterModule,
+    NgxPaginationModule
   ],
   exports: [
     FetureComponent,
