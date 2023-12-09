@@ -38,9 +38,9 @@ export class ProductDetailsComponent {
       this.id = idParams;
       // console.log(this.id);
     })
-    // this.brandById = this.getBrandById();
-    // this.getProductRelations();
-    // this.productRelations=this.productRelationsGetByID.slice(0,4);
+    this.brandById = this.getBrandById();
+    this.getProductRelations();
+    this.productRelations=this.productRelationsGetByID.slice(0,4);
     
   }
 

@@ -347,7 +347,7 @@
                        <div class="flex flex-col lg:gap-3 lg:mt-5 mb-5">
                         <label class="font-medium pb-2"  >Bình luận</label>
                         <input [(ngModel)]="cmtInput" class="input lg:w-10/12 w-full" type="text">
-                        <button (click)="handleCmt()" class="checkout lg:mt-0 p-3 mt-5 lg:w-24 w-full rounded-md">Bình luận</button>
+                        <button (click)="handleCmt()" class="checkout lg:mt-0 p-3 mt-5 lg:w-24 w-full rounded-md hover:scale-105">Bình luận</button>
                        </div>
                     
                     </div>
@@ -435,24 +435,24 @@
                 <h1 style="font-weight: 500;" >Sản phẩm liên quan</h1>
                 
                 <div class="flex flex-wrap justify-center">
-                    <ng-container *ngFor="let itemRec of dataProduct">
+                    <!-- <ng-container *ngFor="let itemRec of dataProduct">
                        
                         <div *ngIf="itemRec.brand == item.brand">
                             <app-product-cart [product]="itemRec"></app-product-cart>
                           </div>
-                    </ng-container>
-                    <!-- <ng-container *ngFor="let itemRec of productRelations">
+                    </ng-container> -->
+                    <ng-container *ngFor="let itemRec of productRelations">
                        
                        
                             <app-product-cart [product]="itemRec"></app-product-cart>
                        
-                    </ng-container> -->
+                    </ng-container>
                 </div>
-                <!-- <div class="text-center">
+                <div class="text-center">
 
-                    <button *ngIf="showMoreButton" (click)="xemthem()" class="  xemthem">xem thêm</button>
-                    <button *ngIf="!showMoreButton" (click)="thugon()" class="  xemthem">thu gọn</button>
-                </div> -->
+                    <button *ngIf="showMoreButton" (click)="xemthem()" class="  xemthem rounded-md">Xem thêm</button>
+                    <button *ngIf="!showMoreButton" (click)="thugon()" class="  xemthem rounded-md">Thu gọn</button>
+                </div>
             </section>
         </div>
     </div>
