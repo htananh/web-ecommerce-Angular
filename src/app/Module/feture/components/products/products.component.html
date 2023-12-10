@@ -1,31 +1,32 @@
-<div class="py-10">
-    <main class="lg:px-24 mx-8">
-        <div class="flex items-baseline justify-between  sm:px-6">
+<div class="pb-10 lg:px-24">
+    <main class=" mx-8">
+        <div class="flex  justify-between  mt-5 lg:mt-0 ">
             <p class="lg:text-3xl font-normal ">
                 Sản Phẩm <span class="lg:text-xl active">> {{brand}}</span>
             </p>
             <div class="flex items-center">
                
-                <button class="lg:text-lg" mat-button  [matMenuTriggerFor]="Sort">Xếp Theo Giá</button>
-                <mat-menu #Sort="matMenu">
-                    <button mat-menu-item (click)="sortItems('h2l')">Cao đến thấp</button>
+                <button class="lg:text-lg btn"  [matMenuTriggerFor]="Sort">Xếp Theo Giá</button>
+                <mat-menu #Sort="matMenu" class="  text-center rounded-md">
+                    <button  mat-menu-item (click)="sortItems('h2l')">Cao đến thấp</button>
+                  
                     <button mat-menu-item (click)="sortItems('l2h')">Thấp đến cao</button>
                   </mat-menu>
                 </div>
           
         </div>
-        <mat-divider></mat-divider>
+      
         <section class="pt-4">
-            <div class="grid grid-cols-1 gap-8 gap-y-10 lg:grid-cols-4 ">
-                <div class="hidden lg:block">
+            <div class="grid grid-cols-1 gap-8 gap-y-10 lg:grid-cols-6 ">
+                <div class="hidden lg:block flex items-center justify-center">
                     <p class="text-xl">Lọc Theo  
-                    <mat-icon class="ml-2">filter_list</mat-icon>
+                    <mat-icon class="ml-2 ">filter_list</mat-icon>
                 </p> 
                 <form class="hidden lg:block">
                     <div *ngFor="let item of filterBrand">
-                        <div class="pt-6 lg:ml-4 font-medium">{{item.name}}</div>
-                        <mat-divider class="w-2/5"></mat-divider>
-                        <div class="pt-4">
+                        <div class="pt-3  font-medium">{{item.name}}</div>
+                       
+                        <div class="pt-0">
                             <mat-radio-group>
                             <div *ngFor="let option of item.option">
                               
@@ -41,9 +42,9 @@
                         </div>
                     </div> 
                     <div *ngFor="let item of filterColor">
-                        <div class="pt-6 lg:ml-4 font-medium">{{item.name}}</div>
-                        <mat-divider class="w-2/5"></mat-divider>
-                        <div class="pt-4">
+                        <div class="pt-6  font-medium">{{item.name}}</div>
+                    
+                        <div class="pt-0">
                             <div *ngFor="let option of item.option">
                                 <mat-checkbox 
                                 [color]="'primary'"
@@ -57,9 +58,9 @@
                         </div>
                     </div>  
                     <div *ngFor="let item of filterPrice">
-                        <div class="pt-6 lg:ml-4 font-medium">{{item.name}}</div>
-                        <mat-divider class="w-2/5"></mat-divider>
-                        <div class="pt-4">
+                        <div class="pt-6 font-medium">{{item.name}}</div>
+                       
+                        <div class="pt-0">
                             <mat-radio-group>
                             <div *ngFor="let option of item.option">
                               
@@ -76,7 +77,7 @@
                     </div>  
                 </form> 
             </div>
-            <div class="lg:col-span-3">
+            <div class="lg:col-span-5">
 
                 <p class="text-xl"> Sản Phẩm</p>
                  <div class="flex flex-wrap justify-center">
@@ -94,8 +95,8 @@
                 <div class="text-center mt-5">
 
                     <pagination-controls
-                            previousLabel="Prev"
-                            nextLabel="Next"
+                            previousLabel="Trước"
+                            nextLabel="Sau"
                             (pageChange)="onTableDataChange($event)"
                             >
                             </pagination-controls>

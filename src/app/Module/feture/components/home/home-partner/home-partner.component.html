@@ -2,12 +2,12 @@
   <div class="flex mb-2">
 
     <div class="lg:text-2xl font-bold lg:w-32 w-16 ">
-        Đối tác
+        ĐỐI TÁC
       </div>
-      <hr  class="line mt-4 ml-2  ">
+      <hr  class="line mt-4   ">
   </div>
-  <p class="font-extralight">Bộ sưu tập các thương hiện nổi tiếng lớn trên Thế Giới</p>
-  <div class="partner-container ">
+  <p class="font-extralight">Bộ sưu tập các thương hiệu nổi tiếng lớn trên Thế Giới</p>
+  <div class="partner-container flex flex-end">
 
       <swiper [slidesPerView]="3"  [breakpoints]="{ 
         '300': { slidesPerView: 1 } ,
@@ -15,7 +15,7 @@
         '1024': { slidesPerView: 3 } ,
         }">
         
-    <ng-template swiperSlide *ngFor="let item of partner"> <img [src]="item.image" alt="" class="modifier-img lg:w-40 lg:ml-5 "></ng-template>
+    <ng-template swiperSlide *ngFor="let item of partner"> <img [src]="item.image" alt="" class="modifier-img lg:w-40 lg:ml-12 "></ng-template>
     
   </swiper>
     </div>

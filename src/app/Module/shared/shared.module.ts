@@ -12,6 +12,7 @@ import { CartItemCheckoutComponent } from './components/cart-item-checkout/cart-
 import {  MatDialogModule } from '@angular/material/dialog';
 import { PaymentCompletedComponent } from './components/payment-completed/payment-completed.component';
 import { FormsModule } from '@angular/forms';
+import { DialogModule } from '@angular/cdk/dialog';
 
 
 
@@ -32,6 +33,7 @@ import { FormsModule } from '@angular/forms';
     RouterLinkActive,
     RouterModule,
     MatDialogModule,
+    DialogModule,
     FormsModule
   ],
   exports: [

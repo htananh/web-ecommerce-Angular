@@ -35,7 +35,7 @@ export const filterPrice =[
         id:"price",
         name:"Mức Giá",
         option: [
-            { value:"2000000", label:"Dưới 2 Triệu"},
+            
             { value:"4000000", label:"Từ 2 - 4 Triệu"},
             { value:"7000000", label:"Từ 4 - 7 Triệu"},
             { value:"12900000", label:"Từ 7 - 13 triệu"},

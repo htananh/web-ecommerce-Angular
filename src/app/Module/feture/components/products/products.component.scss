@@ -6,3 +6,13 @@
     color: white;
     padding: 5px 10px;
 }
+.ngx-pagination .pagination-previous a:before, .ngx-pagination .pagination-previous.disabled:before {
+    content: "trước";
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+.btn{
+    border:solid 1px #ccc;
+    padding: 3px 14px;
+    border-radius: 10px;
+}

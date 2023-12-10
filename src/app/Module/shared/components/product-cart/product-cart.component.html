@@ -1,13 +1,13 @@
 
                        
 
-                            <div (click)="navigateTo('/product-details/' + product.id)"
+                            <div 
 
-                             class="relative box hover:scale-110 duration-500 cursor-pointer flex flex-col items-center rounded-lg  m-3 border-2 xl:w-72 lg:w-60">
-                                <div class="lg:h-56 lg:w-44 w-32 pt-4" >
+                             class="relative box  duration-500 cursor-pointer flex flex-col items-center rounded-lg  m-3 border-2 xl:w-72 lg:w-60">
+                                <div class="lg:h-52 lg:w-44 w-32 pt-4" (click)="navigateTo('/product-details/' + product.id)">
                                     <img [src]="product.imageURL" alt="">
                                 </div>
-                                <div class="p-4">
+                                <div class="px-4" (click)="navigateTo('/product-details/' + product.id)">
                                     <p class="mt-2 text-xs font-bold text-black text-center w-64">{{product.title}}</p>
                                     <div class="flex flex-wrap justify-around ">
                                         <p class="text-center text-red-600 font-bold">{{product.discountedPrice | currency :'VND'}}</p>
@@ -19,7 +19,7 @@
                                 </div>
                                 <ng-container *ngIf="product.discountPersent !== null && product.discountPersent !== ''">
                                     <div class="absolute" style="height: 31px;
-                                    left: -15px;
+                                    left: -5px;
                                     position: absolute;
                                     top: -10px;
                                     width: 4rem;
@@ -36,6 +36,24 @@
                                         <p style="margin-top: 1.5rem;  color: #fff;">giảm {{product.discountPersent }} </p>
                                     </div>
                                 </ng-container>
+                                <div class="flex justify-around w-full">
+                                    <div>
+        
+                                        <i class="fas  fa-star color_star"></i>
+                                        <i class="fas fa-star color_star"></i>
+                                        <i class="fas fa-star color_star"></i>
+                                        <i class="fas fa-star color_star"></i>
+                                        <i class="fas fa-star color_star"></i>
+                                    </div>
+                                    <div class="heart">
+                                        <p>Yêu thích  
+                                          
+                                            <span class="heart-icon">
+                                                <i (click)="HandleLogin()" class="fas fa-heart" style="color: #f8bdbd;"></i>
+                                            </span>
+                                            </p>
+                                    </div>
+                                </div>
                             </div>
                       
                               
