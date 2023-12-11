@@ -1,13 +1,13 @@
 .search_cart:hover .search-input{
     opacity: 1;
-    height: 2rem;
+    height: 1.3rem;
     transform: scale(1);
-   
+    display: block;
 }
 .search-input{
     opacity: 0;
     height: 0;
-   
+    
     transition: opacity 0.7s ease-in-out, height 0.3s ease-in-out;
     width: 0px;
 }

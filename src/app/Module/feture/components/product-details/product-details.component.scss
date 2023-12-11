@@ -47,3 +47,13 @@
     color: white;
     scale: 1.1;
 }
+:host ::ng-deep.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

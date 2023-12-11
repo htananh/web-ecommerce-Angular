@@ -26,18 +26,18 @@
         </div>
         
         <div class=" flex " >
-            <div class="  search_cart px-3 ">
+            <div class="  search_cart px-3 lg:relative">
 
                
               <div class="lg:flex lg:flex-row lg:flex-row-reverse ">
 
                
-                  <div class="hover:text-sky-500 font-bold text-black lg:text-base  flex justify-end search_btn cursor-pointer mb-5">
+                  <div class="hover:text-sky-500 font-bold text-black lg:text-base   flex justify-end search_btn cursor-pointer mb-5">
                         <mat-icon class=" text-xl " >search_cart</mat-icon>
                       </div>
                     </div >
-                    <div class="search-input " >
-                      <input  class=""  type="text" placeholder="Tìm kiếm">
+                    <div class="search-input lg:absolute bottom-7 right-56 " >
+                      <input  class="lg:mt-0 mt-6"  type="text" placeholder="Tìm kiếm">
                  
                   </div>
                    
@@ -51,10 +51,10 @@
             <button *ngIf="true" mat-raised-button class="lg:mt-[-0.5rem] mt-[-0.3rem] ml-3" (click)="HandleLogin()" ><i class="fas fa-user"></i></button>
             
             <button *ngIf="false" class="flex font-bold text-lg" [matMenuTriggerFor]="user">
-                <span>Anh</span>
+                <span class="pr-1">Anh </span>
                     <img class="w-7 h-7" src="https://cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_640.png" alt="">
                 </button>
-                <mat-menu #user="matMenu" class="absolute top-[-4rem]">
+                <mat-menu #user="matMenu" class="absolute top-[-1rem]">
                     <button mat-menu-item>Tài Khoản</button>
                     <button mat-menu-item>Đơn Mua</button>
                     <button mat-menu-item>Đăng xuất</button>

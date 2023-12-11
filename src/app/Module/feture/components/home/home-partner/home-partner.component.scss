@@ -1,7 +1,7 @@
 .modifier-img{
   
     object-fit: contain;
-    border: 1px solid rgba(0,0,0,.1);
+    border: 1px solid #ebebeb;
     border-radius: 4px;
     height: 100px;
     width: 25em;
@@ -29,11 +29,7 @@ p{
 h1{
     margin-right: 1em;
 }
-.line{
-    width: 93%;
-    
-    border: 1px solid #ccc; 
-}
+
 .partner-container {
     width: 100%;
     overflow: hidden;
@@ -42,6 +38,23 @@ h1{
     width: 100%;
    
   }
+  .partner-home::after{
+    background: #ebebeb;
+    content: "";
+    height: 1px;
+ 
+    position: absolute;
+    width: 85%;
+   
+}
+.partner-home-heading{
+    background-color: #fff;
+    display: inline-block;
+    padding-right: 25px;
+    position: relative;
+    z-index: 2;
+    
+}
   
 
   

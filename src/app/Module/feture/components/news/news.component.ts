@@ -9,6 +9,9 @@ import { news } from 'src/Data/news';
 })
 export class NewsComponent {
   news:any;
+  page: number = 1;
+  count: number = 0;
+  tableSize: number = 3;
   constructor(private router:Router){}
   ngOnInit() {
     this.news =news;
@@ -27,6 +30,12 @@ export class NewsComponent {
   }
   navigateToProductsOppo(){
     this.router.navigate(['product/product/all'], {queryParams: {brand:'oppo'}});
+  }
+  onTableDataChange(event: any) {
+    console.log(event);
+    
+    this.page = event;
+    
   }
   
 }
