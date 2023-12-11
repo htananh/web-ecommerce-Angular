@@ -10,7 +10,6 @@ export const dataProduct=[
       arrImg:["https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/v/n/vn_iphone_15_pink_pdp_image_position-1a_pink_color_2.jpg",
              "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/v/n/vn_iphone_15_black_pdp_image_position-1a_black_color_1_4.jpg" ,
              "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/v/n/vn_iphone_15_green_pdp_image_position-1a_green_color_1_4.jpg",
-             "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/v/n/vn_iphone_15_yellow_pdp_image_position-1a_yellow_color_1_4.jpg",
              
             ],
       discountPersent: "5%",
@@ -111,7 +110,7 @@ export const dataProduct=[
       price: 22990000,
       arrImg:["https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-14-storage-select-202209-6-1inch-y889.jpg",
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/p/h/photo_2022-09-28_21-58-48.jpg",
-      "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/p/h/photo_2022-09-28_21-58-51.jpg",
+      
      
     ],
       discountPersent: "18%",
@@ -142,7 +141,7 @@ export const dataProduct=[
       color:"xanh",
       arrImg:["https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-13-pro-max.png",
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/4/_/4_36_3_2_1_9.jpg",
-      "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/2/_/2_61_8_2_1_12.jpg",
+    
       
     ],
       discountedPrice: 28990000,
@@ -177,7 +176,7 @@ export const dataProduct=[
       price: 11990000,
       arrImg:["https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-11.png",
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/6/_/6_130.jpg",
-      "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/2/_/2_242.jpg",
+     
      
     ],
       discountPersent: "5%",
@@ -210,7 +209,7 @@ export const dataProduct=[
       price: 17990000,
       arrImg:["https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-12-128gb_2.png",
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/4/_/4_186_2.jpg",
-      "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/3/_/3_224_2.jpg",
+    
       
     ],
       discountPersent: "17%",
@@ -243,7 +242,7 @@ export const dataProduct=[
       price: 18790000,
       arrImg:["https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/1/5/15_2_7_2_5.jpg",
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/1/3/13_4_7_2_7.jpg",
-      "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/1/1/11_3_12_2_1_5.jpg",
+      
       
     ],
       discountPersent: "18%",
@@ -274,7 +273,7 @@ export const dataProduct=[
       arrImg:[
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/_/t_i_xu_ng_2_2.png",
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/d/o/download_1__2_25.png",
-      "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/d/o/download_4_1.png",
+      
       
     ],
       discountPersent: "16%",
@@ -404,7 +403,7 @@ export const dataProduct=[
       arrImg:[
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy_z_flip5_-_6_1_.png",
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy_z_flip5_-_2.png",
-      "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy_z_flip5_-_3.png",
+      
       
     
     ],
@@ -440,7 +439,7 @@ export const dataProduct=[
       arrImg:[
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/s/m/sm-s908_galaxys22ultra_front_green_211119_2.jpg",
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/s/m/sm-s908_galaxys22ultra_front_burgundy_211119_2.jpg",
-      "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-s22-ultra-12gb-256gb.png",
+    
       
       
     ],
@@ -579,7 +578,7 @@ export const dataProduct=[
       arrImg:[
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/s/m/sm-g990_s21fe_backfront_zw.png",
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/s/m/sm-g990_s21fe_backfront_za.png",
-      "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/s/m/sm-g990_s21fe_backfront_lg.png",
+     
       
       
     ],
@@ -617,7 +616,7 @@ export const dataProduct=[
       arrImg:[
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/2/4/24.2.png",
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/8/_/8_77.jpg",
-      "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/2/4/24.5.png",
+      
       
       
     ],
@@ -653,7 +652,6 @@ export const dataProduct=[
       arrImg:[
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/v/i/vivo_y36_3_.png",
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/v/i/vivo-y36.png",
-      "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/v/i/vivo-y36_2.jpg",
       
       
     ],
@@ -685,7 +683,6 @@ export const dataProduct=[
       arrImg:[
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/1/_/1_333.jpg",
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/2/_/2_319.jpg",
-      "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/8/_/8_87.jpg",
       
       
     ],
