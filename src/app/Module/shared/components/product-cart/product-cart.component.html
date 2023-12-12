@@ -3,7 +3,7 @@
 
                             <div 
 
-                             class=" box  duration-500 cursor-pointer flex flex-col items-center m-3 rounded-lg  product xl:w-72 lg:w-52 lg:h-80">
+                             class=" box  duration-500 cursor-pointer flex flex-col items-center m-3 rounded-lg  product 2xl:w-72 xl:w-60 lg:w-52 lg:h-80">
                                 <div  class=" lg:h-52 relative lg:w-44 w-32 pt-4" (click)="navigateTo('/product-details/' + product.id)">
                                     <img [src]="product.imageURL" alt="">   
                                 </div>
@@ -18,9 +18,9 @@
                                     </div>
                                 </div>
                                 <ng-container *ngIf="product.discountPersent !== null && product.discountPersent !== ''">
-                                    <div  style="height: 2rem;
+                                    <div   style="height: 2rem;
                                     left: -0.5rem;
-                                    position: absolute;
+                                    position: absolute; 
                                     top: -1rem;
                                     width: 4rem;
                                     background: url('https://img.freepik.com/free-vector/banner-design-white-background_1308-95008.jpg?size=626&ext=jpg');
