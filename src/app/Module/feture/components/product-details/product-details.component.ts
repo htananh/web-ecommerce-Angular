@@ -66,7 +66,7 @@ export class ProductDetailsComponent {
     productsToShow: number = 4;
   showMoreButton: boolean = true;
   xemthem(){
-    this.productsToShow += 10; 
+    this.productsToShow += 4; 
     this.productRelations= this.productRelationsGetByID.slice(0,this.productsToShow);
     this.showMoreButton = false;
   }

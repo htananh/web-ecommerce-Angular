@@ -479,7 +479,7 @@
             <section class="related_product pb-10 px-5 lg:px-12">
                 <h1 style="font-weight: 500;" >Sản phẩm liên quan</h1>
                 
-                <div class="flex flex-wrap justify-center">
+                <div class="flex flex-wrap justify-center gap-5">
                     <!-- <ng-container *ngFor="let itemRec of dataProduct">
                        
                         <div *ngIf="itemRec.brand == item.brand">
@@ -489,11 +489,11 @@
                     <ng-container *ngFor="let itemRec of productRelations">
                        
                        
-                            <app-product-cart [product]="itemRec"></app-product-cart>
+                            <app-product-cart class="2xl:w-72 w-72    xl:w-60  lg:w-52 lg:h-80" [product]="itemRec"></app-product-cart>
                        
                     </ng-container>
                 </div>
-                <div class="text-center">
+                <div class="text-center mt-10">
 
                     <button *ngIf="showMoreButton" (click)="xemthem()" class="  xemthem rounded-md">Xem thêm</button>
                     <button *ngIf="!showMoreButton" (click)="thugon()" class="  xemthem rounded-md">Thu gọn</button>
