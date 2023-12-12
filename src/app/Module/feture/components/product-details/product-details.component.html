@@ -231,9 +231,9 @@
     <div *ngIf="item.id==id">
         <div class="0-5 lg:p-10 mt-2">
  
-            <section class=" product_details  grid lg:grid-cols-2 xl:grid-cols-3 lg:gap-10  pb-10 px-5 lg:px-20">
+            <section class=" product_details  lg:grid  lg:grid-cols-2 xl:grid-cols-3 lg:gap-10  pb-10 px-5 lg:px-20">
                 
-                <div class="lg:col-span-1 xl:col-span-2 flex justify-center items-center  ">
+                <div class=" lg:col-span-1 xl:col-span-2 flex justify-center items-center  ">
                     
                     <!-- <img [src]="item.arrImg[1]" alt=""> -->
                     <div class=" swiper-container ">
@@ -475,10 +475,10 @@
                 </div>
                 
             </section>
-            <section class="related_product pb-10 px-5 lg:px-20">
+            <section class="related_product pb-10 px-5 lg:px-12">
                 <h1 style="font-weight: 500;" >Sản phẩm liên quan</h1>
                 
-                <div class="flex  justify-center">
+                <div class="flex flex-wrap justify-center">
                     <!-- <ng-container *ngFor="let itemRec of dataProduct">
                        
                         <div *ngIf="itemRec.brand == item.brand">
