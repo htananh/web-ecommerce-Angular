@@ -249,14 +249,17 @@ export const dataProduct=[
       type: [
           {
             Capacity: "128G",
+            discountedPrice: 22990000,
             quantity: 5
           },
           {
               Capacity: "256G",
+              discountedPrice: 24990000,
               quantity: 5
           },
           {
               Capacity: "512G",
+              discountedPrice: 26990000,
               quantity: 10
           }
         ],
@@ -268,8 +271,8 @@ export const dataProduct=[
       brand: "iphone",
       title: "iPhone 12 Pro  | Chính hãng ",
       color:"xanh",
-      discountedPrice: 28990000,
-      price: 24290000,
+      discountedPrice: 24990000,
+      price: 28290000,
       arrImg:[
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/_/t_i_xu_ng_2_2.png",
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/d/o/download_1__2_25.png",
@@ -280,14 +283,17 @@ export const dataProduct=[
       type: [
           {
             Capacity: "128G",
+            discountedPrice: 24990000,
             quantity: 5
           },
           {
               Capacity: "256G",
+              discountedPrice: 26990000,
               quantity: 5
           },
           {
               Capacity: "512G",
+              discountedPrice: 29990000,
               quantity: 10
           }
         ],
@@ -301,8 +307,8 @@ export const dataProduct=[
       brand: "iphone",
       title: "iPhone 14 Pro | Chính hãng VN/A",
       color:"vàng",
-      discountedPrice: 22990000,
-      price: 18790000,
+      discountedPrice: 18790000,
+      price: 22990000,
       arrImg:[
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-14-pro_2__4.png",
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/v/_/v_ng_12.png",
@@ -313,14 +319,17 @@ export const dataProduct=[
       type: [
           {
             Capacity: "128G",
+            discountedPrice: 18790000,
             quantity: 5
           },
           {
               Capacity: "256G",
+              discountedPrice: 20790000,
               quantity: 5
           },
           {
               Capacity: "512G",
+              discountedPrice: 24790000,
               quantity: 10
           }
         ],
@@ -344,14 +353,17 @@ export const dataProduct=[
       type: [
           {
             Capacity: "128G",
+            discountedPrice: 22490000,
             quantity: 5
           },
           {
               Capacity: "256G",
+              discountedPrice: 24490000,
               quantity: 5
           },
           {
               Capacity: "512G",
+              discountedPrice: 27490000,
               quantity: 10
           }
         ],
