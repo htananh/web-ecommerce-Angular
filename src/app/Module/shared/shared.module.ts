@@ -13,6 +13,7 @@ import {  MatDialogModule } from '@angular/material/dialog';
 import { PaymentCompletedComponent } from './components/payment-completed/payment-completed.component';
 import { FormsModule } from '@angular/forms';
 import { DialogModule } from '@angular/cdk/dialog';
+import { ContactCompletedComponent } from './components/contact-completed/contact-completed.component';
 
 
 
@@ -23,7 +24,8 @@ import { DialogModule } from '@angular/cdk/dialog';
     ProductCartComponent,
     CartItemComponent,
     CartItemCheckoutComponent,
-    PaymentCompletedComponent
+    PaymentCompletedComponent,
+    ContactCompletedComponent
   ],
   imports: [
     CommonModule,
