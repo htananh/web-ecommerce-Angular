@@ -17,10 +17,13 @@
         </div>
       
         <section class="pt-4">
-            <div class="grid grid-cols-1 gap-8 gap-y-10 lg:grid-cols-6 ">
+            <div class="grid grid-cols-1 gap-3 gap-y-10 lg:grid-cols-6 ">
                 <div class="hidden lg:block flex items-center justify-center">
-                    <p class="text-xl">Lọc Theo  
-                    <mat-icon class="ml-2 ">filter_list</mat-icon>
+                    <p class="text-xl flex items-center gap-2 col-span-1">Lọc Theo  
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter" viewBox="0 0 16 16">
+                            <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+                          </svg>
+                    <!-- <mat-icon class="ml-2 ">filter_list</mat-icon> -->
                 </p> 
                 <form class="hidden lg:block">
                     <div *ngFor="let item of filterBrand">

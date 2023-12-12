@@ -3,13 +3,13 @@
 
                             <div 
 
-                             class="relative box  duration-500 cursor-pointer flex flex-col items-center rounded-lg  m-3 product xl:w-72 lg:w-60">
-                                <div class="lg:h-52 lg:w-44 w-32 pt-4" (click)="navigateTo('/product-details/' + product.id)">
-                                    <img [src]="product.imageURL" alt="">
+                             class=" box  duration-500 cursor-pointer flex flex-col items-center m-3 rounded-lg  product xl:w-72 lg:w-52 lg:h-80">
+                                <div  class=" lg:h-52 relative lg:w-44 w-32 pt-4" (click)="navigateTo('/product-details/' + product.id)">
+                                    <img [src]="product.imageURL" alt="">   
                                 </div>
                                 <div class="px-4" (click)="navigateTo('/product-details/' + product.id)">
-                                    <p class="mt-2 text-xs font-bold text-black text-center w-64">{{product.title}}</p>
-                                    <div class="flex flex-wrap justify-around ">
+                                    <p class="mt-2 text-xs font-bold text-black text-center ">{{product.title}}</p>
+                                    <div class="flex  justify-center gap-5 ">
                                         <p class="text-center text-red-600 font-bold">{{product.discountedPrice | currency :'VND'}}</p>
                                         <ng-container *ngIf="product.discountPersent !== null && product.discountPersent !== ''">
                                             <p class="text-center text-current line-through">{{product.price | currency :'VND'}}</p>
@@ -18,10 +18,10 @@
                                     </div>
                                 </div>
                                 <ng-container *ngIf="product.discountPersent !== null && product.discountPersent !== ''">
-                                    <div class="absolute" style="height: 31px;
-                                    left: -5px;
+                                    <div  style="height: 2rem;
+                                    left: -0.5rem;
                                     position: absolute;
-                                    top: -10px;
+                                    top: -1rem;
                                     width: 4rem;
                                     background: url('https://img.freepik.com/free-vector/banner-design-white-background_1308-95008.jpg?size=626&ext=jpg');
                                     background-size: cover; /* hoặc contain tùy theo mong muốn */
@@ -36,7 +36,7 @@
                                         <p style="margin-top: 1.5rem;  color: #fff;">giảm {{product.discountPersent }} </p>
                                     </div>
                                 </ng-container>
-                                <div class="flex justify-around w-full">
+                                <div class="flex justify-around gap-5">
                                     <div>
         
                                         <i class="fas  fa-star color_star"></i>

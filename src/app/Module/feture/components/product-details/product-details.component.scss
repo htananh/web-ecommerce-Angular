@@ -1,6 +1,15 @@
 :host ::ng-deep label{
     margin-bottom: 0;
   }
+  ::ng-deep .swiper-button-prev:after,
+  ::ng-deep .swiper-button-next:after {
+      font-size: 1.5rem;
+      background-color: #faf6f6;
+      color: rgb(66, 55, 55);
+      padding: 0.4rem;
+      border-radius: 0.7rem;
+      
+  }
 .color_star{
     color: #ff9f00;
     padding-bottom: 2rem;

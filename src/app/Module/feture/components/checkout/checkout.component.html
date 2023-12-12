@@ -124,7 +124,7 @@
                 <div class="col-span-2">
                     <label for=""> Xã / Phường</label>
                     <select     class="input w-full" id="ward"  formControlName="ward">
-                        <option [ngValue]="null" [disabled]="true" >Xã, Phường</option>
+                        <option [ngValue]="null" [disabled]="true" >Xã/ Phường</option>
                         <option *ngFor="let ward of wards" [value]="ward.code">{{ ward.name }}</option>
                       </select>
               
