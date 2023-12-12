@@ -3,7 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { dataProduct } from 'src/Data/data';
 
-import { iphone } from 'src/Data/iphone';
+
 import { AuthComponent } from 'src/app/Module/auth/auth.component';
 import { Product,ProductType } from 'src/app/models/product';
 import { CartService } from 'src/app/services/cart.service';
