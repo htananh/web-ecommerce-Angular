@@ -50,10 +50,10 @@
             </p>
                 <div *ngIf="cart ==''; else cartEmpty ">
 
-                    <button disabled (click)="navigateToCheckout()" class="checkout_empty w-full mt-5 p-2">Thanh toán</button>
+                    <button disabled (click)="navigateToCheckout()" class="checkout_empty w-full mt-5 p-2">Tiến hành đặt hàng</button>
                 </div>
                 <ng-template #cartEmpty>
-                    <button  (click)="navigateToCheckout()" class="checkout w-full mt-5 p-2">Thanh toán</button>
+                    <button  (click)="navigateToCheckout()" class="checkout w-full mt-5 p-2">Tiến hành đặt hàng</button>
                 </ng-template>
            
         </div>

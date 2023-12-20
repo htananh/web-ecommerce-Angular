@@ -25,7 +25,7 @@ export class ProductsComponent {
   productFilter:any;
   page: number = 1;
   count: number = 0;
-  tableSize: number = 6;
+  tableSize: number = 8;
 
   constructor(private route:Router, private activatedRoute: ActivatedRoute,private renderer: Renderer2, private el: ElementRef) {}
   ngOnInit(){
