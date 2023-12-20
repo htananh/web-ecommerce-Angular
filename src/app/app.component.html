@@ -8,7 +8,12 @@
  
 </div>
 <div >
-
+  <div class="snowfall">
+    <div class="snowflake" *ngFor="let snowflake of snowflakes" [style.left.px]="snowflake.left" [style.animationDuration.s]="snowflake.duration">
+      ❄
+    </div>
+  </div>
+  
   <!-- <app-products></app-products> -->
   <router-outlet></router-outlet>
 </div>
