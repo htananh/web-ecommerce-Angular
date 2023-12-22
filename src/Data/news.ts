@@ -155,7 +155,7 @@ export const news=[
             content_sub:` <p>Đáng chú ý, từ ngày 28/02 – 10/03/2023, khách hàng đã có thể đặt trước suất sở hữu Xiaomi 13 Series tại FPT Shop để trở thành một trong những chủ nhân đầu tiên của siêu phẩm này và nhận ngay ưu đãi giá trị cùng những phần quà thiết thực. Theo đó, FPT Shop sẽ giảm ngay 1.000.000 đồng hoặc tặng tai nghe Xiaomi Buds 3 trị giá 2.690.000 đồng khi khách hàng đặt mua Xiaomi 13 Lite 128GB độc quyền duy nhất tại FPT Shop cùng cam kết bảo hành 18 tháng. Bên cạnh đó, khách hàng cũng sẽ được mua kèm gói bảo hiểm rơi vỡ màn hình 6 tháng với ưu đãi 40% hoặc đồ gia dụng với ưu đãi 250.000 đồng.</p>
             <p>Đối với Xiaomi 13 Pro và Xiaomi 13 khách hàng có thể chọn 1 trong 2 ưu đãi sau: giảm ngay 4.000.000 đồng hoặc tặng máy hút bụi Mi Vacuum Cleaner G10 trị giá 7.990.000 đồng cũng như cam kết bảo hành 2 năm và bảo hành 1 đổi 1. </p>
            `,
-            img:'https://images.fpt.shop/unsafe/filters:quality(90)/fptshop.com.vn/uploads/images/tin-tuc/155422/Originals/DSC05446.JPG'
+            
         },
         {
             content_title:"Quà tặng",
