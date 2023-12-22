@@ -103,7 +103,7 @@ export const news=[
             content_sub:` <p>iPhone 14 Pro Max và Galaxy Z Flip4 đều có màn hình kích thước 6.7 inch nên cho không gian hiển thị tương đồng nhau. Tuy nhiên, di động Apple sử dụng tấm nền OLED "đục lỗ", có độ phân giải 2,556 x 1,179 pixel, tần số quét thích ứng 120Hz và độ sáng tối đa 2,000 nits.</p>
             <p>Mặt khác, Galaxy Z Flip4 sở hữu màn hình Dynamic AMOLED 2X với thiết kế gập thú vị, hỗ trợ độ phân giải 2,640 x 1,080 pixel, tần số quét 120Hz và có độ sáng tối đa 1,200 nits. Di động Samsung còn có màn hình phụ 1.9 inch ở mặt sau, giúp người dùng có thể xem nhanh thông báo hay dùng camera sau để chụp ảnh selfie. </p>
             <p>Vì vậy, xét về chất lượng hiển thị thì iPhone 14 Pro Max "nhỉnh" hơn một chút khi có độ phân giải cao hơn và giúp hiển thị ngoài trời nắng tốt hơn. Còn Galaxy Z Flip4 ghi điểm ở khả năng sử dụng thú vị khi máy có thiết kế gập và màn hình phụ ở mặt sau.</p>`,
-           
+            img:'https://images.fpt.shop/unsafe/filters:quality(90)/fptshop.com.vn/uploads/images/tin-tuc/161810/Originals/so-sanh-iphone-14-pro-max-vs-galaxy-z-flip-4-11.jpeg'
         },
         {
             content_title:"Hiệu năng",
@@ -139,7 +139,7 @@ export const news=[
         }
         ],
     },
-    {
+     {
         id:6,
         imagrTitle:"https://fptshop.com.vn/Uploads/Originals/2023/9/7/638296718154229570_so-sanh-iphone-14-pro-max-vs-galaxy-z-flip-4-cover.jpg",
         title:"Đặt trước Xiaomi 13 Lite độc quyền tại TECHSTORE Shop, nhận ngay nhiều ưu đãi hấp dẫn",
@@ -155,7 +155,7 @@ export const news=[
             content_sub:` <p>Đáng chú ý, từ ngày 28/02 – 10/03/2023, khách hàng đã có thể đặt trước suất sở hữu Xiaomi 13 Series tại FPT Shop để trở thành một trong những chủ nhân đầu tiên của siêu phẩm này và nhận ngay ưu đãi giá trị cùng những phần quà thiết thực. Theo đó, FPT Shop sẽ giảm ngay 1.000.000 đồng hoặc tặng tai nghe Xiaomi Buds 3 trị giá 2.690.000 đồng khi khách hàng đặt mua Xiaomi 13 Lite 128GB độc quyền duy nhất tại FPT Shop cùng cam kết bảo hành 18 tháng. Bên cạnh đó, khách hàng cũng sẽ được mua kèm gói bảo hiểm rơi vỡ màn hình 6 tháng với ưu đãi 40% hoặc đồ gia dụng với ưu đãi 250.000 đồng.</p>
             <p>Đối với Xiaomi 13 Pro và Xiaomi 13 khách hàng có thể chọn 1 trong 2 ưu đãi sau: giảm ngay 4.000.000 đồng hoặc tặng máy hút bụi Mi Vacuum Cleaner G10 trị giá 7.990.000 đồng cũng như cam kết bảo hành 2 năm và bảo hành 1 đổi 1. </p>
            `,
-            
+            img:'https://images.fpt.shop/unsafe/filters:quality(90)/fptshop.com.vn/uploads/images/tin-tuc/155422/Originals/DSC05446.JPG'
         },
         {
             content_title:"Quà tặng",
