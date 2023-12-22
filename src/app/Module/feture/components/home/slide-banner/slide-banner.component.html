@@ -14,10 +14,13 @@
         modifier: 1,
         slideShadows: true
       }"
-      [pagination]="true"
+    
+    [pagination]="{
+      clickable: true
+    }"
       [autoplay]="{
         delay: 2500, 
-        disableOnInteraction: false 
+        disableOnInteraction: true 
     }"
       class="mySwiper ">
    
