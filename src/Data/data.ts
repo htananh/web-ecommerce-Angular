@@ -440,42 +440,7 @@ export const dataProduct=[
         ],
         quantity: 1,
   },
-  {
-      id:16,
-      imageURL:"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-s22-ultra-12gb-256gb.png",
-      brand: "samsung",
-      title: "Samsung Galaxy S22 Ultra ",
-      color:"đen",
-      discountedPrice: 17550000,
-      price: 33990000,
-      arrImg:[
-      "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/s/m/sm-s908_galaxys22ultra_front_green_211119_2.jpg",
-      "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/s/m/sm-s908_galaxys22ultra_front_burgundy_211119_2.jpg",
-    
-      
-      
-    ],
-      discountPersent: "48%",
-      type: [
-          {
-            Capacity: "128G",
-            quantity: 5,
-            discountedPrice: 13990000,
-            
-          },
-          {
-              Capacity: "256G",
-              quantity: 5,
-              discountedPrice: 17550000,
-          },
-          {
-              Capacity: "512G",
-              quantity: 10,
-              discountedPrice: 22990000,
-          }
-        ],
-        quantity: 1,
-  },
+
   {
       id:17,
       imageURL:"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-z-fold-5-256gb_1.png",
@@ -581,42 +546,7 @@ export const dataProduct=[
         ],
         quantity: 1,
   },
-  {
-      id:20,
-      imageURL:"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/s/m/sm-g990_s21fe_backfront_lv.png",
-      brand: "samsung",
-      title: "Samsung Galaxy S21 FE",
-      color:"đen",
-      arrImg:[
-      "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/s/m/sm-g990_s21fe_backfront_zw.png",
-      "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/s/m/sm-g990_s21fe_backfront_za.png",
-     
-      
-      
-    ],
-      discountedPrice: 9990000,
-      price: 16900000,
-      discountPersent: "41%",
-      type: [
-          {
-            Capacity: "128GB",
-            quantity: 5,
-            discountedPrice: 9990000,
-            
-          },
-          {
-              Capacity: "256GB",
-              quantity: 5,
-              discountedPrice: 9990000,
-          },
-          {
-              Capacity: "512GB",
-              quantity: 10,
-              discountedPrice: 9990000,
-          }
-        ],
-        quantity: 1,
-  },
+  
   {
       id:21,
       imageURL:"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-a23-5g.png",
@@ -746,37 +676,7 @@ export const dataProduct=[
         ],
         quantity: 1,
   },
-  {
-      id:25,
-      imageURL:"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/v/i/vivo-y02a.png",
-      brand: "vivo",
-      title: "Vivo Y02A 3G",
-      color:"trắng",
-      discountedPrice: 2690000,
-      price: 2790000,
-      arrImg:[
-      "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/v/i/vivo-y02s_6_.jpg",
-      "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/v/i/vivo-y02s_7_.jpg",
-     
-      
-    ],
-      discountPersent: "4%",
-      type: [
-          {
-            Capacity: "8G",
-            quantity: 5,
-            discountedPrice: 2690000,
-            
-          },
-          {
-              Capacity: "16G",
-              quantity: 5,
-              discountedPrice: 2690000,
-          },
-       
-        ],
-        quantity: 1,
-  },
+  
   {
       id:26,
       imageURL:"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/v/i/vivo-iqoo-9t.png",
