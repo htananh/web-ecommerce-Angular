@@ -118,7 +118,7 @@ export const news=[
     },
     {
         id:5,
-        imagrTitle:"https://fptshop.com.vn/Uploads/Originals/2023/9/7/638296718154229570_so-sanh-iphone-14-pro-max-vs-galaxy-z-flip-4-cover.jpg",
+        imagrTitle:"https://fptshop.com.vn/Uploads/Originals/2023/2/28/638131737108281659_dsc05468.JPG",
         title:"Đã có cách xử lý iPhone 15 Pro bị ám màn từ chính Apple",
         sub_title:"Rất may đây chỉ là một lỗi phần mềm đến từ iOS 17 trên iPhone 15 Pro và hiện tại đã có cách để khắc phục ngay tại nhà.",
         content:[{
@@ -141,7 +141,7 @@ export const news=[
     },
     {
         id:6,
-        imagrTitle:"https://images.fpt.shop/unsafe/fit-in/300x200/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/12/4/638372975324690869_cach-chuyen-anh-tu-android-sang-iphone.jpg",
+        imagrTitle:"https://fptshop.com.vn/Uploads/Originals/2023/9/7/638296718154229570_so-sanh-iphone-14-pro-max-vs-galaxy-z-flip-4-cover.jpg",
         title:"Đặt trước Xiaomi 13 Lite độc quyền tại TECHSTORE Shop, nhận ngay nhiều ưu đãi hấp dẫn",
         sub_title:"Từ nay đến ngày 10/03/2023, khách hàng đã có thể đặt trước Xiaomi 13 Series tại Tech Shop để nhận thêm nhiều ưu đãi",
         content:[{
