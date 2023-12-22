@@ -139,36 +139,5 @@ export const news=[
         }
         ],
     },
-     {
-        id:6,
-        imagrTitle:"https://fptshop.com.vn/Uploads/Originals/2023/9/7/638296718154229570_so-sanh-iphone-14-pro-max-vs-galaxy-z-flip-4-cover.jpg",
-        title:"Đặt trước Xiaomi 13 Lite độc quyền tại TECHSTORE Shop, nhận ngay nhiều ưu đãi hấp dẫn",
-        sub_title:"Từ nay đến ngày 10/03/2023, khách hàng đã có thể đặt trước Xiaomi 13 Series tại Tech Shop để nhận thêm nhiều ưu đãi",
-        content:[{
-            content_title:"Tuần lễ vàng",
-            content_sub:` <p>Được biết, TECHSTORE Shop triển khai chương trình “Tuần lễ Xiaomi” với hàng loạt ưu đãi giá trị dành tặng khách hàng. Theo đó,  khi khách hàng chọn mua điện thoại trong thời gian từ từ 20/10 - 26/10/2023 sẽ nhận được ưu đãi đến 15.000.000 đồng. Chưa hết, khi khách hàng là học sinh – sinh viên, giáo viên hoặc giảng viên sẽ được giảm thêm 10% và tặng bảo hành 1 năm, nâng tổng thời gian bảo hành lên đến 03 năm. Đây cũng là ưu đãi độc quyền của FPT Shop, giúp các khách hàng yên tâm hơn khi sử dụng sản phẩm, cũng như tiết kiệm thêm được một phần chi phí nếu chẳng may laptop gặp sự cố trong quá trình sử dụng.</p>
-           `,
-            img:'https://images.fpt.shop/unsafe/filters:quality(90)/fptshop.com.vn/uploads/images/tin-tuc/155422/Originals/DSC05468.JPG'
-        },
-        {
-            content_title:"Ưu đãi",
-            content_sub:` <p>Đáng chú ý, từ ngày 28/02 – 10/03/2023, khách hàng đã có thể đặt trước suất sở hữu Xiaomi 13 Series tại FPT Shop để trở thành một trong những chủ nhân đầu tiên của siêu phẩm này và nhận ngay ưu đãi giá trị cùng những phần quà thiết thực. Theo đó, FPT Shop sẽ giảm ngay 1.000.000 đồng hoặc tặng tai nghe Xiaomi Buds 3 trị giá 2.690.000 đồng khi khách hàng đặt mua Xiaomi 13 Lite 128GB độc quyền duy nhất tại FPT Shop cùng cam kết bảo hành 18 tháng. Bên cạnh đó, khách hàng cũng sẽ được mua kèm gói bảo hiểm rơi vỡ màn hình 6 tháng với ưu đãi 40% hoặc đồ gia dụng với ưu đãi 250.000 đồng.</p>
-            <p>Đối với Xiaomi 13 Pro và Xiaomi 13 khách hàng có thể chọn 1 trong 2 ưu đãi sau: giảm ngay 4.000.000 đồng hoặc tặng máy hút bụi Mi Vacuum Cleaner G10 trị giá 7.990.000 đồng cũng như cam kết bảo hành 2 năm và bảo hành 1 đổi 1. </p>
-           `,
-            img:'https://images.fpt.shop/unsafe/filters:quality(90)/fptshop.com.vn/uploads/images/tin-tuc/155422/Originals/DSC05446.JPG'
-        },
-        {
-            content_title:"Quà tặng",
-            content_sub:` <p>Bên cạnh những ưu đãi độc quyền trên, khi khách hàng mua điện thoại trong “tuần lễ Xiaomi sẽ nhận được nhiều quà tặng thiết thực như:
-            </p>
-            <p>Tặng phiếu mua hàng 300.000 đồng mua máy in.</p>
-            <p>Tặng phiếu mua hàng 300.000 đồng mua màn hình LCD</p>
-            <p>Tặng tai nghe choàng đầu ProOne trị giá 449.000 đồng khi mua Office kèm MTXT.</p>
-            <p>Tặng balo laptop cao cấp.</p>
-            <p>Tặng Chuột Gaming GM03 hoặc GM08.</p>
-            <p>Giảm ngay 5% tối đa 200.000 đồng khi thanh toán trả góp 6/12 tháng qua Kredivo.</p>
-            <p>Để cạnh tranh với các thương hiệu khác, Xiaomi tập trung phát triển cấu hình, sản phẩm được trang bị hệ điều hành mới nhất, bộ xử lý hiện đại cùng hiệu năng làm việc mạnh mẽ mang đến trải nghiệm tuyệt vời nhất cho người sử dụng. Một trong những ưu điểm của laptop Lenovo là giá thành máy thường rẻ hơn từ 1-3 triệu cùng cấu hình. Điều này phù hợp với những người có kinh tế hạn hẹp nhưng muốn sở hữu máy có cấu hình tốt. Thời lượng pin của Lenovo có thể hoạt động từ 4-6 tiếng mà không cần sạc giúp bạn thoải mái làm việc ở mọi nơi. </p>`
-        },
-        ],
-    },
+    
 ]
