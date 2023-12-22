@@ -103,7 +103,7 @@ export const news=[
             content_sub:` <p>iPhone 14 Pro Max và Galaxy Z Flip4 đều có màn hình kích thước 6.7 inch nên cho không gian hiển thị tương đồng nhau. Tuy nhiên, di động Apple sử dụng tấm nền OLED "đục lỗ", có độ phân giải 2,556 x 1,179 pixel, tần số quét thích ứng 120Hz và độ sáng tối đa 2,000 nits.</p>
             <p>Mặt khác, Galaxy Z Flip4 sở hữu màn hình Dynamic AMOLED 2X với thiết kế gập thú vị, hỗ trợ độ phân giải 2,640 x 1,080 pixel, tần số quét 120Hz và có độ sáng tối đa 1,200 nits. Di động Samsung còn có màn hình phụ 1.9 inch ở mặt sau, giúp người dùng có thể xem nhanh thông báo hay dùng camera sau để chụp ảnh selfie. </p>
             <p>Vì vậy, xét về chất lượng hiển thị thì iPhone 14 Pro Max "nhỉnh" hơn một chút khi có độ phân giải cao hơn và giúp hiển thị ngoài trời nắng tốt hơn. Còn Galaxy Z Flip4 ghi điểm ở khả năng sử dụng thú vị khi máy có thiết kế gập và màn hình phụ ở mặt sau.</p>`,
-            img:'https://images.fpt.shop/unsafe/filters:quality(90)/fptshop.com.vn/uploads/images/tin-tuc/161810/Originals/so-sanh-iphone-14-pro-max-vs-galaxy-z-flip-4-11.jpeg'
+           
         },
         {
             content_title:"Hiệu năng",
