@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router, } from '@angular/router';
 
 @Component({
   selector: 'app-signin',
@@ -7,4 +8,11 @@ import { Component, Input } from '@angular/core';
 })
 export class SigninComponent {
   @Input() changeIslogin:any;
+   
+  constructor(private router:Router){
+    
+  }
+  navigateToHome(){
+    this.router.navigate(['/']);
+  }
 }

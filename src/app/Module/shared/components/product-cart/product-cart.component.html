@@ -3,11 +3,11 @@
 
                             <div 
 
-                             class=" box relative duration-500 cursor-pointer flex flex-col items-center justify-center m-3 rounded-lg  product 2xl:w-72    xl:w-60  lg:w-52 lg:h-80">
-                                <div  class=" lg:h-52  lg:w-44 w-32 pt-4" (click)="navigateTo('/product-details/' + product.id)">
+                             class=" box relative duration-500 cursor-pointer flex flex-col items-center justify-center  rounded-lg  product 2xl:w-68    xl:w-60  lg:w-52 lg:h-80">
+                                <div  class="   lg:w-36 w-32 py-2" (click)="navigateTo('/product-details/' + product.id)">
                                     <img [src]="product.imageURL" alt="">   
                                 </div>
-                                <div class="px-4" (click)="navigateTo('/product-details/' + product.id)">
+                                <div  (click)="navigateTo('/product-details/' + product.id)">
                                     <p class="mt-2 text-xs font-bold text-black text-center ">{{product.title}}</p>
                                     <div class="flex  justify-center gap-5 ">
                                         <p class="text-center text-red-600 font-bold">{{product.discountedPrice | currency :'VND'}}</p>

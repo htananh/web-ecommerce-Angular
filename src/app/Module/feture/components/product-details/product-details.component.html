@@ -226,11 +226,14 @@
         </div>
     </section>
 </div> -->
+
 <ng-container *ngFor="let item of dataProduct">
 
     <div *ngIf="item.id==id">
-        <div class="0-5 lg:p-10 mt-2">
- 
+        <div class="0-5 lg:px-10 mt-2">
+            <p class="lg:text-xl font-normal px-20">
+                Sản Phẩm > {{item.brand}} <span class="lg:text-xl active"> > {{item.title}}</span>
+            </p>
             <section class=" product_details  lg:grid  lg:grid-cols-2 2xl:grid-cols-3 lg:gap-10  pb-10 px-5 lg:px-20">
                 
                 <div class=" lg:col-span-1 2xl:col-span-2 flex justify-center items-center  ">

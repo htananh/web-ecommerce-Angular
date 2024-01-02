@@ -16,7 +16,9 @@ import { RouterLinkActive, RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     RouterLinkActive,
-    RouterModule
+    RouterModule,
+    RouterLinkActive,
+    RouterModule,
   ]
 })
 export class AuthModule { }
