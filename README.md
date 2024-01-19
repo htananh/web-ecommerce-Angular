@@ -6,12 +6,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 npx tailwindcss init
 # Responsive 
 Able to use on moblie or tablet
+
 ![image](https://github.com/htananh/web-ecommerce-Angular/assets/109346888/3261fcf2-49ac-4791-9acd-3a51bbd09c12)
 
 
 # Clone and run
 git clone : git@github.com:htananh/web-ecommerce-Angular.git
+
 npm install
+
 open : http://localhost:4200/
 # tailwindcss
 npm install -D tailwindcss postcss autoprefixer
